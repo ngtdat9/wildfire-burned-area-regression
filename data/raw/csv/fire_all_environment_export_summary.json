@@ -1,0 +1,3053 @@
+{
+  "phase": "02_environment_terrain_extraction",
+  "project": "wildfire-area-regression",
+  "input_csv": "data/raw/csv/fire_all.csv",
+  "drive_folder": "Wildfire_Environment_Exports_v2",
+  "dry_run": false,
+  "weather_mode": "stacked",
+  "lookback_days": 3,
+  "min_buffer_m": 20000,
+  "weather_scale_m": 9000,
+  "terrain_scale_m": 30,
+  "events": [
+    {
+      "fire_id": "20778153",
+      "weather_mode": "stacked",
+      "terrain_task_id": "DDFMU7DD5F5GVJM6L5N4RKV5",
+      "weather_task_id": "GSQS6PMSEACWNWJUQTIYHJWH",
+      "weather_days": 24,
+      "weather_start_date": "2017-07-07",
+      "weather_end_date": "2017-07-30",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "20778186",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HTCR7AKBM4APWG4NOOPHHG6P",
+      "weather_task_id": "JYJZ4MWDU5D3T7NM2PXOA7Y5",
+      "weather_days": 61,
+      "weather_start_date": "2017-07-14",
+      "weather_end_date": "2017-09-12",
+      "weather_band_count_expected": 366
+    },
+    {
+      "fire_id": "20901111",
+      "weather_mode": "stacked",
+      "terrain_task_id": "WKLSXNO6NDT72TKHN4MXU2LL",
+      "weather_task_id": "VQPH6RJEKCHO3EELBHN6FPN6",
+      "weather_days": 12,
+      "weather_start_date": "2017-08-25",
+      "weather_end_date": "2017-09-05",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "20778225",
+      "weather_mode": "stacked",
+      "terrain_task_id": "G3UIV3AWK2UFXBPDCWVXI6VY",
+      "weather_task_id": "MENWU6BPDMSPOYKXVUDEYWHA",
+      "weather_days": 10,
+      "weather_start_date": "2017-07-04",
+      "weather_end_date": "2017-07-13",
+      "weather_band_count_expected": 60
+    },
+    {
+      "fire_id": "20900131",
+      "weather_mode": "stacked",
+      "terrain_task_id": "5YOL3X47KLG6LZRHBRXMKWYD",
+      "weather_task_id": "5RDRLCLV2P4JJBHOOC2UDSYJ",
+      "weather_days": 14,
+      "weather_start_date": "2017-08-01",
+      "weather_end_date": "2017-08-14",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "20901127",
+      "weather_mode": "stacked",
+      "terrain_task_id": "JJKGCXYHTCVXN7MFS3XPSCIH",
+      "weather_task_id": "DK6LPQXTVR7NKI4XKYOKXTJP",
+      "weather_days": 11,
+      "weather_start_date": "2017-08-28",
+      "weather_end_date": "2017-09-07",
+      "weather_band_count_expected": 66
+    },
+    {
+      "fire_id": "20899892",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GWTZRRIPYZ2QNY44D7QDOVRG",
+      "weather_task_id": "OWQ6L5JMGHV27OWDCAZLRJQI",
+      "weather_days": 37,
+      "weather_start_date": "2017-08-07",
+      "weather_end_date": "2017-09-12",
+      "weather_band_count_expected": 222
+    },
+    {
+      "fire_id": "20900124",
+      "weather_mode": "stacked",
+      "terrain_task_id": "AOCVSYBCVAYYIXB6EMFLDEEK",
+      "weather_task_id": "U6SH4W2MTFU2EDGJLWFDF6J5",
+      "weather_days": 15,
+      "weather_start_date": "2017-08-02",
+      "weather_end_date": "2017-08-16",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "20900040",
+      "weather_mode": "stacked",
+      "terrain_task_id": "D6SQPEX4ZL5NRWBAJQO2SZ5D",
+      "weather_task_id": "XKD5QI4J3BAZUYYGDL6KPSAC",
+      "weather_days": 9,
+      "weather_start_date": "2017-07-29",
+      "weather_end_date": "2017-08-06",
+      "weather_band_count_expected": 54
+    },
+    {
+      "fire_id": "20899967",
+      "weather_mode": "stacked",
+      "terrain_task_id": "WVSCYM3HNRTWQP745ZLFGNR7",
+      "weather_task_id": "MR74HYTADXWWRDE3PH6KNU7K",
+      "weather_days": 20,
+      "weather_start_date": "2017-08-06",
+      "weather_end_date": "2017-08-25",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "20778140",
+      "weather_mode": "stacked",
+      "terrain_task_id": "7NYC76YEQ6D4KQWA7ASHWQPX",
+      "weather_task_id": "7V2IMLSZRBAUWR53CZ27B5OQ",
+      "weather_days": 69,
+      "weather_start_date": "2017-07-17",
+      "weather_end_date": "2017-09-23",
+      "weather_band_count_expected": 414
+    },
+    {
+      "fire_id": "20899673",
+      "weather_mode": "stacked",
+      "terrain_task_id": "UFQ4XUI6WXYZW7MP5QZJHGJR",
+      "weather_task_id": "RGQBE3XO6GWJOIRFCOMA3MSO",
+      "weather_days": 42,
+      "weather_start_date": "2017-08-05",
+      "weather_end_date": "2017-09-15",
+      "weather_band_count_expected": 252
+    },
+    {
+      "fire_id": "20900085",
+      "weather_mode": "stacked",
+      "terrain_task_id": "SKHN2TWLWFTX7PECWWMH34NG",
+      "weather_task_id": "YHW2O6GJZBHCCHNR6YCPQYAI",
+      "weather_days": 14,
+      "weather_start_date": "2017-08-01",
+      "weather_end_date": "2017-08-14",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "20777397",
+      "weather_mode": "stacked",
+      "terrain_task_id": "WSIC5DBRLECA2B74ZL4WV3NM",
+      "weather_task_id": "YSW3YDJ26NJU6LL4MVMRN7PI",
+      "weather_days": 18,
+      "weather_start_date": "2017-07-12",
+      "weather_end_date": "2017-07-29",
+      "weather_band_count_expected": 108
+    },
+    {
+      "fire_id": "21038333",
+      "weather_mode": "stacked",
+      "terrain_task_id": "7ATJ2I2YGYM7RSOJVEDTWZSU",
+      "weather_task_id": "ZCZNUQP6WHZJARLDTUNY7PED",
+      "weather_days": 18,
+      "weather_start_date": "2017-08-29",
+      "weather_end_date": "2017-09-15",
+      "weather_band_count_expected": 108
+    },
+    {
+      "fire_id": "20899721",
+      "weather_mode": "stacked",
+      "terrain_task_id": "FJICBS6IOFXS6PJSSL6X6HYW",
+      "weather_task_id": "DYHS7DRAH7W4IDQFQ2AREFFF",
+      "weather_days": 37,
+      "weather_start_date": "2017-08-09",
+      "weather_end_date": "2017-09-14",
+      "weather_band_count_expected": 222
+    },
+    {
+      "fire_id": "20777134",
+      "weather_mode": "stacked",
+      "terrain_task_id": "3D5EJIYPUYHCJ74YVKFT5UMR",
+      "weather_task_id": "JWNDAEED7T7BOOZ7WDYYNR3Q",
+      "weather_days": 55,
+      "weather_start_date": "2017-07-20",
+      "weather_end_date": "2017-09-12",
+      "weather_band_count_expected": 330
+    },
+    {
+      "fire_id": "20777152",
+      "weather_mode": "stacked",
+      "terrain_task_id": "DG3YHJ7FF6O4S5CLXO4LHBMY",
+      "weather_task_id": "OU4JKTKBLPMODRRL5RICB5VL",
+      "weather_days": 21,
+      "weather_start_date": "2017-07-23",
+      "weather_end_date": "2017-08-12",
+      "weather_band_count_expected": 126
+    },
+    {
+      "fire_id": "20777459",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HW3WKPXOHTM7AFQ3HR3AEQM6",
+      "weather_task_id": "YGCBINX5WDHQMNHDSNMAUCI4",
+      "weather_days": 9,
+      "weather_start_date": "2017-07-07",
+      "weather_end_date": "2017-07-15",
+      "weather_band_count_expected": 54
+    },
+    {
+      "fire_id": "20777452",
+      "weather_mode": "stacked",
+      "terrain_task_id": "NP5XRGJZH6ZOILFN5BDVOCCN",
+      "weather_task_id": "7SCTRQKIOOE6T4GCIQ4TFTKO",
+      "weather_days": 8,
+      "weather_start_date": "2017-07-07",
+      "weather_end_date": "2017-07-14",
+      "weather_band_count_expected": 48
+    },
+    {
+      "fire_id": "20899813",
+      "weather_mode": "stacked",
+      "terrain_task_id": "WH55VTIMWFV45QJKIFEUGTUT",
+      "weather_task_id": "LU6OWSLPQEH3TV2QUZHANPEL",
+      "weather_days": 29,
+      "weather_start_date": "2017-08-23",
+      "weather_end_date": "2017-09-20",
+      "weather_band_count_expected": 174
+    },
+    {
+      "fire_id": "20777482",
+      "weather_mode": "stacked",
+      "terrain_task_id": "35F2SFKRENGSN6YOL6Q65DJ2",
+      "weather_task_id": "53DG7UM6PFUMMWD3IP5GHBCO",
+      "weather_days": 9,
+      "weather_start_date": "2017-07-02",
+      "weather_end_date": "2017-07-10",
+      "weather_band_count_expected": 54
+    },
+    {
+      "fire_id": "20777487",
+      "weather_mode": "stacked",
+      "terrain_task_id": "2RTCRGR3KGBRDIJUJKEHURL6",
+      "weather_task_id": "SSV2JEK5JBEESEVTUOUDQSW2",
+      "weather_days": 11,
+      "weather_start_date": "2017-07-10",
+      "weather_end_date": "2017-07-20",
+      "weather_band_count_expected": 66
+    },
+    {
+      "fire_id": "20777521",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GXF2HAHFRRQKIDMBVS6TJBI5",
+      "weather_task_id": "KJPB3JKNWE7CV2J6RMVB2CSP",
+      "weather_days": 13,
+      "weather_start_date": "2017-07-13",
+      "weather_end_date": "2017-07-25",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "20777181",
+      "weather_mode": "stacked",
+      "terrain_task_id": "Q46H2G57Q4DNS6NTQAONXZYA",
+      "weather_task_id": "ACQCDYFFOT44ZRGGXEDNT2US",
+      "weather_days": 15,
+      "weather_start_date": "2017-07-13",
+      "weather_end_date": "2017-07-27",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "20899766",
+      "weather_mode": "stacked",
+      "terrain_task_id": "S6XVJZR62SBOK7BCZPFO5P5R",
+      "weather_task_id": "U56TTJEKE2EMF4WHJC3EH3NF",
+      "weather_days": 14,
+      "weather_start_date": "2017-08-26",
+      "weather_end_date": "2017-09-08",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "21158900",
+      "weather_mode": "stacked",
+      "terrain_task_id": "E62MFDLMCCJWFVJCXTYD2OTD",
+      "weather_task_id": "FQ64EJMTLW3EZOR75UHL23XF",
+      "weather_days": 20,
+      "weather_start_date": "2017-10-01",
+      "weather_end_date": "2017-10-20",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "20777195",
+      "weather_mode": "stacked",
+      "terrain_task_id": "G72DANBMU4USXCPU3EO423GS",
+      "weather_task_id": "FE6G7B4ZKKDWEHCV6Y5THR36",
+      "weather_days": 18,
+      "weather_start_date": "2017-07-05",
+      "weather_end_date": "2017-07-22",
+      "weather_band_count_expected": 108
+    },
+    {
+      "fire_id": "20777203",
+      "weather_mode": "stacked",
+      "terrain_task_id": "U4LYYKQMXY5FTMGTQDC4D5CT",
+      "weather_task_id": "XMWGRW4EPC73TFUU5QJFFWBH",
+      "weather_days": 12,
+      "weather_start_date": "2017-07-04",
+      "weather_end_date": "2017-07-15",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "20702159",
+      "weather_mode": "stacked",
+      "terrain_task_id": "JPRU5FLUFAQTBOC2XX45TGUG",
+      "weather_task_id": "AOYHUPHCXIFNHIMJ2BGDGX7N",
+      "weather_days": 31,
+      "weather_start_date": "2017-06-14",
+      "weather_end_date": "2017-07-14",
+      "weather_band_count_expected": 186
+    },
+    {
+      "fire_id": "21158940",
+      "weather_mode": "stacked",
+      "terrain_task_id": "3LS6PD65DU6PD6WCBAUGKGU5",
+      "weather_task_id": "H5MKUQDGDPYMV2UUZD3VYPPE",
+      "weather_days": 23,
+      "weather_start_date": "2017-10-03",
+      "weather_end_date": "2017-10-25",
+      "weather_band_count_expected": 138
+    },
+    {
+      "fire_id": "21158932",
+      "weather_mode": "stacked",
+      "terrain_task_id": "35PB3H7BTEPHFEVRDBT3UY2J",
+      "weather_task_id": "UFQWEQL4YOGXUIQ7SCXAFYQP",
+      "weather_days": 18,
+      "weather_start_date": "2017-10-03",
+      "weather_end_date": "2017-10-20",
+      "weather_band_count_expected": 108
+    },
+    {
+      "fire_id": "21158939",
+      "weather_mode": "stacked",
+      "terrain_task_id": "52Q6PEN7GAI6HHH7HM3TXWR2",
+      "weather_task_id": "FN3BMTF6T7ZMP5YOISITOGSG",
+      "weather_days": 20,
+      "weather_start_date": "2017-10-03",
+      "weather_end_date": "2017-10-22",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "20777508",
+      "weather_mode": "stacked",
+      "terrain_task_id": "PUSVBM77IREBIQOZJRPUOPDX",
+      "weather_task_id": "XFLYOZPAQ4Z6MD75FYHUREEU",
+      "weather_days": 10,
+      "weather_start_date": "2017-07-07",
+      "weather_end_date": "2017-07-16",
+      "weather_band_count_expected": 60
+    },
+    {
+      "fire_id": "20700973",
+      "weather_mode": "stacked",
+      "terrain_task_id": "FT3T477QUPU6MNAW65KTEVJH",
+      "weather_task_id": "J5ZF5OWQISFSYTVADMCYD2AP",
+      "weather_days": 13,
+      "weather_start_date": "2017-06-19",
+      "weather_end_date": "2017-07-01",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "20562846",
+      "weather_mode": "stacked",
+      "terrain_task_id": "V7AHNY3GANATIAPGSVGHAPC5",
+      "weather_task_id": "O4KJZYCMXXF42JYZ7AEVCNTP",
+      "weather_days": 12,
+      "weather_start_date": "2017-04-20",
+      "weather_end_date": "2017-05-01",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "20701026",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VEZRHMDSBLFSBZJH7XWERY3J",
+      "weather_task_id": "VNJIPA3Z7GP2EIPKLEU673TB",
+      "weather_days": 28,
+      "weather_start_date": "2017-06-05",
+      "weather_end_date": "2017-07-02",
+      "weather_band_count_expected": 168
+    },
+    {
+      "fire_id": "20568194",
+      "weather_mode": "stacked",
+      "terrain_task_id": "LVDUVP6SD4LF3OVWAUO2HFTO",
+      "weather_task_id": "4BQINFJOWAGQQREQMF5UYEEE",
+      "weather_days": 42,
+      "weather_start_date": "2017-04-05",
+      "weather_end_date": "2017-05-16",
+      "weather_band_count_expected": 252
+    },
+    {
+      "fire_id": "21890013",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VXRJBYEXKSR5B7DBPFPCBYZB",
+      "weather_task_id": "6ADLL56FFFT44KR5ZSJCVIQL",
+      "weather_days": 16,
+      "weather_start_date": "2018-07-21",
+      "weather_end_date": "2018-08-05",
+      "weather_band_count_expected": 96
+    },
+    {
+      "fire_id": "21890003",
+      "weather_mode": "stacked",
+      "terrain_task_id": "II2ZQ7LJZGFIISBIETAXQE4C",
+      "weather_task_id": "3ESHWHDE6LKARY34YY4PFBPT",
+      "weather_days": 33,
+      "weather_start_date": "2018-07-26",
+      "weather_end_date": "2018-08-27",
+      "weather_band_count_expected": 198
+    },
+    {
+      "fire_id": "21889992",
+      "weather_mode": "stacked",
+      "terrain_task_id": "A5X5OG3PHC7AKNIT7TCCKXTE",
+      "weather_task_id": "GVI4HZVDZX2AKQHGINW6YLUY",
+      "weather_days": 12,
+      "weather_start_date": "2018-07-13",
+      "weather_end_date": "2018-07-24",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "21804884",
+      "weather_mode": "stacked",
+      "terrain_task_id": "JSL6MY6QJPY35BLTSELVKTCY",
+      "weather_task_id": "5AXSUUOTDDRYQOKNYIZWEVVF",
+      "weather_days": 14,
+      "weather_start_date": "2018-06-17",
+      "weather_end_date": "2018-06-30",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "21889717",
+      "weather_mode": "stacked",
+      "terrain_task_id": "YGCPWZNTODADTSRNZW44MRCU",
+      "weather_task_id": "K7DUKJMKRI42BTBLPH6ELESB",
+      "weather_days": 11,
+      "weather_start_date": "2018-06-30",
+      "weather_end_date": "2018-07-10",
+      "weather_band_count_expected": 66
+    },
+    {
+      "fire_id": "21890524",
+      "weather_mode": "stacked",
+      "terrain_task_id": "J2PWDPNDLACJ5NJRUOJILSHM",
+      "weather_task_id": "AST42LWFWJKD5JKEI6WEFVAC",
+      "weather_days": 47,
+      "weather_start_date": "2018-07-28",
+      "weather_end_date": "2018-09-12",
+      "weather_band_count_expected": 282
+    },
+    {
+      "fire_id": "21889953",
+      "weather_mode": "stacked",
+      "terrain_task_id": "7GPNCITUXDWABJFCYEWQY54D",
+      "weather_task_id": "4GQX2VLNOGA7JUTPYC2ICG4B",
+      "weather_days": 11,
+      "weather_start_date": "2018-07-16",
+      "weather_end_date": "2018-07-26",
+      "weather_band_count_expected": 66
+    },
+    {
+      "fire_id": "21889943",
+      "weather_mode": "stacked",
+      "terrain_task_id": "2PNJPN6ZIZNTPL3N3HKOCGL2",
+      "weather_task_id": "XKMO6C5EM4GWGB5BJGVS324Q",
+      "weather_days": 41,
+      "weather_start_date": "2018-07-24",
+      "weather_end_date": "2018-09-02",
+      "weather_band_count_expected": 246
+    },
+    {
+      "fire_id": "21998095",
+      "weather_mode": "stacked",
+      "terrain_task_id": "DGKHZQEFXXQQREIR7ZTU6XRR",
+      "weather_task_id": "OXZFONZDVELDINJQSZ7YRVZM",
+      "weather_days": 22,
+      "weather_start_date": "2018-08-12",
+      "weather_end_date": "2018-09-02",
+      "weather_band_count_expected": 132
+    },
+    {
+      "fire_id": "21997770",
+      "weather_mode": "stacked",
+      "terrain_task_id": "XZJIR4AF3OYB2VOZXG7ETRN5",
+      "weather_task_id": "2MRCV2LNPGJAJXJPPLKPXNY7",
+      "weather_days": 18,
+      "weather_start_date": "2018-08-12",
+      "weather_end_date": "2018-08-29",
+      "weather_band_count_expected": 108
+    },
+    {
+      "fire_id": "21889994",
+      "weather_mode": "stacked",
+      "terrain_task_id": "X27O6M3TK5WBBAJZXWDNCO4Q",
+      "weather_task_id": "ILW2RBB6KX3XBRWDPJBHHWSP",
+      "weather_days": 15,
+      "weather_start_date": "2018-07-23",
+      "weather_end_date": "2018-08-06",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "21890009",
+      "weather_mode": "stacked",
+      "terrain_task_id": "FQ3YQYHJSOFN2IZRHEXLG2YU",
+      "weather_task_id": "A3YGOJU6Q67CI4HCPRLFOT3F",
+      "weather_days": 23,
+      "weather_start_date": "2018-07-19",
+      "weather_end_date": "2018-08-10",
+      "weather_band_count_expected": 138
+    },
+    {
+      "fire_id": "21998023",
+      "weather_mode": "stacked",
+      "terrain_task_id": "6HU3EQNLTQGII6B535HCE2CN",
+      "weather_task_id": "FKPM2ZHE3W3ANVUOXPZHD7EA",
+      "weather_days": 12,
+      "weather_start_date": "2018-08-04",
+      "weather_end_date": "2018-08-15",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "21890502",
+      "weather_mode": "stacked",
+      "terrain_task_id": "3FDOX3GPEBBEJOTPPXMR5CRJ",
+      "weather_task_id": "KPVHRBRT2TZO2PQAUAFNJVKV",
+      "weather_days": 47,
+      "weather_start_date": "2018-07-15",
+      "weather_end_date": "2018-08-30",
+      "weather_band_count_expected": 282
+    },
+    {
+      "fire_id": "21998230",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HRU2G4YZWQDLHNEZ36QGQUBB",
+      "weather_task_id": "6VCF6JVVS2S6LGV7VCTNIILL",
+      "weather_days": 19,
+      "weather_start_date": "2018-08-11",
+      "weather_end_date": "2018-08-29",
+      "weather_band_count_expected": 114
+    },
+    {
+      "fire_id": "21890024",
+      "weather_mode": "stacked",
+      "terrain_task_id": "C73J3BQCIWZQWMMJUHXJO6XK",
+      "weather_task_id": "3YDASBTZBN5IJ3HKAY246INV",
+      "weather_days": 20,
+      "weather_start_date": "2018-07-22",
+      "weather_end_date": "2018-08-10",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "22343688",
+      "weather_mode": "stacked",
+      "terrain_task_id": "KQ7VZW3AUOHN6EDCUSPY5CR3",
+      "weather_task_id": "CYEDWGMS3QONP2HIJXWYKF7Q",
+      "weather_days": 14,
+      "weather_start_date": "2018-11-04",
+      "weather_end_date": "2018-11-17",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "22343661",
+      "weather_mode": "stacked",
+      "terrain_task_id": "F7SD2HIIZEK5ZH3P3VMSCX42",
+      "weather_task_id": "JHEIC7BL3ET54L5KOA6RM3R2",
+      "weather_days": 16,
+      "weather_start_date": "2018-11-04",
+      "weather_end_date": "2018-11-19",
+      "weather_band_count_expected": 96
+    },
+    {
+      "fire_id": "21997828",
+      "weather_mode": "stacked",
+      "terrain_task_id": "QXJL7YS4ON32I2FEDRYN2COY",
+      "weather_task_id": "EJZPPWBOOKLOWMEZQF75CL5X",
+      "weather_days": 27,
+      "weather_start_date": "2018-07-29",
+      "weather_end_date": "2018-08-24",
+      "weather_band_count_expected": 162
+    },
+    {
+      "fire_id": "21889779",
+      "weather_mode": "stacked",
+      "terrain_task_id": "FNCW6YYZG2V24RPHYGWSQNWC",
+      "weather_task_id": "Y6UMJ34BJNG3OZUQMXSGDHIN",
+      "weather_days": 38,
+      "weather_start_date": "2018-07-09",
+      "weather_end_date": "2018-08-15",
+      "weather_band_count_expected": 228
+    },
+    {
+      "fire_id": "21998287",
+      "weather_mode": "stacked",
+      "terrain_task_id": "LPEW45R4HRZXH3A4PRGU6V3T",
+      "weather_task_id": "5YEFL36CYY27NXVISHXKR4Z6",
+      "weather_days": 10,
+      "weather_start_date": "2018-08-14",
+      "weather_end_date": "2018-08-23",
+      "weather_band_count_expected": 60
+    },
+    {
+      "fire_id": "21890072",
+      "weather_mode": "stacked",
+      "terrain_task_id": "YLGNJQCLBJVM7BXRNUSL2KX6",
+      "weather_task_id": "FKZDGZPIBUGKQIRXBOUZCPYI",
+      "weather_days": 15,
+      "weather_start_date": "2018-06-30",
+      "weather_end_date": "2018-07-14",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "21804582",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VSCWTNVUB7OA2TAUD6NYUSJ5",
+      "weather_task_id": "SIWZQSZTX2C5WLSCLMSKNV5D",
+      "weather_days": 15,
+      "weather_start_date": "2018-06-26",
+      "weather_end_date": "2018-07-10",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "21889763",
+      "weather_mode": "stacked",
+      "terrain_task_id": "2DJP3VF2NMVJ5FTHOXP7Q6LY",
+      "weather_task_id": "YKXXDGQO5WOIOVVBYUER7NW6",
+      "weather_days": 19,
+      "weather_start_date": "2018-07-24",
+      "weather_end_date": "2018-08-11",
+      "weather_band_count_expected": 114
+    },
+    {
+      "fire_id": "21890056",
+      "weather_mode": "stacked",
+      "terrain_task_id": "NBYDEBZ5PICPJMIJQ6ZPRW7O",
+      "weather_task_id": "2IKGOFH2LYY6SNPUEIL2XIUU",
+      "weather_days": 13,
+      "weather_start_date": "2018-07-20",
+      "weather_end_date": "2018-08-01",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "21889750",
+      "weather_mode": "stacked",
+      "terrain_task_id": "4FDCL7BO33WTEENYX4T5LERT",
+      "weather_task_id": "AYCPNQXVP4QYDPKAA7NSV243",
+      "weather_days": 13,
+      "weather_start_date": "2018-07-23",
+      "weather_end_date": "2018-08-04",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "21998264",
+      "weather_mode": "stacked",
+      "terrain_task_id": "EAYEP4TV3LQPHXSYJ6RB2U7S",
+      "weather_task_id": "DOYHBXUXY4HKHMTELHOMUYV4",
+      "weather_days": 23,
+      "weather_start_date": "2018-08-11",
+      "weather_end_date": "2018-09-02",
+      "weather_band_count_expected": 138
+    },
+    {
+      "fire_id": "22141509",
+      "weather_mode": "stacked",
+      "terrain_task_id": "MORFRQMY4JPSH5DKFBMQ3SS4",
+      "weather_task_id": "WD253HUPAALXAFWXXZPQJJTW",
+      "weather_days": 18,
+      "weather_start_date": "2018-09-11",
+      "weather_end_date": "2018-09-28",
+      "weather_band_count_expected": 108
+    },
+    {
+      "fire_id": "21751305",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VJI2SMMMBZILXZKRQW625QVE",
+      "weather_task_id": "QL3AMDLWRXTGKS32JK7JS6SF",
+      "weather_days": 13,
+      "weather_start_date": "2018-05-26",
+      "weather_end_date": "2018-06-07",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "21804985",
+      "weather_mode": "stacked",
+      "terrain_task_id": "S6Y3NITVHVLGR4WAHMOHK7MZ",
+      "weather_task_id": "UQN23ZOVVOIMYSNHYOG6KZNF",
+      "weather_days": 16,
+      "weather_start_date": "2018-06-23",
+      "weather_end_date": "2018-07-08",
+      "weather_band_count_expected": 96
+    },
+    {
+      "fire_id": "21890160",
+      "weather_mode": "stacked",
+      "terrain_task_id": "4QF357GHFYKU6UGXKRQ4QK6R",
+      "weather_task_id": "U5NOD2EJM4JK365HGZ6USEBG",
+      "weather_days": 30,
+      "weather_start_date": "2018-07-26",
+      "weather_end_date": "2018-08-24",
+      "weather_band_count_expected": 180
+    },
+    {
+      "fire_id": "21748801",
+      "weather_mode": "stacked",
+      "terrain_task_id": "C3VBWRZVAEKRZVK7UVZKXIBR",
+      "weather_task_id": "HHBU2MIPF6LZ2QJHDVBMPHEL",
+      "weather_days": 36,
+      "weather_start_date": "2018-05-18",
+      "weather_end_date": "2018-06-22",
+      "weather_band_count_expected": 216
+    },
+    {
+      "fire_id": "21693566",
+      "weather_mode": "stacked",
+      "terrain_task_id": "AP7WTAV6BRMC2QO7CVUAFT2W",
+      "weather_task_id": "6XIT57JZLSTEBYNN6KB5IJVO",
+      "weather_days": 24,
+      "weather_start_date": "2018-03-30",
+      "weather_end_date": "2018-04-22",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "21751309",
+      "weather_mode": "stacked",
+      "terrain_task_id": "N4KPPJTXKNLRRUJYHOANAAYA",
+      "weather_task_id": "TFGBJ2Z2L6RS3754MW6KQVE5",
+      "weather_days": 15,
+      "weather_start_date": "2018-05-05",
+      "weather_end_date": "2018-05-19",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "21999381",
+      "weather_mode": "stacked",
+      "terrain_task_id": "FDLWBTSJ5SQF56TAX4NVBC3C",
+      "weather_task_id": "QGWYEQL47TNATCXU5EYFZ7EA",
+      "weather_days": 22,
+      "weather_start_date": "2018-08-20",
+      "weather_end_date": "2018-09-10",
+      "weather_band_count_expected": 132
+    },
+    {
+      "fire_id": "22141596",
+      "weather_mode": "stacked",
+      "terrain_task_id": "EJGRX4Z7RBCPK5LRL75CJA5J",
+      "weather_task_id": "NWGTZ7W64XICJK6RZZHCRG54",
+      "weather_days": 23,
+      "weather_start_date": "2018-09-05",
+      "weather_end_date": "2018-09-27",
+      "weather_band_count_expected": 138
+    },
+    {
+      "fire_id": "21751303",
+      "weather_mode": "stacked",
+      "terrain_task_id": "PT5EJ6JRTP2JJ6YLI6Y25YK7",
+      "weather_task_id": "MANPVJOHKE7SO23JLKHTMPG4",
+      "weather_days": 45,
+      "weather_start_date": "2018-05-27",
+      "weather_end_date": "2018-07-10",
+      "weather_band_count_expected": 270
+    },
+    {
+      "fire_id": "21998313",
+      "weather_mode": "stacked",
+      "terrain_task_id": "JHTQI6666C6U22WV4TNB3KO4",
+      "weather_task_id": "CIKBMGH5W3JVV3ZJJAA5NHLX",
+      "weather_days": 28,
+      "weather_start_date": "2018-07-30",
+      "weather_end_date": "2018-08-26",
+      "weather_band_count_expected": 168
+    },
+    {
+      "fire_id": "23036871",
+      "weather_mode": "stacked",
+      "terrain_task_id": "I7ESZKBESESDYANR7KHPCH37",
+      "weather_task_id": "IYFFC66OACNDEL7VS7G3XWNA",
+      "weather_days": 12,
+      "weather_start_date": "2019-07-17",
+      "weather_end_date": "2019-07-28",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "23159836",
+      "weather_mode": "stacked",
+      "terrain_task_id": "V4RKPRWBG6RHPYERLZBY2OWM",
+      "weather_task_id": "MPT6EYIAVLJGXZZR5Q2LEWXT",
+      "weather_days": 11,
+      "weather_start_date": "2019-08-01",
+      "weather_end_date": "2019-08-11",
+      "weather_band_count_expected": 66
+    },
+    {
+      "fire_id": "23036806",
+      "weather_mode": "stacked",
+      "terrain_task_id": "QMO5JJRHPTBDNI5HL6FHS6QS",
+      "weather_task_id": "HWD3NWMICEMLK45I6JPM42FL",
+      "weather_days": 10,
+      "weather_start_date": "2019-07-14",
+      "weather_end_date": "2019-07-23",
+      "weather_band_count_expected": 60
+    },
+    {
+      "fire_id": "23160475",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VKBAZ2AQCFVZGF2AQTWIIWGM",
+      "weather_task_id": "6YSMGC7EARIOXLXEQMM5IORH",
+      "weather_days": 20,
+      "weather_start_date": "2019-07-29",
+      "weather_end_date": "2019-08-17",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "23410594",
+      "weather_mode": "stacked",
+      "terrain_task_id": "EHOQWOUVVHIL7NEESHRT5SZU",
+      "weather_task_id": "XEUCXL3SH7NIMDTCPXGY4IUJ",
+      "weather_days": 14,
+      "weather_start_date": "2019-10-19",
+      "weather_end_date": "2019-11-01",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "23300669",
+      "weather_mode": "stacked",
+      "terrain_task_id": "S77AXJTB4CAPP2K6VXQN3W7Q",
+      "weather_task_id": "EVNNJTQHXPK2YG566AR274FK",
+      "weather_days": 20,
+      "weather_start_date": "2019-08-31",
+      "weather_end_date": "2019-09-19",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "22712973",
+      "weather_mode": "stacked",
+      "terrain_task_id": "I2GWLBOVZQ2BC6KHR6TWCD4T",
+      "weather_task_id": "NQVNXVWPYUW4T46SCIPQ72IZ",
+      "weather_days": 27,
+      "weather_start_date": "2019-03-18",
+      "weather_end_date": "2019-04-13",
+      "weather_band_count_expected": 162
+    },
+    {
+      "fire_id": "22938749",
+      "weather_mode": "stacked",
+      "terrain_task_id": "5NJMSB2GVX3KSK2PFSBXFPZZ",
+      "weather_task_id": "7QB6TC5YBQDOPILS7I2SBG5C",
+      "weather_days": 27,
+      "weather_start_date": "2019-06-05",
+      "weather_end_date": "2019-07-01",
+      "weather_band_count_expected": 162
+    },
+    {
+      "fire_id": "22712904",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GQK4DSIQ22BVDCH2FGCJ6MOD",
+      "weather_task_id": "REPCJFNAO54YTQ4IMZOYSSWY",
+      "weather_days": 20,
+      "weather_start_date": "2019-03-23",
+      "weather_end_date": "2019-04-11",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "24463187",
+      "weather_mode": "stacked",
+      "terrain_task_id": "ULTJ4F7JTENTGZCL5K3WKZVY",
+      "weather_task_id": "7TNXJVT32BJ4WLMIG56Y4ADH",
+      "weather_days": 7,
+      "weather_start_date": "2020-08-29",
+      "weather_end_date": "2020-09-04",
+      "weather_band_count_expected": 42
+    },
+    {
+      "fire_id": "24333277",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GXBEYL5D2PSNJ2RGYXSKHEAP",
+      "weather_task_id": "P66Z6UWMKDXX4FQHKJTSTINC",
+      "weather_days": 10,
+      "weather_start_date": "2020-08-28",
+      "weather_end_date": "2020-09-06",
+      "weather_band_count_expected": 60
+    },
+    {
+      "fire_id": "24333270",
+      "weather_mode": "stacked",
+      "terrain_task_id": "K747UEPZD2USGWC5YDFBKFJS",
+      "weather_task_id": "JL5UQ2CI6OD5RA2VCF7ORY42",
+      "weather_days": 14,
+      "weather_start_date": "2020-08-28",
+      "weather_end_date": "2020-09-10",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "24333279",
+      "weather_mode": "stacked",
+      "terrain_task_id": "C6JTNGD3XCJFUN7OQKXA3VUQ",
+      "weather_task_id": "M2XJPRS2VBZPDMY7Q5GSR574",
+      "weather_days": 14,
+      "weather_start_date": "2020-08-28",
+      "weather_end_date": "2020-09-10",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "24461328",
+      "weather_mode": "stacked",
+      "terrain_task_id": "Y46AEFVTXQ4TUS752HSP4ZV3",
+      "weather_task_id": "4MXI2IEA6RA4CAYJAHY6VOAG",
+      "weather_days": 28,
+      "weather_start_date": "2020-09-01",
+      "weather_end_date": "2020-09-28",
+      "weather_band_count_expected": 168
+    },
+    {
+      "fire_id": "24461320",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HN3ND5DLIJKLQ7NUDUKL6BKL",
+      "weather_task_id": "PRTAXKRI6FXXLFWHWBD26ENL",
+      "weather_days": 20,
+      "weather_start_date": "2020-09-01",
+      "weather_end_date": "2020-09-20",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "24332880",
+      "weather_mode": "stacked",
+      "terrain_task_id": "MWOTBT2B6OOWK4FSWWKCXE7V",
+      "weather_task_id": "TYXX6SOYH2H375BMV6KIEGWS",
+      "weather_days": 17,
+      "weather_start_date": "2020-08-23",
+      "weather_end_date": "2020-09-08",
+      "weather_band_count_expected": 102
+    },
+    {
+      "fire_id": "24462610",
+      "weather_mode": "stacked",
+      "terrain_task_id": "KEHF7QYP6DWMQGYXHIB3QGWP",
+      "weather_task_id": "W2SRPDNI5N25QUZIGHXAURWK",
+      "weather_days": 31,
+      "weather_start_date": "2020-08-31",
+      "weather_end_date": "2020-09-30",
+      "weather_band_count_expected": 186
+    },
+    {
+      "fire_id": "24462263",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GUKBQQ63BEI5OKXXOKLMKYKT",
+      "weather_task_id": "YHNWR2OWDDC3OFVRPSF5V4AR",
+      "weather_days": 30,
+      "weather_start_date": "2020-08-31",
+      "weather_end_date": "2020-09-29",
+      "weather_band_count_expected": 180
+    },
+    {
+      "fire_id": "24462488",
+      "weather_mode": "stacked",
+      "terrain_task_id": "DM6IS64HXPCCI25SWAOW7XZY",
+      "weather_task_id": "BDCCELMDV3ZEE4P6W36V2FZC",
+      "weather_days": 30,
+      "weather_start_date": "2020-08-31",
+      "weather_end_date": "2020-09-29",
+      "weather_band_count_expected": 180
+    },
+    {
+      "fire_id": "24332956",
+      "weather_mode": "stacked",
+      "terrain_task_id": "NOZ4YZBM4WLIRZKHRVHFRQ5S",
+      "weather_task_id": "MLSFGS2T6LICCPOCU5D6VKH3",
+      "weather_days": 22,
+      "weather_start_date": "2020-08-11",
+      "weather_end_date": "2020-09-01",
+      "weather_band_count_expected": 132
+    },
+    {
+      "fire_id": "24191347",
+      "weather_mode": "stacked",
+      "terrain_task_id": "WNZNLLA7EQX2WEY2X4OHUHNL",
+      "weather_task_id": "QE3T5XOA7P6ZYNZOO65H4PPR",
+      "weather_days": 16,
+      "weather_start_date": "2020-07-18",
+      "weather_end_date": "2020-08-02",
+      "weather_band_count_expected": 96
+    },
+    {
+      "fire_id": "24461421",
+      "weather_mode": "stacked",
+      "terrain_task_id": "EPZIWZVL2OGZSADTQWE3JZKN",
+      "weather_task_id": "MJ3G5NVLZXETEFEC4SULDHU5",
+      "weather_days": 10,
+      "weather_start_date": "2020-09-24",
+      "weather_end_date": "2020-10-03",
+      "weather_band_count_expected": 60
+    },
+    {
+      "fire_id": "24462753",
+      "weather_mode": "stacked",
+      "terrain_task_id": "BGCH7FX6PCOGDRZLZUAXAV4W",
+      "weather_task_id": "AURABGIQTKDYUF36MOGAGPWD",
+      "weather_days": 24,
+      "weather_start_date": "2020-09-04",
+      "weather_end_date": "2020-09-27",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "24462335",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GKLKD5DIYRVF24XRU2Q7KL64",
+      "weather_task_id": "EYGZB5EGJCPK3RYZ3QWYWDOF",
+      "weather_days": 26,
+      "weather_start_date": "2020-09-03",
+      "weather_end_date": "2020-09-28",
+      "weather_band_count_expected": 156
+    },
+    {
+      "fire_id": "24461996",
+      "weather_mode": "stacked",
+      "terrain_task_id": "ISOYAATKSUIVRSO6ITT7G7Y4",
+      "weather_task_id": "NDYPFTXSAMY5ODILKKPKCLN4",
+      "weather_days": 13,
+      "weather_start_date": "2020-08-30",
+      "weather_end_date": "2020-09-11",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "24461899",
+      "weather_mode": "stacked",
+      "terrain_task_id": "MDQ4Y6AY65XGUHQPUXQAA37X",
+      "weather_task_id": "L7QJWSNIU65UQTPHS2IZLDYM",
+      "weather_days": 26,
+      "weather_start_date": "2020-08-30",
+      "weather_end_date": "2020-09-24",
+      "weather_band_count_expected": 156
+    },
+    {
+      "fire_id": "24332939",
+      "weather_mode": "stacked",
+      "terrain_task_id": "ZYL7WGPGAFYGTJJQDR3PCJ3O",
+      "weather_task_id": "ZQVSAKE4MJHQ3QKONDAEB3M3",
+      "weather_days": 47,
+      "weather_start_date": "2020-08-16",
+      "weather_end_date": "2020-10-01",
+      "weather_band_count_expected": 282
+    },
+    {
+      "fire_id": "24332592",
+      "weather_mode": "stacked",
+      "terrain_task_id": "5RS3XTYSLK3FIWQZVQXHZKFL",
+      "weather_task_id": "3ZVM5I7TYVCWNZO5CT6QZJD2",
+      "weather_days": 27,
+      "weather_start_date": "2020-08-12",
+      "weather_end_date": "2020-09-07",
+      "weather_band_count_expected": 162
+    },
+    {
+      "fire_id": "24332608",
+      "weather_mode": "stacked",
+      "terrain_task_id": "GPZHZA2EFDELC2BPL4SOY57O",
+      "weather_task_id": "5MULSA5I4OJM2S7NZPUMHJBP",
+      "weather_days": 54,
+      "weather_start_date": "2020-08-20",
+      "weather_end_date": "2020-10-12",
+      "weather_band_count_expected": 324
+    },
+    {
+      "fire_id": "24461771",
+      "weather_mode": "stacked",
+      "terrain_task_id": "A2BCW42GSNB6GNPCUUGEMZBL",
+      "weather_task_id": "HOVUFZYGZKSAGHLZUJTKT4RS",
+      "weather_days": 28,
+      "weather_start_date": "2020-09-01",
+      "weather_end_date": "2020-09-28",
+      "weather_band_count_expected": 168
+    },
+    {
+      "fire_id": "24191393",
+      "weather_mode": "stacked",
+      "terrain_task_id": "6PGNSFOLBVKZIHDDYNWX5JSP",
+      "weather_task_id": "YMROAGO7LWDXYCRJSRA34Y5L",
+      "weather_days": 13,
+      "weather_start_date": "2020-07-10",
+      "weather_end_date": "2020-07-22",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "24332622",
+      "weather_mode": "stacked",
+      "terrain_task_id": "KV3G577UVSGOBREIMYFCUGGI",
+      "weather_task_id": "ZW6ZKLF3TLWHV6WWZDOBIAUY",
+      "weather_days": 24,
+      "weather_start_date": "2020-08-15",
+      "weather_end_date": "2020-09-07",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "24332704",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HQDSW62LMWXZTR364UIPEGHK",
+      "weather_task_id": "P7GOE6GAMV3CUKZ5DAZSBTV4",
+      "weather_days": 22,
+      "weather_start_date": "2020-08-26",
+      "weather_end_date": "2020-09-16",
+      "weather_band_count_expected": 132
+    },
+    {
+      "fire_id": "24461607",
+      "weather_mode": "stacked",
+      "terrain_task_id": "37VSL4FJBF6KHOHDGGZRDDFY",
+      "weather_task_id": "XESF245T5PIFMJOU2TEM7YFL",
+      "weather_days": 15,
+      "weather_start_date": "2020-09-23",
+      "weather_end_date": "2020-10-07",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "24332760",
+      "weather_mode": "stacked",
+      "terrain_task_id": "Y5ME7ARRCTIMGEPNY2PWZAAB",
+      "weather_task_id": "NI2F3ZIOZZGQ4Y6H4JQIHOJQ",
+      "weather_days": 14,
+      "weather_start_date": "2020-08-14",
+      "weather_end_date": "2020-08-27",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "24332676",
+      "weather_mode": "stacked",
+      "terrain_task_id": "36B3NVYH4OIDP5WJ5G7PVNLV",
+      "weather_task_id": "2QQM5EBYY2TPQVTG62GGTVPJ",
+      "weather_days": 12,
+      "weather_start_date": "2020-08-10",
+      "weather_end_date": "2020-08-21",
+      "weather_band_count_expected": 72
+    },
+    {
+      "fire_id": "24332700",
+      "weather_mode": "stacked",
+      "terrain_task_id": "G6OWFGPPGB7UQX5KBSQ265EO",
+      "weather_task_id": "BPYJEKW4RJUJUZPUXZP2UULT",
+      "weather_days": 24,
+      "weather_start_date": "2020-08-10",
+      "weather_end_date": "2020-09-02",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "24332764",
+      "weather_mode": "stacked",
+      "terrain_task_id": "QDU4PNHMU225IXQLWBXEGU76",
+      "weather_task_id": "FUCLQYJSHMYRIRCYTOS7IKXU",
+      "weather_days": 41,
+      "weather_start_date": "2020-08-13",
+      "weather_end_date": "2020-09-22",
+      "weather_band_count_expected": 246
+    },
+    {
+      "fire_id": "24332746",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HOJIL6EHQUP4X7UV3K7ULNHE",
+      "weather_task_id": "I2QGVNAPSOIA3BYVJLW7JZKJ",
+      "weather_days": 20,
+      "weather_start_date": "2020-08-13",
+      "weather_end_date": "2020-09-01",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "24332702",
+      "weather_mode": "stacked",
+      "terrain_task_id": "IXR5O472VEALZUCMIXXJRKUV",
+      "weather_task_id": "2DJ7DUTRRNBNKXYF6FC5636D",
+      "weather_days": 15,
+      "weather_start_date": "2020-08-13",
+      "weather_end_date": "2020-08-27",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "24332732",
+      "weather_mode": "stacked",
+      "terrain_task_id": "C2TYNTHCLC6Z2QXHAS2E6LGU",
+      "weather_task_id": "N3CZ7JWA52YQ4N6SXS2KRCSF",
+      "weather_days": 27,
+      "weather_start_date": "2020-08-09",
+      "weather_end_date": "2020-09-04",
+      "weather_band_count_expected": 162
+    },
+    {
+      "fire_id": "24191376",
+      "weather_mode": "stacked",
+      "terrain_task_id": "SAVK6AL5EN4I5RP7T3HPM2ME",
+      "weather_task_id": "WRKLWIMEJSTRSL6EUSUBZFBE",
+      "weather_days": 14,
+      "weather_start_date": "2020-06-30",
+      "weather_end_date": "2020-07-13",
+      "weather_band_count_expected": 84
+    },
+    {
+      "fire_id": "24332763",
+      "weather_mode": "stacked",
+      "terrain_task_id": "KJB22G5DHPSEOVNC234F6FKL",
+      "weather_task_id": "5SSP3JYDGJEJFS5ZQNQBEOSC",
+      "weather_days": 56,
+      "weather_start_date": "2020-08-17",
+      "weather_end_date": "2020-10-11",
+      "weather_band_count_expected": 336
+    },
+    {
+      "fire_id": "24191418",
+      "weather_mode": "stacked",
+      "terrain_task_id": "TPKLO6JAUQLKARYJVYF2N6VW",
+      "weather_task_id": "W2GVGJ743YWGSTFH3KTO6IEJ",
+      "weather_days": 16,
+      "weather_start_date": "2020-07-28",
+      "weather_end_date": "2020-08-12",
+      "weather_band_count_expected": 96
+    },
+    {
+      "fire_id": "24332787",
+      "weather_mode": "stacked",
+      "terrain_task_id": "MMO4A2OBB3ROXEMHPVHPPP32",
+      "weather_task_id": "OUH223SF47QDBLOV5PA2KVCE",
+      "weather_days": 17,
+      "weather_start_date": "2020-08-08",
+      "weather_end_date": "2020-08-24",
+      "weather_band_count_expected": 102
+    },
+    {
+      "fire_id": "24332647",
+      "weather_mode": "stacked",
+      "terrain_task_id": "ZHYHZJTSRUWLHF43RO2DTMY4",
+      "weather_task_id": "PD3NAPO4GB7NYPNGGSNBYG66",
+      "weather_days": 55,
+      "weather_start_date": "2020-08-12",
+      "weather_end_date": "2020-10-05",
+      "weather_band_count_expected": 330
+    },
+    {
+      "fire_id": "24332783",
+      "weather_mode": "stacked",
+      "terrain_task_id": "Y27UWLH453J7PCRMQUG7WJIH",
+      "weather_task_id": "WI6GAYKHCOXTLFM2BEKCSOHQ",
+      "weather_days": 9,
+      "weather_start_date": "2020-08-12",
+      "weather_end_date": "2020-08-20",
+      "weather_band_count_expected": 54
+    },
+    {
+      "fire_id": "24462788",
+      "weather_mode": "stacked",
+      "terrain_task_id": "J57PWPQJUO6HKMWEVLOEZNAA",
+      "weather_task_id": "QYHD2XFWL5YMUNFRNWERS7YQ",
+      "weather_days": 20,
+      "weather_start_date": "2020-09-09",
+      "weather_end_date": "2020-09-28",
+      "weather_band_count_expected": 120
+    },
+    {
+      "fire_id": "23860939",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VXJCLLVBQQ7BZMH5VPFULZKF",
+      "weather_task_id": "ZMCMSZFNRTTKMWQJTRTUJJZ4",
+      "weather_days": 24,
+      "weather_start_date": "2020-03-20",
+      "weather_end_date": "2020-04-12",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "24462847",
+      "weather_mode": "stacked",
+      "terrain_task_id": "25OXNYPAVPIUA5PQGRRNTDZ3",
+      "weather_task_id": "WA2CMIU7TAHTGFHVXRLLBMF2",
+      "weather_days": 39,
+      "weather_start_date": "2020-08-31",
+      "weather_end_date": "2020-10-08",
+      "weather_band_count_expected": 234
+    },
+    {
+      "fire_id": "24333000",
+      "weather_mode": "stacked",
+      "terrain_task_id": "NSQLHOGG2C624SXA5MMA5UWW",
+      "weather_task_id": "HX6YB2LPI7JMD3FKJIAAXZUK",
+      "weather_days": 40,
+      "weather_start_date": "2020-08-19",
+      "weather_end_date": "2020-09-27",
+      "weather_band_count_expected": 240
+    },
+    {
+      "fire_id": "24333039",
+      "weather_mode": "stacked",
+      "terrain_task_id": "VSLF2L732IRXU4TBUHSF6JL2",
+      "weather_task_id": "UWDSGHDGLK5O43R65MQGPHM5",
+      "weather_days": 34,
+      "weather_start_date": "2020-07-29",
+      "weather_end_date": "2020-08-31",
+      "weather_band_count_expected": 204
+    },
+    {
+      "fire_id": "24191427",
+      "weather_mode": "stacked",
+      "terrain_task_id": "C3TXP3WEERIHKIDPNKUUMQ5R",
+      "weather_task_id": "4ZB5UL5VPL54NC3THUTTDILE",
+      "weather_days": 21,
+      "weather_start_date": "2020-07-09",
+      "weather_end_date": "2020-07-29",
+      "weather_band_count_expected": 126
+    },
+    {
+      "fire_id": "24333033",
+      "weather_mode": "stacked",
+      "terrain_task_id": "HTR5AQNX3S4PWLD3IDOIKPSW",
+      "weather_task_id": "WQVXSJCJKLZOVGF7E5C6IVXI",
+      "weather_days": 24,
+      "weather_start_date": "2020-08-06",
+      "weather_end_date": "2020-08-29",
+      "weather_band_count_expected": 144
+    },
+    {
+      "fire_id": "24332801",
+      "weather_mode": "stacked",
+      "terrain_task_id": "4QGRUWLJZZ2A4A7KXIBEIQQF",
+      "weather_task_id": "MGOYXS3O6W7XD4YCUE5I2DQZ",
+      "weather_days": 17,
+      "weather_start_date": "2020-08-14",
+      "weather_end_date": "2020-08-30",
+      "weather_band_count_expected": 102
+    },
+    {
+      "fire_id": "24103581",
+      "weather_mode": "stacked",
+      "terrain_task_id": "JHMLYC665TYMEGI77AHQLDOR",
+      "weather_task_id": "HEKYKIAVY6UU2TNKB5KVPHD5",
+      "weather_days": 13,
+      "weather_start_date": "2020-06-03",
+      "weather_end_date": "2020-06-15",
+      "weather_band_count_expected": 78
+    },
+    {
+      "fire_id": "24103557",
+      "weather_mode": "stacked",
+      "terrain_task_id": "AMZUPXLRKG7CRGWMO2UDB5ZB",
+      "weather_task_id": "NP7F53LKSIMB6CXR7VXVGMFU",
+      "weather_days": 25,
+      "weather_start_date": "2020-06-06",
+      "weather_end_date": "2020-06-30",
+      "weather_band_count_expected": 150
+    },
+    {
+      "fire_id": "24104631",
+      "weather_mode": "stacked",
+      "terrain_task_id": "ZT6WBXFNLD7E6QIWMJBLBCBQ",
+      "weather_task_id": "AQFB7E5FJLSZWEOFXI4X7GAH",
+      "weather_days": 15,
+      "weather_start_date": "2020-06-22",
+      "weather_end_date": "2020-07-06",
+      "weather_band_count_expected": 90
+    },
+    {
+      "fire_id": "24103611",
+      "weather_mode": "stacked",
+      "terrain_task_id": "XRLEQB5ZQPRGQ5IYY2YXGHJ2",
+      "weather_task_id": "SPRAXI4NHMTTR5OL5C7RXWFJ",
+      "weather_days": 35,
+      "weather_start_date": "2020-06-02",
+      "weather_end_date": "2020-07-06",
+      "weather_band_count_expected": 210
+    },
+    {
+      "fire_id": "24462819",
+      "weather_mode": "stacked",
+      "terrain_task_id": "J25AMNIEASKQTPXUP62NRNXG",
+      "weather_task_id": "5M2NCMNT62WIM32DLZK4QKMG",
+      "weather_days": 28,
+      "weather_start_date": "2020-09-14",
+      "weather_end_date": "2020-10-11",
+      "weather_band_count_expected": 168
+    },
+    {
+      "fire_id": "24333012",
+      "weather_mode": "stacked",
+      "terrain_task_id": "ECN5XTKRIGZTQ73SDIPQQLAH",
+      "weather_task_id": "WGIBBR4WOXPLY3LZ76QJB4VZ",
+      "weather_days": 22,
+      "weather_start_date": "2020-08-28",
+      "weather_end_date": "2020-09-18",
+      "weather_band_count_expected": 132
+    },
+    {
+      "fire_id": "24103571",
+      "weather_mode": "stacked",
+      "terrain_task_id": "J4ODPDDVS5WCKWZX7YBW3JWF",
+      "weather_task_id": "CY7ZTYQOTU2FGQC75QOV42RP",
+      "weather_days": 22,
+      "weather_start_date": "2020-06-09",
+      "weather_end_date": "2020-06-30",
+      "weather_band_count_expected": 132
+    }
+  ],
+  "tasks": [
+    {
+      "Id": "20778153",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "DDFMU7DD5F5GVJM6L5N4RKV5"
+    },
+    {
+      "Id": "20778153",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "GSQS6PMSEACWNWJUQTIYHJWH"
+    },
+    {
+      "Id": "20778186",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HTCR7AKBM4APWG4NOOPHHG6P"
+    },
+    {
+      "Id": "20778186",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "JYJZ4MWDU5D3T7NM2PXOA7Y5"
+    },
+    {
+      "Id": "20901111",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "WKLSXNO6NDT72TKHN4MXU2LL"
+    },
+    {
+      "Id": "20901111",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "VQPH6RJEKCHO3EELBHN6FPN6"
+    },
+    {
+      "Id": "20778225",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "G3UIV3AWK2UFXBPDCWVXI6VY"
+    },
+    {
+      "Id": "20778225",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MENWU6BPDMSPOYKXVUDEYWHA"
+    },
+    {
+      "Id": "20900131",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "5YOL3X47KLG6LZRHBRXMKWYD"
+    },
+    {
+      "Id": "20900131",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "5RDRLCLV2P4JJBHOOC2UDSYJ"
+    },
+    {
+      "Id": "20901127",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "JJKGCXYHTCVXN7MFS3XPSCIH"
+    },
+    {
+      "Id": "20901127",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "DK6LPQXTVR7NKI4XKYOKXTJP"
+    },
+    {
+      "Id": "20899892",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GWTZRRIPYZ2QNY44D7QDOVRG"
+    },
+    {
+      "Id": "20899892",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "OWQ6L5JMGHV27OWDCAZLRJQI"
+    },
+    {
+      "Id": "20900124",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "AOCVSYBCVAYYIXB6EMFLDEEK"
+    },
+    {
+      "Id": "20900124",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "U6SH4W2MTFU2EDGJLWFDF6J5"
+    },
+    {
+      "Id": "20900040",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "D6SQPEX4ZL5NRWBAJQO2SZ5D"
+    },
+    {
+      "Id": "20900040",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "XKD5QI4J3BAZUYYGDL6KPSAC"
+    },
+    {
+      "Id": "20899967",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "WVSCYM3HNRTWQP745ZLFGNR7"
+    },
+    {
+      "Id": "20899967",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MR74HYTADXWWRDE3PH6KNU7K"
+    },
+    {
+      "Id": "20778140",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "7NYC76YEQ6D4KQWA7ASHWQPX"
+    },
+    {
+      "Id": "20778140",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "7V2IMLSZRBAUWR53CZ27B5OQ"
+    },
+    {
+      "Id": "20899673",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "UFQ4XUI6WXYZW7MP5QZJHGJR"
+    },
+    {
+      "Id": "20899673",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "RGQBE3XO6GWJOIRFCOMA3MSO"
+    },
+    {
+      "Id": "20900085",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "SKHN2TWLWFTX7PECWWMH34NG"
+    },
+    {
+      "Id": "20900085",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "YHW2O6GJZBHCCHNR6YCPQYAI"
+    },
+    {
+      "Id": "20777397",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "WSIC5DBRLECA2B74ZL4WV3NM"
+    },
+    {
+      "Id": "20777397",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "YSW3YDJ26NJU6LL4MVMRN7PI"
+    },
+    {
+      "Id": "21038333",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "7ATJ2I2YGYM7RSOJVEDTWZSU"
+    },
+    {
+      "Id": "21038333",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "ZCZNUQP6WHZJARLDTUNY7PED"
+    },
+    {
+      "Id": "20899721",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "FJICBS6IOFXS6PJSSL6X6HYW"
+    },
+    {
+      "Id": "20899721",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "DYHS7DRAH7W4IDQFQ2AREFFF"
+    },
+    {
+      "Id": "20777134",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "3D5EJIYPUYHCJ74YVKFT5UMR"
+    },
+    {
+      "Id": "20777134",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "JWNDAEED7T7BOOZ7WDYYNR3Q"
+    },
+    {
+      "Id": "20777152",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "DG3YHJ7FF6O4S5CLXO4LHBMY"
+    },
+    {
+      "Id": "20777152",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "OU4JKTKBLPMODRRL5RICB5VL"
+    },
+    {
+      "Id": "20777459",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HW3WKPXOHTM7AFQ3HR3AEQM6"
+    },
+    {
+      "Id": "20777459",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "YGCBINX5WDHQMNHDSNMAUCI4"
+    },
+    {
+      "Id": "20777452",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "NP5XRGJZH6ZOILFN5BDVOCCN"
+    },
+    {
+      "Id": "20777452",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "7SCTRQKIOOE6T4GCIQ4TFTKO"
+    },
+    {
+      "Id": "20899813",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "WH55VTIMWFV45QJKIFEUGTUT"
+    },
+    {
+      "Id": "20899813",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "LU6OWSLPQEH3TV2QUZHANPEL"
+    },
+    {
+      "Id": "20777482",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "35F2SFKRENGSN6YOL6Q65DJ2"
+    },
+    {
+      "Id": "20777482",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "53DG7UM6PFUMMWD3IP5GHBCO"
+    },
+    {
+      "Id": "20777487",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "2RTCRGR3KGBRDIJUJKEHURL6"
+    },
+    {
+      "Id": "20777487",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "SSV2JEK5JBEESEVTUOUDQSW2"
+    },
+    {
+      "Id": "20777521",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GXF2HAHFRRQKIDMBVS6TJBI5"
+    },
+    {
+      "Id": "20777521",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "KJPB3JKNWE7CV2J6RMVB2CSP"
+    },
+    {
+      "Id": "20777181",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "Q46H2G57Q4DNS6NTQAONXZYA"
+    },
+    {
+      "Id": "20777181",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "ACQCDYFFOT44ZRGGXEDNT2US"
+    },
+    {
+      "Id": "20899766",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "S6XVJZR62SBOK7BCZPFO5P5R"
+    },
+    {
+      "Id": "20899766",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "U56TTJEKE2EMF4WHJC3EH3NF"
+    },
+    {
+      "Id": "21158900",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "E62MFDLMCCJWFVJCXTYD2OTD"
+    },
+    {
+      "Id": "21158900",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "FQ64EJMTLW3EZOR75UHL23XF"
+    },
+    {
+      "Id": "20777195",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "G72DANBMU4USXCPU3EO423GS"
+    },
+    {
+      "Id": "20777195",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "FE6G7B4ZKKDWEHCV6Y5THR36"
+    },
+    {
+      "Id": "20777203",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "U4LYYKQMXY5FTMGTQDC4D5CT"
+    },
+    {
+      "Id": "20777203",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "XMWGRW4EPC73TFUU5QJFFWBH"
+    },
+    {
+      "Id": "20702159",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "JPRU5FLUFAQTBOC2XX45TGUG"
+    },
+    {
+      "Id": "20702159",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "AOYHUPHCXIFNHIMJ2BGDGX7N"
+    },
+    {
+      "Id": "21158940",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "3LS6PD65DU6PD6WCBAUGKGU5"
+    },
+    {
+      "Id": "21158940",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "H5MKUQDGDPYMV2UUZD3VYPPE"
+    },
+    {
+      "Id": "21158932",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "35PB3H7BTEPHFEVRDBT3UY2J"
+    },
+    {
+      "Id": "21158932",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "UFQWEQL4YOGXUIQ7SCXAFYQP"
+    },
+    {
+      "Id": "21158939",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "52Q6PEN7GAI6HHH7HM3TXWR2"
+    },
+    {
+      "Id": "21158939",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "FN3BMTF6T7ZMP5YOISITOGSG"
+    },
+    {
+      "Id": "20777508",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "PUSVBM77IREBIQOZJRPUOPDX"
+    },
+    {
+      "Id": "20777508",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "XFLYOZPAQ4Z6MD75FYHUREEU"
+    },
+    {
+      "Id": "20700973",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "FT3T477QUPU6MNAW65KTEVJH"
+    },
+    {
+      "Id": "20700973",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "J5ZF5OWQISFSYTVADMCYD2AP"
+    },
+    {
+      "Id": "20562846",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "V7AHNY3GANATIAPGSVGHAPC5"
+    },
+    {
+      "Id": "20562846",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "O4KJZYCMXXF42JYZ7AEVCNTP"
+    },
+    {
+      "Id": "20701026",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VEZRHMDSBLFSBZJH7XWERY3J"
+    },
+    {
+      "Id": "20701026",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "VNJIPA3Z7GP2EIPKLEU673TB"
+    },
+    {
+      "Id": "20568194",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "LVDUVP6SD4LF3OVWAUO2HFTO"
+    },
+    {
+      "Id": "20568194",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "4BQINFJOWAGQQREQMF5UYEEE"
+    },
+    {
+      "Id": "21890013",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VXRJBYEXKSR5B7DBPFPCBYZB"
+    },
+    {
+      "Id": "21890013",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "6ADLL56FFFT44KR5ZSJCVIQL"
+    },
+    {
+      "Id": "21890003",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "II2ZQ7LJZGFIISBIETAXQE4C"
+    },
+    {
+      "Id": "21890003",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "3ESHWHDE6LKARY34YY4PFBPT"
+    },
+    {
+      "Id": "21889992",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "A5X5OG3PHC7AKNIT7TCCKXTE"
+    },
+    {
+      "Id": "21889992",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "GVI4HZVDZX2AKQHGINW6YLUY"
+    },
+    {
+      "Id": "21804884",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "JSL6MY6QJPY35BLTSELVKTCY"
+    },
+    {
+      "Id": "21804884",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "5AXSUUOTDDRYQOKNYIZWEVVF"
+    },
+    {
+      "Id": "21889717",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "YGCPWZNTODADTSRNZW44MRCU"
+    },
+    {
+      "Id": "21889717",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "K7DUKJMKRI42BTBLPH6ELESB"
+    },
+    {
+      "Id": "21890524",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "J2PWDPNDLACJ5NJRUOJILSHM"
+    },
+    {
+      "Id": "21890524",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "AST42LWFWJKD5JKEI6WEFVAC"
+    },
+    {
+      "Id": "21889953",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "7GPNCITUXDWABJFCYEWQY54D"
+    },
+    {
+      "Id": "21889953",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "4GQX2VLNOGA7JUTPYC2ICG4B"
+    },
+    {
+      "Id": "21889943",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "2PNJPN6ZIZNTPL3N3HKOCGL2"
+    },
+    {
+      "Id": "21889943",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "XKMO6C5EM4GWGB5BJGVS324Q"
+    },
+    {
+      "Id": "21998095",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "DGKHZQEFXXQQREIR7ZTU6XRR"
+    },
+    {
+      "Id": "21998095",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "OXZFONZDVELDINJQSZ7YRVZM"
+    },
+    {
+      "Id": "21997770",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "XZJIR4AF3OYB2VOZXG7ETRN5"
+    },
+    {
+      "Id": "21997770",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "2MRCV2LNPGJAJXJPPLKPXNY7"
+    },
+    {
+      "Id": "21889994",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "X27O6M3TK5WBBAJZXWDNCO4Q"
+    },
+    {
+      "Id": "21889994",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "ILW2RBB6KX3XBRWDPJBHHWSP"
+    },
+    {
+      "Id": "21890009",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "FQ3YQYHJSOFN2IZRHEXLG2YU"
+    },
+    {
+      "Id": "21890009",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "A3YGOJU6Q67CI4HCPRLFOT3F"
+    },
+    {
+      "Id": "21998023",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "6HU3EQNLTQGII6B535HCE2CN"
+    },
+    {
+      "Id": "21998023",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "FKPM2ZHE3W3ANVUOXPZHD7EA"
+    },
+    {
+      "Id": "21890502",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "3FDOX3GPEBBEJOTPPXMR5CRJ"
+    },
+    {
+      "Id": "21890502",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "KPVHRBRT2TZO2PQAUAFNJVKV"
+    },
+    {
+      "Id": "21998230",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HRU2G4YZWQDLHNEZ36QGQUBB"
+    },
+    {
+      "Id": "21998230",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "6VCF6JVVS2S6LGV7VCTNIILL"
+    },
+    {
+      "Id": "21890024",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "C73J3BQCIWZQWMMJUHXJO6XK"
+    },
+    {
+      "Id": "21890024",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "3YDASBTZBN5IJ3HKAY246INV"
+    },
+    {
+      "Id": "22343688",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "KQ7VZW3AUOHN6EDCUSPY5CR3"
+    },
+    {
+      "Id": "22343688",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "CYEDWGMS3QONP2HIJXWYKF7Q"
+    },
+    {
+      "Id": "22343661",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "F7SD2HIIZEK5ZH3P3VMSCX42"
+    },
+    {
+      "Id": "22343661",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "JHEIC7BL3ET54L5KOA6RM3R2"
+    },
+    {
+      "Id": "21997828",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "QXJL7YS4ON32I2FEDRYN2COY"
+    },
+    {
+      "Id": "21997828",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "EJZPPWBOOKLOWMEZQF75CL5X"
+    },
+    {
+      "Id": "21889779",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "FNCW6YYZG2V24RPHYGWSQNWC"
+    },
+    {
+      "Id": "21889779",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "Y6UMJ34BJNG3OZUQMXSGDHIN"
+    },
+    {
+      "Id": "21998287",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "LPEW45R4HRZXH3A4PRGU6V3T"
+    },
+    {
+      "Id": "21998287",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "5YEFL36CYY27NXVISHXKR4Z6"
+    },
+    {
+      "Id": "21890072",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "YLGNJQCLBJVM7BXRNUSL2KX6"
+    },
+    {
+      "Id": "21890072",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "FKZDGZPIBUGKQIRXBOUZCPYI"
+    },
+    {
+      "Id": "21804582",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VSCWTNVUB7OA2TAUD6NYUSJ5"
+    },
+    {
+      "Id": "21804582",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "SIWZQSZTX2C5WLSCLMSKNV5D"
+    },
+    {
+      "Id": "21889763",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "2DJP3VF2NMVJ5FTHOXP7Q6LY"
+    },
+    {
+      "Id": "21889763",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "YKXXDGQO5WOIOVVBYUER7NW6"
+    },
+    {
+      "Id": "21890056",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "NBYDEBZ5PICPJMIJQ6ZPRW7O"
+    },
+    {
+      "Id": "21890056",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "2IKGOFH2LYY6SNPUEIL2XIUU"
+    },
+    {
+      "Id": "21889750",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "4FDCL7BO33WTEENYX4T5LERT"
+    },
+    {
+      "Id": "21889750",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "AYCPNQXVP4QYDPKAA7NSV243"
+    },
+    {
+      "Id": "21998264",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "EAYEP4TV3LQPHXSYJ6RB2U7S"
+    },
+    {
+      "Id": "21998264",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "DOYHBXUXY4HKHMTELHOMUYV4"
+    },
+    {
+      "Id": "22141509",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "MORFRQMY4JPSH5DKFBMQ3SS4"
+    },
+    {
+      "Id": "22141509",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "WD253HUPAALXAFWXXZPQJJTW"
+    },
+    {
+      "Id": "21751305",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VJI2SMMMBZILXZKRQW625QVE"
+    },
+    {
+      "Id": "21751305",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "QL3AMDLWRXTGKS32JK7JS6SF"
+    },
+    {
+      "Id": "21804985",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "S6Y3NITVHVLGR4WAHMOHK7MZ"
+    },
+    {
+      "Id": "21804985",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "UQN23ZOVVOIMYSNHYOG6KZNF"
+    },
+    {
+      "Id": "21890160",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "4QF357GHFYKU6UGXKRQ4QK6R"
+    },
+    {
+      "Id": "21890160",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "U5NOD2EJM4JK365HGZ6USEBG"
+    },
+    {
+      "Id": "21748801",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "C3VBWRZVAEKRZVK7UVZKXIBR"
+    },
+    {
+      "Id": "21748801",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "HHBU2MIPF6LZ2QJHDVBMPHEL"
+    },
+    {
+      "Id": "21693566",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "AP7WTAV6BRMC2QO7CVUAFT2W"
+    },
+    {
+      "Id": "21693566",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "6XIT57JZLSTEBYNN6KB5IJVO"
+    },
+    {
+      "Id": "21751309",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "N4KPPJTXKNLRRUJYHOANAAYA"
+    },
+    {
+      "Id": "21751309",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "TFGBJ2Z2L6RS3754MW6KQVE5"
+    },
+    {
+      "Id": "21999381",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "FDLWBTSJ5SQF56TAX4NVBC3C"
+    },
+    {
+      "Id": "21999381",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "QGWYEQL47TNATCXU5EYFZ7EA"
+    },
+    {
+      "Id": "22141596",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "EJGRX4Z7RBCPK5LRL75CJA5J"
+    },
+    {
+      "Id": "22141596",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "NWGTZ7W64XICJK6RZZHCRG54"
+    },
+    {
+      "Id": "21751303",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "PT5EJ6JRTP2JJ6YLI6Y25YK7"
+    },
+    {
+      "Id": "21751303",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MANPVJOHKE7SO23JLKHTMPG4"
+    },
+    {
+      "Id": "21998313",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "JHTQI6666C6U22WV4TNB3KO4"
+    },
+    {
+      "Id": "21998313",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "CIKBMGH5W3JVV3ZJJAA5NHLX"
+    },
+    {
+      "Id": "23036871",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "I7ESZKBESESDYANR7KHPCH37"
+    },
+    {
+      "Id": "23036871",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "IYFFC66OACNDEL7VS7G3XWNA"
+    },
+    {
+      "Id": "23159836",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "V4RKPRWBG6RHPYERLZBY2OWM"
+    },
+    {
+      "Id": "23159836",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MPT6EYIAVLJGXZZR5Q2LEWXT"
+    },
+    {
+      "Id": "23036806",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "QMO5JJRHPTBDNI5HL6FHS6QS"
+    },
+    {
+      "Id": "23036806",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "HWD3NWMICEMLK45I6JPM42FL"
+    },
+    {
+      "Id": "23160475",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VKBAZ2AQCFVZGF2AQTWIIWGM"
+    },
+    {
+      "Id": "23160475",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "6YSMGC7EARIOXLXEQMM5IORH"
+    },
+    {
+      "Id": "23410594",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "EHOQWOUVVHIL7NEESHRT5SZU"
+    },
+    {
+      "Id": "23410594",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "XEUCXL3SH7NIMDTCPXGY4IUJ"
+    },
+    {
+      "Id": "23300669",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "S77AXJTB4CAPP2K6VXQN3W7Q"
+    },
+    {
+      "Id": "23300669",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "EVNNJTQHXPK2YG566AR274FK"
+    },
+    {
+      "Id": "22712973",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "I2GWLBOVZQ2BC6KHR6TWCD4T"
+    },
+    {
+      "Id": "22712973",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "NQVNXVWPYUW4T46SCIPQ72IZ"
+    },
+    {
+      "Id": "22938749",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "5NJMSB2GVX3KSK2PFSBXFPZZ"
+    },
+    {
+      "Id": "22938749",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "7QB6TC5YBQDOPILS7I2SBG5C"
+    },
+    {
+      "Id": "22712904",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GQK4DSIQ22BVDCH2FGCJ6MOD"
+    },
+    {
+      "Id": "22712904",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "REPCJFNAO54YTQ4IMZOYSSWY"
+    },
+    {
+      "Id": "24463187",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "ULTJ4F7JTENTGZCL5K3WKZVY"
+    },
+    {
+      "Id": "24463187",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "7TNXJVT32BJ4WLMIG56Y4ADH"
+    },
+    {
+      "Id": "24333277",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GXBEYL5D2PSNJ2RGYXSKHEAP"
+    },
+    {
+      "Id": "24333277",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "P66Z6UWMKDXX4FQHKJTSTINC"
+    },
+    {
+      "Id": "24333270",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "K747UEPZD2USGWC5YDFBKFJS"
+    },
+    {
+      "Id": "24333270",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "JL5UQ2CI6OD5RA2VCF7ORY42"
+    },
+    {
+      "Id": "24333279",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "C6JTNGD3XCJFUN7OQKXA3VUQ"
+    },
+    {
+      "Id": "24333279",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "M2XJPRS2VBZPDMY7Q5GSR574"
+    },
+    {
+      "Id": "24461328",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "Y46AEFVTXQ4TUS752HSP4ZV3"
+    },
+    {
+      "Id": "24461328",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "4MXI2IEA6RA4CAYJAHY6VOAG"
+    },
+    {
+      "Id": "24461320",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HN3ND5DLIJKLQ7NUDUKL6BKL"
+    },
+    {
+      "Id": "24461320",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "PRTAXKRI6FXXLFWHWBD26ENL"
+    },
+    {
+      "Id": "24332880",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "MWOTBT2B6OOWK4FSWWKCXE7V"
+    },
+    {
+      "Id": "24332880",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "TYXX6SOYH2H375BMV6KIEGWS"
+    },
+    {
+      "Id": "24462610",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "KEHF7QYP6DWMQGYXHIB3QGWP"
+    },
+    {
+      "Id": "24462610",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "W2SRPDNI5N25QUZIGHXAURWK"
+    },
+    {
+      "Id": "24462263",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GUKBQQ63BEI5OKXXOKLMKYKT"
+    },
+    {
+      "Id": "24462263",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "YHNWR2OWDDC3OFVRPSF5V4AR"
+    },
+    {
+      "Id": "24462488",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "DM6IS64HXPCCI25SWAOW7XZY"
+    },
+    {
+      "Id": "24462488",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "BDCCELMDV3ZEE4P6W36V2FZC"
+    },
+    {
+      "Id": "24332956",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "NOZ4YZBM4WLIRZKHRVHFRQ5S"
+    },
+    {
+      "Id": "24332956",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MLSFGS2T6LICCPOCU5D6VKH3"
+    },
+    {
+      "Id": "24191347",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "WNZNLLA7EQX2WEY2X4OHUHNL"
+    },
+    {
+      "Id": "24191347",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "QE3T5XOA7P6ZYNZOO65H4PPR"
+    },
+    {
+      "Id": "24461421",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "EPZIWZVL2OGZSADTQWE3JZKN"
+    },
+    {
+      "Id": "24461421",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MJ3G5NVLZXETEFEC4SULDHU5"
+    },
+    {
+      "Id": "24462753",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "BGCH7FX6PCOGDRZLZUAXAV4W"
+    },
+    {
+      "Id": "24462753",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "AURABGIQTKDYUF36MOGAGPWD"
+    },
+    {
+      "Id": "24462335",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GKLKD5DIYRVF24XRU2Q7KL64"
+    },
+    {
+      "Id": "24462335",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "EYGZB5EGJCPK3RYZ3QWYWDOF"
+    },
+    {
+      "Id": "24461996",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "ISOYAATKSUIVRSO6ITT7G7Y4"
+    },
+    {
+      "Id": "24461996",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "NDYPFTXSAMY5ODILKKPKCLN4"
+    },
+    {
+      "Id": "24461899",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "MDQ4Y6AY65XGUHQPUXQAA37X"
+    },
+    {
+      "Id": "24461899",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "L7QJWSNIU65UQTPHS2IZLDYM"
+    },
+    {
+      "Id": "24332939",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "ZYL7WGPGAFYGTJJQDR3PCJ3O"
+    },
+    {
+      "Id": "24332939",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "ZQVSAKE4MJHQ3QKONDAEB3M3"
+    },
+    {
+      "Id": "24332592",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "5RS3XTYSLK3FIWQZVQXHZKFL"
+    },
+    {
+      "Id": "24332592",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "3ZVM5I7TYVCWNZO5CT6QZJD2"
+    },
+    {
+      "Id": "24332608",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "GPZHZA2EFDELC2BPL4SOY57O"
+    },
+    {
+      "Id": "24332608",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "5MULSA5I4OJM2S7NZPUMHJBP"
+    },
+    {
+      "Id": "24461771",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "A2BCW42GSNB6GNPCUUGEMZBL"
+    },
+    {
+      "Id": "24461771",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "HOVUFZYGZKSAGHLZUJTKT4RS"
+    },
+    {
+      "Id": "24191393",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "6PGNSFOLBVKZIHDDYNWX5JSP"
+    },
+    {
+      "Id": "24191393",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "YMROAGO7LWDXYCRJSRA34Y5L"
+    },
+    {
+      "Id": "24332622",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "KV3G577UVSGOBREIMYFCUGGI"
+    },
+    {
+      "Id": "24332622",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "ZW6ZKLF3TLWHV6WWZDOBIAUY"
+    },
+    {
+      "Id": "24332704",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HQDSW62LMWXZTR364UIPEGHK"
+    },
+    {
+      "Id": "24332704",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "P7GOE6GAMV3CUKZ5DAZSBTV4"
+    },
+    {
+      "Id": "24461607",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "37VSL4FJBF6KHOHDGGZRDDFY"
+    },
+    {
+      "Id": "24461607",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "XESF245T5PIFMJOU2TEM7YFL"
+    },
+    {
+      "Id": "24332760",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "Y5ME7ARRCTIMGEPNY2PWZAAB"
+    },
+    {
+      "Id": "24332760",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "NI2F3ZIOZZGQ4Y6H4JQIHOJQ"
+    },
+    {
+      "Id": "24332676",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "36B3NVYH4OIDP5WJ5G7PVNLV"
+    },
+    {
+      "Id": "24332676",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "2QQM5EBYY2TPQVTG62GGTVPJ"
+    },
+    {
+      "Id": "24332700",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "G6OWFGPPGB7UQX5KBSQ265EO"
+    },
+    {
+      "Id": "24332700",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "BPYJEKW4RJUJUZPUXZP2UULT"
+    },
+    {
+      "Id": "24332764",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "QDU4PNHMU225IXQLWBXEGU76"
+    },
+    {
+      "Id": "24332764",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "FUCLQYJSHMYRIRCYTOS7IKXU"
+    },
+    {
+      "Id": "24332746",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HOJIL6EHQUP4X7UV3K7ULNHE"
+    },
+    {
+      "Id": "24332746",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "I2QGVNAPSOIA3BYVJLW7JZKJ"
+    },
+    {
+      "Id": "24332702",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "IXR5O472VEALZUCMIXXJRKUV"
+    },
+    {
+      "Id": "24332702",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "2DJ7DUTRRNBNKXYF6FC5636D"
+    },
+    {
+      "Id": "24332732",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "C2TYNTHCLC6Z2QXHAS2E6LGU"
+    },
+    {
+      "Id": "24332732",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "N3CZ7JWA52YQ4N6SXS2KRCSF"
+    },
+    {
+      "Id": "24191376",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "SAVK6AL5EN4I5RP7T3HPM2ME"
+    },
+    {
+      "Id": "24191376",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "WRKLWIMEJSTRSL6EUSUBZFBE"
+    },
+    {
+      "Id": "24332763",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "KJB22G5DHPSEOVNC234F6FKL"
+    },
+    {
+      "Id": "24332763",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "5SSP3JYDGJEJFS5ZQNQBEOSC"
+    },
+    {
+      "Id": "24191418",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "TPKLO6JAUQLKARYJVYF2N6VW"
+    },
+    {
+      "Id": "24191418",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "W2GVGJ743YWGSTFH3KTO6IEJ"
+    },
+    {
+      "Id": "24332787",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "MMO4A2OBB3ROXEMHPVHPPP32"
+    },
+    {
+      "Id": "24332787",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "OUH223SF47QDBLOV5PA2KVCE"
+    },
+    {
+      "Id": "24332647",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "ZHYHZJTSRUWLHF43RO2DTMY4"
+    },
+    {
+      "Id": "24332647",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "PD3NAPO4GB7NYPNGGSNBYG66"
+    },
+    {
+      "Id": "24332783",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "Y27UWLH453J7PCRMQUG7WJIH"
+    },
+    {
+      "Id": "24332783",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "WI6GAYKHCOXTLFM2BEKCSOHQ"
+    },
+    {
+      "Id": "24462788",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "J57PWPQJUO6HKMWEVLOEZNAA"
+    },
+    {
+      "Id": "24462788",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "QYHD2XFWL5YMUNFRNWERS7YQ"
+    },
+    {
+      "Id": "23860939",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VXJCLLVBQQ7BZMH5VPFULZKF"
+    },
+    {
+      "Id": "23860939",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "ZMCMSZFNRTTKMWQJTRTUJJZ4"
+    },
+    {
+      "Id": "24462847",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "25OXNYPAVPIUA5PQGRRNTDZ3"
+    },
+    {
+      "Id": "24462847",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "WA2CMIU7TAHTGFHVXRLLBMF2"
+    },
+    {
+      "Id": "24333000",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "NSQLHOGG2C624SXA5MMA5UWW"
+    },
+    {
+      "Id": "24333000",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "HX6YB2LPI7JMD3FKJIAAXZUK"
+    },
+    {
+      "Id": "24333039",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "VSLF2L732IRXU4TBUHSF6JL2"
+    },
+    {
+      "Id": "24333039",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "UWDSGHDGLK5O43R65MQGPHM5"
+    },
+    {
+      "Id": "24191427",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "C3TXP3WEERIHKIDPNKUUMQ5R"
+    },
+    {
+      "Id": "24191427",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "4ZB5UL5VPL54NC3THUTTDILE"
+    },
+    {
+      "Id": "24333033",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "HTR5AQNX3S4PWLD3IDOIKPSW"
+    },
+    {
+      "Id": "24333033",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "WQVXSJCJKLZOVGF7E5C6IVXI"
+    },
+    {
+      "Id": "24332801",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "4QGRUWLJZZ2A4A7KXIBEIQQF"
+    },
+    {
+      "Id": "24332801",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "MGOYXS3O6W7XD4YCUE5I2DQZ"
+    },
+    {
+      "Id": "24103581",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "JHMLYC665TYMEGI77AHQLDOR"
+    },
+    {
+      "Id": "24103581",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "HEKYKIAVY6UU2TNKB5KVPHD5"
+    },
+    {
+      "Id": "24103557",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "AMZUPXLRKG7CRGWMO2UDB5ZB"
+    },
+    {
+      "Id": "24103557",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "NP7F53LKSIMB6CXR7VXVGMFU"
+    },
+    {
+      "Id": "24104631",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "ZT6WBXFNLD7E6QIWMJBLBCBQ"
+    },
+    {
+      "Id": "24104631",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "AQFB7E5FJLSZWEOFXI4X7GAH"
+    },
+    {
+      "Id": "24103611",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "XRLEQB5ZQPRGQ5IYY2YXGHJ2"
+    },
+    {
+      "Id": "24103611",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "SPRAXI4NHMTTR5OL5C7RXWFJ"
+    },
+    {
+      "Id": "24462819",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "J25AMNIEASKQTPXUP62NRNXG"
+    },
+    {
+      "Id": "24462819",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "5M2NCMNT62WIM32DLZK4QKMG"
+    },
+    {
+      "Id": "24333012",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "ECN5XTKRIGZTQ73SDIPQQLAH"
+    },
+    {
+      "Id": "24333012",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "WGIBBR4WOXPLY3LZ76QJB4VZ"
+    },
+    {
+      "Id": "24103571",
+      "layer": "terrain",
+      "date": "static",
+      "task_id": "J4ODPDDVS5WCKWZX7YBW3JWF"
+    },
+    {
+      "Id": "24103571",
+      "layer": "weather_stacked",
+      "date": "stacked",
+      "task_id": "CY7ZTYQOTU2FGQC75QOV42RP"
+    }
+  ],
+  "failed": []
+}

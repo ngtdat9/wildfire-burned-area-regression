@@ -1,0 +1,2627 @@
+{
+  "source_csv": "data/raw/csv/fire_all.csv",
+  "events": [
+    {
+      "fire_id": "20778153",
+      "lat": 47.20253088756144,
+      "lon": -107.7755697705804,
+      "area": 997732876.926442,
+      "start_date": "2017-07-10",
+      "end_date": "2017-07-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20778186",
+      "lat": 46.69410244024619,
+      "lon": -114.2272865792834,
+      "area": 154983388.64919996,
+      "start_date": "2017-07-17",
+      "end_date": "2017-09-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20901111",
+      "lat": 45.861953363846965,
+      "lon": -106.03441264014454,
+      "area": 357192544.7590176,
+      "start_date": "2017-08-28",
+      "end_date": "2017-09-05",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20778225",
+      "lat": 45.35860112037866,
+      "lon": -106.61738261011688,
+      "area": 101533766.41522382,
+      "start_date": "2017-07-07",
+      "end_date": "2017-07-13",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20900131",
+      "lat": 42.7185886435778,
+      "lon": -112.58437717023963,
+      "area": 200062117.92171547,
+      "start_date": "2017-08-04",
+      "end_date": "2017-08-14",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20901127",
+      "lat": 44.96367178217839,
+      "lon": -106.44391983415824,
+      "area": 302883456.61947155,
+      "start_date": "2017-08-31",
+      "end_date": "2017-09-07",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20899892",
+      "lat": 46.996258737463855,
+      "lon": -121.4117616881094,
+      "area": 179669649.07165012,
+      "start_date": "2017-08-10",
+      "end_date": "2017-09-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20900124",
+      "lat": 42.87465058218748,
+      "lon": -114.58567719968798,
+      "area": 131371265.8571374,
+      "start_date": "2017-08-05",
+      "end_date": "2017-08-16",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20900040",
+      "lat": 43.42778246694766,
+      "lon": -119.87897270987148,
+      "area": 189114411.09567183,
+      "start_date": "2017-08-01",
+      "end_date": "2017-08-06",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20899967",
+      "lat": 44.96007644873632,
+      "lon": -121.22769888763791,
+      "area": 255014773.28491703,
+      "start_date": "2017-08-09",
+      "end_date": "2017-08-25",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20778140",
+      "lat": 48.9335462983921,
+      "lon": -120.3856924750789,
+      "area": 429316706.7752948,
+      "start_date": "2017-07-20",
+      "end_date": "2017-09-23",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20899673",
+      "lat": 41.740296966837946,
+      "lon": -123.6066697133268,
+      "area": 227109453.12047723,
+      "start_date": "2017-08-08",
+      "end_date": "2017-09-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20900085",
+      "lat": 43.20311475464309,
+      "lon": -114.12736754262988,
+      "area": 103465910.56102118,
+      "start_date": "2017-08-04",
+      "end_date": "2017-08-14",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777397",
+      "lat": 45.9671132043434,
+      "lon": -116.79832966643882,
+      "area": 151334286.9427691,
+      "start_date": "2017-07-15",
+      "end_date": "2017-07-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21038333",
+      "lat": 45.59846216838896,
+      "lon": -121.9327872659252,
+      "area": 120638060.11051032,
+      "start_date": "2017-09-01",
+      "end_date": "2017-09-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20899721",
+      "lat": 41.412842092646486,
+      "lon": -123.12771248923744,
+      "area": 178381780.58035988,
+      "start_date": "2017-08-12",
+      "end_date": "2017-09-14",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777134",
+      "lat": 42.25147085012564,
+      "lon": -124.0389226645526,
+      "area": 649772442.3710865,
+      "start_date": "2017-07-23",
+      "end_date": "2017-09-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777152",
+      "lat": 41.2792214602254,
+      "lon": -121.01598851334204,
+      "area": 112910388.05049697,
+      "start_date": "2017-07-26",
+      "end_date": "2017-08-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777459",
+      "lat": 42.82788089266273,
+      "lon": -115.65145210139649,
+      "area": 133303384.06856038,
+      "start_date": "2017-07-10",
+      "end_date": "2017-07-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777452",
+      "lat": 42.88723593872466,
+      "lon": -114.42105409916536,
+      "area": 101104487.56189354,
+      "start_date": "2017-07-10",
+      "end_date": "2017-07-14",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20899813",
+      "lat": 36.129444492310576,
+      "lon": -118.699941408729,
+      "area": 104109616.57370472,
+      "start_date": "2017-08-26",
+      "end_date": "2017-09-20",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777482",
+      "lat": 41.75355518560045,
+      "lon": -114.2698185667679,
+      "area": 205428466.76757807,
+      "start_date": "2017-07-05",
+      "end_date": "2017-07-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777487",
+      "lat": 41.45878452429105,
+      "lon": -116.69964804565352,
+      "area": 516898278.36209846,
+      "start_date": "2017-07-13",
+      "end_date": "2017-07-20",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777521",
+      "lat": 40.2037465515056,
+      "lon": -112.64514176566624,
+      "area": 126863383.98069556,
+      "start_date": "2017-07-16",
+      "end_date": "2017-07-25",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777181",
+      "lat": 37.57472251780111,
+      "lon": -120.11836397974857,
+      "area": 320914988.120985,
+      "start_date": "2017-07-16",
+      "end_date": "2017-07-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20899766",
+      "lat": 40.29223668279344,
+      "lon": -119.39456166063653,
+      "area": 335082490.1178636,
+      "start_date": "2017-08-29",
+      "end_date": "2017-09-08",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21158900",
+      "lat": 39.33388393765442,
+      "lon": -123.20623718446365,
+      "area": 125790265.61664546,
+      "start_date": "2017-10-04",
+      "end_date": "2017-10-20",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777195",
+      "lat": 35.960915861348575,
+      "lon": -120.310032454888,
+      "area": 195124775.69507813,
+      "start_date": "2017-07-08",
+      "end_date": "2017-07-22",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777203",
+      "lat": 34.97286917289264,
+      "lon": -120.27609449962064,
+      "area": 118491796.85685782,
+      "start_date": "2017-07-07",
+      "end_date": "2017-07-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20702159",
+      "lat": 37.76403814118726,
+      "lon": -112.7012686306931,
+      "area": 260381054.73640093,
+      "start_date": "2017-06-17",
+      "end_date": "2017-07-14",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21158940",
+      "lat": 38.37522321952477,
+      "lon": -122.4693875410875,
+      "area": 135020548.45518306,
+      "start_date": "2017-10-06",
+      "end_date": "2017-10-25",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21158932",
+      "lat": 38.55196245162863,
+      "lon": -122.67977814566878,
+      "area": 105826749.51976933,
+      "start_date": "2017-10-06",
+      "end_date": "2017-10-20",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21158939",
+      "lat": 38.37865419762287,
+      "lon": -122.23434434545894,
+      "area": 180313877.12084147,
+      "start_date": "2017-10-06",
+      "end_date": "2017-10-22",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20777508",
+      "lat": 40.94623724301435,
+      "lon": -116.62818267650552,
+      "area": 764614640.6617087,
+      "start_date": "2017-07-10",
+      "end_date": "2017-07-16",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20700973",
+      "lat": 34.38735840304398,
+      "lon": -112.3188952597562,
+      "area": 116774365.91275184,
+      "start_date": "2017-06-22",
+      "end_date": "2017-07-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20562846",
+      "lat": 31.80687990353912,
+      "lon": -110.6737135638438,
+      "area": 157989117.8419469,
+      "start_date": "2017-04-23",
+      "end_date": "2017-05-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20701026",
+      "lat": 32.72072767569092,
+      "lon": -109.8650129521582,
+      "area": 174946657.69988915,
+      "start_date": "2017-06-08",
+      "end_date": "2017-07-02",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "20568194",
+      "lat": 30.62848381140472,
+      "lon": -82.28671717525754,
+      "area": 557468023.531865,
+      "start_date": "2017-04-08",
+      "end_date": "2017-05-16",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890013",
+      "lat": 44.1485667370192,
+      "lon": -111.98912924384952,
+      "area": 424165563.2728958,
+      "start_date": "2018-07-24",
+      "end_date": "2018-08-05",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890003",
+      "lat": 44.8565335032298,
+      "lon": -114.23481963742458,
+      "area": 101748158.69689833,
+      "start_date": "2018-07-29",
+      "end_date": "2018-08-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889992",
+      "lat": 45.49904925292751,
+      "lon": -120.90238892598428,
+      "area": 259737402.4772174,
+      "start_date": "2018-07-16",
+      "end_date": "2018-07-24",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21804884",
+      "lat": 45.05862512365232,
+      "lon": -121.01541990475818,
+      "area": 398835589.8624954,
+      "start_date": "2018-06-20",
+      "end_date": "2018-06-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889717",
+      "lat": 41.96288667724188,
+      "lon": -122.5316357427587,
+      "area": 137810722.6938727,
+      "start_date": "2018-07-03",
+      "end_date": "2018-07-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890524",
+      "lat": 48.363689359643146,
+      "lon": -120.46567319954138,
+      "area": 170223915.2577704,
+      "start_date": "2018-07-31",
+      "end_date": "2018-09-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889953",
+      "lat": 46.85543639467479,
+      "lon": -120.07984202307114,
+      "area": 185248475.01696157,
+      "start_date": "2018-07-19",
+      "end_date": "2018-07-26",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889943",
+      "lat": 47.812036366859566,
+      "lon": -120.48875215272162,
+      "area": 158631936.75976238,
+      "start_date": "2018-07-27",
+      "end_date": "2018-09-02",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21998095",
+      "lat": 45.2247103322061,
+      "lon": -120.43159167165707,
+      "area": 167004326.9362764,
+      "start_date": "2018-08-15",
+      "end_date": "2018-09-02",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21997770",
+      "lat": 41.42392374666986,
+      "lon": -121.01848217498352,
+      "area": 141889449.17476097,
+      "start_date": "2018-08-15",
+      "end_date": "2018-08-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889994",
+      "lat": 45.35701703770346,
+      "lon": -121.05811330546854,
+      "area": 203067148.54978693,
+      "start_date": "2018-07-26",
+      "end_date": "2018-08-06",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890009",
+      "lat": 44.658013442303286,
+      "lon": -116.35541687215408,
+      "area": 133947111.2052918,
+      "start_date": "2018-07-22",
+      "end_date": "2018-08-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21998023",
+      "lat": 47.92208145595017,
+      "lon": -119.22742778693956,
+      "area": 277339451.5755143,
+      "start_date": "2018-08-07",
+      "end_date": "2018-08-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890502",
+      "lat": 49.10004525729122,
+      "lon": -119.81630686804873,
+      "area": 146826534.7297095,
+      "start_date": "2018-07-18",
+      "end_date": "2018-08-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21998230",
+      "lat": 42.6189631367712,
+      "lon": -120.7337310435246,
+      "area": 239559354.8365648,
+      "start_date": "2018-08-14",
+      "end_date": "2018-08-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890024",
+      "lat": 43.53920032712779,
+      "lon": -114.06099398024736,
+      "area": 262313078.07243475,
+      "start_date": "2018-07-25",
+      "end_date": "2018-08-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22343688",
+      "lat": 34.116876640803845,
+      "lon": -118.80216455347,
+      "area": 354187106.3809149,
+      "start_date": "2018-11-07",
+      "end_date": "2018-11-17",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22343661",
+      "lat": 39.750650511462105,
+      "lon": -121.58244295585804,
+      "area": 461945781.4593494,
+      "start_date": "2018-11-07",
+      "end_date": "2018-11-19",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21997828",
+      "lat": 38.37690922124813,
+      "lon": -119.82591356906812,
+      "area": 132444623.38004312,
+      "start_date": "2018-08-01",
+      "end_date": "2018-08-24",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889779",
+      "lat": 37.629594082996114,
+      "lon": -119.806823922933,
+      "area": 392181426.9241675,
+      "start_date": "2018-07-12",
+      "end_date": "2018-08-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21998287",
+      "lat": 40.805943582121,
+      "lon": -116.8063561589764,
+      "area": 212511573.23330307,
+      "start_date": "2018-08-17",
+      "end_date": "2018-08-23",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890072",
+      "lat": 41.59899131476727,
+      "lon": -116.99991051818076,
+      "area": 1443358358.4260292,
+      "start_date": "2018-07-03",
+      "end_date": "2018-07-14",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21804582",
+      "lat": 38.66259781023312,
+      "lon": -122.16928233346634,
+      "area": 354186917.8614795,
+      "start_date": "2018-06-29",
+      "end_date": "2018-07-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889763",
+      "lat": 39.05758353852529,
+      "lon": -123.0266041305818,
+      "area": 196842082.24299127,
+      "start_date": "2018-07-27",
+      "end_date": "2018-08-11",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890056",
+      "lat": 42.13319989854243,
+      "lon": -115.62934233905148,
+      "area": 308678641.28104234,
+      "start_date": "2018-07-23",
+      "end_date": "2018-08-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21889750",
+      "lat": 39.80922757016735,
+      "lon": -119.50158290617652,
+      "area": 202852856.5457766,
+      "start_date": "2018-07-26",
+      "end_date": "2018-08-04",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21998264",
+      "lat": 41.7253410022932,
+      "lon": -116.00419817646156,
+      "area": 897919138.7304468,
+      "start_date": "2018-08-14",
+      "end_date": "2018-09-02",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22141509",
+      "lat": 43.07013107696215,
+      "lon": -110.40533626113198,
+      "area": 184391592.0700377,
+      "start_date": "2018-09-14",
+      "end_date": "2018-09-28",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21751305",
+      "lat": 36.53479011476462,
+      "lon": -105.02722370900533,
+      "area": 125360902.43391325,
+      "start_date": "2018-05-29",
+      "end_date": "2018-06-07",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21804985",
+      "lat": 37.54672999925885,
+      "lon": -105.15185415391647,
+      "area": 414935405.4388266,
+      "start_date": "2018-06-26",
+      "end_date": "2018-07-08",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21890160",
+      "lat": 38.494293205729,
+      "lon": -108.65905939963972,
+      "area": 116774347.15257569,
+      "start_date": "2018-07-29",
+      "end_date": "2018-08-24",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21748801",
+      "lat": 33.71141557447906,
+      "lon": -108.5110890673764,
+      "area": 152192718.59730574,
+      "start_date": "2018-05-21",
+      "end_date": "2018-06-22",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21693566",
+      "lat": 38.55698881130073,
+      "lon": -96.46573488267656,
+      "area": 134591039.94232893,
+      "start_date": "2018-04-02",
+      "end_date": "2018-04-22",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21751309",
+      "lat": 34.90445011119338,
+      "lon": -101.2128015208358,
+      "area": 271758090.68722105,
+      "start_date": "2018-05-08",
+      "end_date": "2018-05-19",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21999381",
+      "lat": 42.09940342349408,
+      "lon": -105.29557150211822,
+      "area": 109476113.27842069,
+      "start_date": "2018-08-23",
+      "end_date": "2018-09-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22141596",
+      "lat": 39.94540261811829,
+      "lon": -111.5579434128434,
+      "area": 481479741.0990817,
+      "start_date": "2018-09-08",
+      "end_date": "2018-09-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21751303",
+      "lat": 37.49228422650444,
+      "lon": -107.90352200314196,
+      "area": 200705962.11849228,
+      "start_date": "2018-05-30",
+      "end_date": "2018-07-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "21998313",
+      "lat": 39.91545830961751,
+      "lon": -111.31669425887202,
+      "area": 120638199.5593461,
+      "start_date": "2018-08-02",
+      "end_date": "2018-08-26",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23036871",
+      "lat": 43.6336373539297,
+      "lon": -112.7646707223802,
+      "area": 360412616.7153661,
+      "start_date": "2019-07-20",
+      "end_date": "2019-07-28",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23159836",
+      "lat": 42.6728229913166,
+      "lon": -115.5203672717368,
+      "area": 145753346.1010293,
+      "start_date": "2019-08-04",
+      "end_date": "2019-08-11",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23036806",
+      "lat": 46.47210311410917,
+      "lon": -119.69838139455253,
+      "area": 176449581.60676628,
+      "start_date": "2019-07-17",
+      "end_date": "2019-07-23",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23160475",
+      "lat": 47.97133596553884,
+      "lon": -118.4928060131422,
+      "area": 171726674.96142033,
+      "start_date": "2019-08-01",
+      "end_date": "2019-08-17",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23410594",
+      "lat": 38.68252579907912,
+      "lon": -122.7708095095577,
+      "area": 300522212.0467144,
+      "start_date": "2019-10-22",
+      "end_date": "2019-11-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23300669",
+      "lat": 40.08895328294924,
+      "lon": -120.59686721875585,
+      "area": 183962507.301859,
+      "start_date": "2019-09-03",
+      "end_date": "2019-09-19",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22712973",
+      "lat": 38.17394937273371,
+      "lon": -96.6254441980973,
+      "area": 331003692.9644752,
+      "start_date": "2019-03-21",
+      "end_date": "2019-04-13",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22938749",
+      "lat": 33.49683128821324,
+      "lon": -111.19124161705687,
+      "area": 448851174.6692264,
+      "start_date": "2019-06-08",
+      "end_date": "2019-07-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "22712904",
+      "lat": 38.505749477933655,
+      "lon": -96.46544135891806,
+      "area": 175162473.61082676,
+      "start_date": "2019-03-26",
+      "end_date": "2019-04-11",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24463187",
+      "lat": 47.32326719478381,
+      "lon": -106.83965201145692,
+      "area": 131371415.39443624,
+      "start_date": "2020-09-01",
+      "end_date": "2020-09-04",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333277",
+      "lat": 45.84954851020946,
+      "lon": -106.13097149632638,
+      "area": 113340196.80677228,
+      "start_date": "2020-08-31",
+      "end_date": "2020-09-06",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333270",
+      "lat": 46.31557685567488,
+      "lon": -108.37380571662756,
+      "area": 116130894.87790604,
+      "start_date": "2020-08-31",
+      "end_date": "2020-09-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333279",
+      "lat": 45.66898712431424,
+      "lon": -107.02110425234495,
+      "area": 205215214.89436656,
+      "start_date": "2020-08-31",
+      "end_date": "2020-09-10",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461328",
+      "lat": 41.94263951521548,
+      "lon": -123.5000670404874,
+      "area": 551887102.2444583,
+      "start_date": "2020-09-04",
+      "end_date": "2020-09-28",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461320",
+      "lat": 42.53119413053564,
+      "lon": -122.69868962444616,
+      "area": 121069018.45118882,
+      "start_date": "2020-09-04",
+      "end_date": "2020-09-20",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332880",
+      "lat": 46.83959042325502,
+      "lon": -120.64714235690852,
+      "area": 268967281.8907331,
+      "start_date": "2020-08-26",
+      "end_date": "2020-09-08",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462610",
+      "lat": 43.36656557312985,
+      "lon": -122.93784701357684,
+      "area": 485987295.4068945,
+      "start_date": "2020-09-03",
+      "end_date": "2020-09-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462263",
+      "lat": 45.10961104769878,
+      "lon": -122.23106501849924,
+      "area": 547379090.232841,
+      "start_date": "2020-09-03",
+      "end_date": "2020-09-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462488",
+      "lat": 44.14989280760344,
+      "lon": -122.48230206445936,
+      "area": 654064371.9928943,
+      "start_date": "2020-09-03",
+      "end_date": "2020-09-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332956",
+      "lat": 43.91977126157663,
+      "lon": -117.94160949914264,
+      "area": 142962811.84015447,
+      "start_date": "2020-08-14",
+      "end_date": "2020-09-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24191347",
+      "lat": 41.731424536783024,
+      "lon": -121.45423464262932,
+      "area": 311040186.6231361,
+      "start_date": "2020-07-21",
+      "end_date": "2020-08-02",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461421",
+      "lat": 40.43618816905508,
+      "lon": -122.62399410703868,
+      "area": 233978162.7997647,
+      "start_date": "2020-09-27",
+      "end_date": "2020-10-03",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462753",
+      "lat": 42.61505481702005,
+      "lon": -120.5676722242106,
+      "area": 178595985.92027882,
+      "start_date": "2020-09-07",
+      "end_date": "2020-09-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462335",
+      "lat": 44.73744911200609,
+      "lon": -116.76795651462002,
+      "area": 306103937.2558881,
+      "start_date": "2020-09-06",
+      "end_date": "2020-09-28",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461996",
+      "lat": 47.61410454425497,
+      "lon": -118.49429413254994,
+      "area": 424810792.79047215,
+      "start_date": "2020-09-02",
+      "end_date": "2020-09-11",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461899",
+      "lat": 48.041659400134606,
+      "lon": -119.54354265941816,
+      "area": 1309848053.0362682,
+      "start_date": "2020-09-02",
+      "end_date": "2020-09-24",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332939",
+      "lat": 44.8061371576842,
+      "lon": -122.14764772814364,
+      "area": 1396782699.1804588,
+      "start_date": "2020-08-19",
+      "end_date": "2020-10-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332592",
+      "lat": 41.09488213623677,
+      "lon": -120.08192575767916,
+      "area": 294509538.4548564,
+      "start_date": "2020-08-15",
+      "end_date": "2020-09-07",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332608",
+      "lat": 41.10374751050327,
+      "lon": -123.39419610983204,
+      "area": 359124070.38181704,
+      "start_date": "2020-08-23",
+      "end_date": "2020-10-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461771",
+      "lat": 34.33060619491223,
+      "lon": -117.93097450278194,
+      "area": 460442886.1274136,
+      "start_date": "2020-09-04",
+      "end_date": "2020-09-28",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24191393",
+      "lat": 36.18021473403386,
+      "lon": -120.56562053997472,
+      "area": 112051734.09714007,
+      "start_date": "2020-07-13",
+      "end_date": "2020-07-22",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332622",
+      "lat": 40.32322144285628,
+      "lon": -120.72641843279747,
+      "area": 109261523.91066983,
+      "start_date": "2020-08-18",
+      "end_date": "2020-09-07",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332704",
+      "lat": 38.52348336765407,
+      "lon": -119.56657527982428,
+      "area": 102177567.0258084,
+      "start_date": "2020-08-29",
+      "end_date": "2020-09-16",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24461607",
+      "lat": 38.537666533299046,
+      "lon": -122.54744755247673,
+      "area": 235910050.41545677,
+      "start_date": "2020-09-26",
+      "end_date": "2020-10-07",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332760",
+      "lat": 36.479029560649614,
+      "lon": -121.56347679738823,
+      "area": 194266132.77910972,
+      "start_date": "2020-08-17",
+      "end_date": "2020-08-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332676",
+      "lat": 39.70348536834347,
+      "lon": -120.1117617897657,
+      "area": 168936418.40292016,
+      "start_date": "2020-08-13",
+      "end_date": "2020-08-21",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332700",
+      "lat": 38.623244486310966,
+      "lon": -122.24217860958834,
+      "area": 1126314966.6070096,
+      "start_date": "2020-08-13",
+      "end_date": "2020-09-02",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332764",
+      "lat": 36.07479105231664,
+      "lon": -121.4696624805644,
+      "area": 494788477.3914871,
+      "start_date": "2020-08-16",
+      "end_date": "2020-09-22",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332746",
+      "lat": 37.14293025665211,
+      "lon": -122.23649646730848,
+      "area": 241491081.76341292,
+      "start_date": "2020-08-16",
+      "end_date": "2020-09-01",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332702",
+      "lat": 38.61894329830734,
+      "lon": -123.02143779739934,
+      "area": 124716652.7790479,
+      "start_date": "2020-08-16",
+      "end_date": "2020-08-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332732",
+      "lat": 37.34094120378133,
+      "lon": -121.43944335018584,
+      "area": 1438428339.4264133,
+      "start_date": "2020-08-12",
+      "end_date": "2020-09-04",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24191376",
+      "lat": 37.18391751025302,
+      "lon": -114.6079338222722,
+      "area": 194266022.77414623,
+      "start_date": "2020-07-03",
+      "end_date": "2020-07-13",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332763",
+      "lat": 36.206517744428574,
+      "lon": -118.53567790912112,
+      "area": 603405518.1415024,
+      "start_date": "2020-08-20",
+      "end_date": "2020-10-11",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24191418",
+      "lat": 34.02467294762927,
+      "lon": -116.85722644113189,
+      "area": 141245473.68495125,
+      "start_date": "2020-07-31",
+      "end_date": "2020-08-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332787",
+      "lat": 34.67678875409553,
+      "lon": -118.55788751471395,
+      "area": 132659209.64209346,
+      "start_date": "2020-08-11",
+      "end_date": "2020-08-24",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332647",
+      "lat": 39.72474749550207,
+      "lon": -121.2014899977086,
+      "area": 1194361627.768254,
+      "start_date": "2020-08-15",
+      "end_date": "2020-10-05",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332783",
+      "lat": 35.29118084055676,
+      "lon": -115.58860648254,
+      "area": 149616945.60356247,
+      "start_date": "2020-08-15",
+      "end_date": "2020-08-20",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462788",
+      "lat": 42.225827726580725,
+      "lon": -114.19938496763838,
+      "area": 342810296.0683801,
+      "start_date": "2020-09-12",
+      "end_date": "2020-09-28",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "23860939",
+      "lat": 38.45427204534645,
+      "lon": -96.63213367861404,
+      "area": 675530953.7788653,
+      "start_date": "2020-03-23",
+      "end_date": "2020-04-12",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462847",
+      "lat": 40.72530318029639,
+      "lon": -105.6780765507764,
+      "area": 124716226.88157731,
+      "start_date": "2020-09-03",
+      "end_date": "2020-10-08",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333000",
+      "lat": 40.5872040926238,
+      "lon": -110.59347098430668,
+      "area": 236983828.65370035,
+      "start_date": "2020-08-22",
+      "end_date": "2020-09-27",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333039",
+      "lat": 39.43254510226961,
+      "lon": -108.54401182512515,
+      "area": 532139687.8887522,
+      "start_date": "2020-08-01",
+      "end_date": "2020-08-31",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24191427",
+      "lat": 33.439711836338425,
+      "lon": -110.2582682080205,
+      "area": 197485742.76029927,
+      "start_date": "2020-07-12",
+      "end_date": "2020-07-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333033",
+      "lat": 39.59725804295038,
+      "lon": -107.20006805288205,
+      "area": 105826727.78579482,
+      "start_date": "2020-08-09",
+      "end_date": "2020-08-29",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24332801",
+      "lat": 33.528573729930486,
+      "lon": -110.63492870052896,
+      "area": 247931058.54361868,
+      "start_date": "2020-08-17",
+      "end_date": "2020-08-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24103581",
+      "lat": 33.49873807882364,
+      "lon": -110.34967143761196,
+      "area": 119565004.8636692,
+      "start_date": "2020-06-06",
+      "end_date": "2020-06-15",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24103557",
+      "lat": 36.76627065037865,
+      "lon": -112.23076615506196,
+      "area": 259951669.73341396,
+      "start_date": "2020-06-09",
+      "end_date": "2020-06-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24104631",
+      "lat": 39.46767663708197,
+      "lon": -112.23464695634638,
+      "area": 131371780.1272086,
+      "start_date": "2020-06-25",
+      "end_date": "2020-07-06",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24103611",
+      "lat": 32.43712693311202,
+      "lon": -110.75287325413078,
+      "area": 444987232.7528516,
+      "start_date": "2020-06-05",
+      "end_date": "2020-07-06",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24462819",
+      "lat": 41.101639226390674,
+      "lon": -106.28705412976096,
+      "area": 680682663.1188492,
+      "start_date": "2020-09-17",
+      "end_date": "2020-10-11",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24333012",
+      "lat": 40.64093353353493,
+      "lon": -105.6394922972191,
+      "area": 219382468.89107463,
+      "start_date": "2020-08-31",
+      "end_date": "2020-09-18",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    },
+    {
+      "fire_id": "24103571",
+      "lat": 33.75892924517697,
+      "lon": -111.36934273323112,
+      "area": 813341150.3478637,
+      "start_date": "2020-06-12",
+      "end_date": "2020-06-30",
+      "burn_labels": {
+        "exported": false,
+        "downloaded": false,
+        "path": null
+      },
+      "environment_terrain": {
+        "weather_exported": false,
+        "terrain_exported": false,
+        "downloaded": false,
+        "path": null
+      }
+    }
+  ]
+}

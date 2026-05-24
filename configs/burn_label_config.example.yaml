@@ -1,0 +1,9 @@
+min_buffer_m: 20000
+modis_scale_m: 500
+landsat_scale_m: 30
+severity_classes:
+  unburned: 0
+  low: 1
+  moderate_low: 2
+  moderate_high: 3
+  high: 4

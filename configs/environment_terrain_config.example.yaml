@@ -1,0 +1,15 @@
+lookback_days: 3
+min_buffer_m: 20000
+weather_scale_m: 9000
+terrain_scale_m: 30
+terrain_bands:
+  - elevation
+  - slope
+  - aspect
+weather_bands:
+  - temperature_2m
+  - relative_humidity_pct
+  - wind_speed_ms
+  - wind_dir_deg
+  - surface_pressure
+  - total_precipitation

@@ -1,0 +1,96 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Package/build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.cursor/
+.idea/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+token.json
+
+# =========================
+# Large geospatial / ML data
+# =========================
+*.tif
+*.tiff
+*.vrt
+*.ovr
+*.aux.xml
+*.nc
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# =========================
+# Large data folders
+# =========================
+data/raw/satellite_labels/**
+data/raw/environment_terrain/**
+data/aligned/**
+data/aligned_compressed/**
+data/tensors/**
+models/**
+
+# Keep folder structure
+!data/**/.gitkeep
+!models/.gitkeep
+
+# =========================
+# Allow small useful CSV/JSON metadata files
+# =========================
+!data/raw/csv/*.csv
+!data/raw/csv/*.json
+!data/aligned_compressed/*.csv
+!data/aligned_compressed/*.json
+!data/aligned/*.csv
+!data/aligned/*.json

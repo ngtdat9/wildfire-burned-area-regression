@@ -1,0 +1,8 @@
+earthengine-api
+pandas
+numpy
+rasterio
+geopandas
+pyyaml
+matplotlib
+jupyter
