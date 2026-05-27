@@ -176,6 +176,51 @@ python scripts/compress_aligned_geotiffs.py \
 - [ ] Phase 4 tensor construction (Student 4)
 - [ ] Event-based train/val/test split (Student 4)
 
+## Daily fire-mask update (incremental)
+
+The main dataset under `data/aligned_compressed/` contains:
+
+| Layer | Role |
+|-------|------|
+| `burned_area_30m_aligned.tif` | **Final** cumulative burned footprint (MODIS) |
+| `severity_30m_aligned.tif` | **Final** dNBR burn-severity damage map (Landsat) |
+| `weather_stacked_30m_aligned.tif` | **Daily** ERA5 weather (already stacked) |
+| `terrain_30m_aligned.tif` | **Static** SRTM terrain |
+
+For fire-spread time-series modeling, add:
+
+| Layer | Role |
+|-------|------|
+| `fire_mask_stacked_30m_aligned.tif` | **Daily** cumulative fire progression (one band per day) |
+
+This is produced in a **separate update folder** (does not overwrite the
+main dataset):
+
+```
+data/fire_mask_update/aligned_compressed/<fire_id>/labels/
+    fire_mask_stacked_30m_aligned.tif
+```
+
+### Pipeline
+
+1. **Extract** (GEE): `scripts/extract_daily_fire_masks.py`
+2. **Download** from Drive → `data/raw/fire_mask_stacked/`
+3. **Organize**: `scripts/organize_fire_mask_stacks.py`
+4. **Align** to severity 30 m grid: `scripts/align_fire_mask_update.py`
+
+Summary: `data/fire_mask_update/fire_mask_update_summary.csv`
+
+### Merge into main dataset
+
+After verifying the update folder, merge into the main aligned dataset:
+
+```bash
+rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/
+```
+
+This adds `labels/fire_mask_stacked_30m_aligned.tif` under each
+`<fire_id>/` without reprocessing existing layers.
+
 ## Related docs
 
 - Phase 1: [`phase_01_burn_label_extraction.md`](./phase_01_burn_label_extraction.md)

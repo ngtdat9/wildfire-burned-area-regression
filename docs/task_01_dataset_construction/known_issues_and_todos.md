@@ -21,8 +21,20 @@ inside Task 1 (Dataset Construction & Data Preparation).
       `data/aligned_compressed/<fire_id>/`.
 - [x] **`area` unit — RESOLVED 2026-05-23.** Confirmed **m²**; Phases 1
       and 2 use `radius_m = max(buffer_m, sqrt(area_m2 / π) * 1.5)`.
+- [x] **Daily fire-mask update scripts** (incremental). GEE extract,
+      organize, and align pipeline for `fire_mask_stacked_30m_aligned.tif`.
+      See Phase 1 and Phase 3 docs.
 
 ## Remaining TODO
+
+### Daily fire-mask update (incremental)
+
+- [ ] **Full export run.** Submit GEE tasks for all fires in
+      `fire_all.csv` → Drive folder `Wildfire_FireMask_Stacked`.
+- [ ] **Download & organize** into `data/raw/fire_mask_stacked/`.
+- [ ] **Align all fires** with `scripts/align_fire_mask_update.py`.
+- [ ] **Merge** into main dataset:
+      `rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/`
 
 ### Phase 3 / handoff
 
@@ -89,6 +101,7 @@ Known limitation (documented, not a blocker):
 
 ## Phase 4 — Tensor structuring & ML export (Student 4) — not started
 
-- [ ] Use `data/aligned_compressed/` as input.
+- [ ] Use `data/aligned_compressed/` as input (include merged
+      `fire_mask_stacked_30m_aligned.tif` for time-series modeling).
 - [ ] Event-based train/val/test split policy.
 - [ ] Tensor format and folder layout under `data/tensors/`, `data/splits/`.

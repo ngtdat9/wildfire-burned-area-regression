@@ -10,7 +10,7 @@
 
 Build a reproducible, per-fire-event dataset that combines:
 
-- **Burn labels** — burned-area mask + dNBR burn-severity map.
+- **Burn labels** — burned-area mask + dNBR burn-severity map + *(incremental)* daily stacked fire-mask time series.
 - **Environmental drivers** — daily weather + static terrain.
 - **Event metadata** — a single source of truth indexed by `fire_id`.
 
@@ -64,14 +64,21 @@ Organized by fire ID:
 ```
 data/aligned_compressed/<fire_id>/
 ├── labels/
-│   ├── burned_area_30m_aligned.tif
-│   └── severity_30m_aligned.tif
+│   ├── burned_area_30m_aligned.tif       # final cumulative footprint
+│   ├── severity_30m_aligned.tif          # final dNBR damage map
+│   └── fire_mask_stacked_30m_aligned.tif # daily cumulative mask (after update merge)
 ├── terrain/
-│   └── terrain_30m_aligned.tif
+│   └── terrain_30m_aligned.tif           # static
 ├── weather/
-│   └── weather_stacked_30m_aligned.tif
+│   └── weather_stacked_30m_aligned.tif   # daily stacked
 └── metadata.json
 ```
+
+The daily fire-mask layer is built incrementally in
+`data/fire_mask_update/aligned_compressed/` and merged with `rsync` so
+the main Phase 3 dataset is not reprocessed. See
+[`phase_01_burn_label_extraction.md`](./phase_01_burn_label_extraction.md)
+and [`phase_03_geospatial_alignment.md`](./phase_03_geospatial_alignment.md).
 
 All layers share the **Landsat severity 30 m reference grid**. GeoTIFFs
 use internal `deflate` compression but remain normal `.tif` files

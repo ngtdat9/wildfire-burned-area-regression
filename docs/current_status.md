@@ -45,6 +45,12 @@ Snapshot of where the project stands. The project is organised into
 - See [`task_01_dataset_construction/phase_03_geospatial_alignment.md`](./task_01_dataset_construction/phase_03_geospatial_alignment.md).
 - Scripts: `scripts/align_fire_event_layers.py`, `scripts/compress_aligned_geotiffs.py`.
 
+### Daily fire-mask update *(incremental — in progress)*
+- Stacked daily cumulative fire masks for time-series modeling.
+- Scripts: `scripts/extract_daily_fire_masks.py`, `scripts/organize_fire_mask_stacks.py`, `scripts/align_fire_mask_update.py`.
+- Update folder: `data/fire_mask_update/aligned_compressed/` → merge with `rsync` into main dataset.
+- Test fire `20778153` aligned successfully; full run pending for all fires.
+
 ### Phase 4 — Tensor structuring & event-based splitting *(not started)*
 - **Student 4** will build ML-ready tensors from
   `data/aligned_compressed/`.

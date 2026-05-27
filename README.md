@@ -65,6 +65,23 @@ required.
 construction and split train/validation/test by **entire wildfire
 event**, not random pixels or patches.
 
+### Label layers (after fire-mask update is merged)
+
+| File | Type | Description |
+|------|------|-------------|
+| `burned_area_30m_aligned.tif` | Final mask | Cumulative burned footprint at end of event |
+| `fire_mask_stacked_30m_aligned.tif` | Daily stack | Cumulative fire mask per day (time series) |
+| `severity_30m_aligned.tif` | Final map | dNBR burn-severity damage classes |
+| `weather_stacked_30m_aligned.tif` | Daily stack | ERA5 weather bands per day |
+| `terrain_30m_aligned.tif` | Static | Elevation, slope, aspect |
+
+The fire-mask update is built in `data/fire_mask_update/` first, then
+merged:
+
+```bash
+rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/
+```
+
 ## Folder structure
 
 ```
@@ -73,18 +90,23 @@ wildfire-burned-area-regression/
 │   ├── raw/
 │   │   ├── csv/                    # input CSVs, manifests, inventory
 │   │   ├── satellite_labels/       # Phase 1 (by fire_id/)
-│   │   └── environment_terrain/    # Phase 2 (by fire_id/)
+│   │   ├── environment_terrain/    # Phase 2 (by fire_id/)
+│   │   └── fire_mask_stacked/      # daily fire-mask GEE downloads
 │   ├── aligned/                    # temporary alignment workspace (often empty)
 │   ├── aligned_compressed/         # Phase 3 final deliverable (by fire_id/)
+│   ├── fire_mask_update/           # incremental daily fire-mask alignment
 │   ├── tensors/                    # Phase 4 (not started)
 │   └── splits/                     # Phase 4 (not started)
 ├── scripts/
 │   ├── extract_burn_labels.py
 │   ├── extract_environment_terrain.py
+│   ├── extract_daily_fire_masks.py
 │   ├── organize_satellite_labels.py
 │   ├── organize_environment_terrain.py
+│   ├── organize_fire_mask_stacks.py
 │   ├── check_phase1_phase2_inventory.py
 │   ├── align_fire_event_layers.py
+│   ├── align_fire_mask_update.py
 │   ├── compress_aligned_geotiffs.py
 │   ├── test_geotiff_compression.py
 │   ├── validate_fire_csv.py
@@ -172,6 +194,38 @@ python scripts/align_fire_event_layers.py --fire-id <fire_id>
 python scripts/compress_aligned_geotiffs.py \
     --fire-id <fire_id> \
     --delete-original-after-success
+```
+
+## Daily fire-mask update (time-series labels)
+
+Adds `fire_mask_stacked_30m_aligned.tif` — one band per day showing
+cumulative burned area through that date. Does **not** overwrite the
+main `data/aligned_compressed/` folder until you merge.
+
+**Extract (GEE, one fire):**
+
+```bash
+python scripts/extract_daily_fire_masks.py \
+    data/raw/csv/fire_all.csv \
+    --fire-id <fire_id>
+```
+
+**Organize downloads:**
+
+```bash
+python scripts/organize_fire_mask_stacks.py
+```
+
+**Align to 30 m severity grid:**
+
+```bash
+python scripts/align_fire_mask_update.py --fire-id <fire_id>
+```
+
+**Merge into main dataset after verification:**
+
+```bash
+rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/
 ```
 
 ## Helper scripts

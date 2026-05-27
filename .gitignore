@@ -79,6 +79,8 @@ data/raw/environment_terrain/**
 data/aligned/**
 data/aligned_compressed/**
 data/tensors/**
+data/raw/fire_mask_stacked/**
+data/fire_mask_update/**
 models/**
 
 # Keep folder structure
@@ -94,3 +96,5 @@ models/**
 !data/aligned_compressed/*.json
 !data/aligned/*.csv
 !data/aligned/*.json
+!data/fire_mask_update/*.csv
+!data/fire_mask_update/*.json

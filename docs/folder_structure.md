@@ -9,9 +9,11 @@ wildfire-burned-area-regression/
 │   ├── raw/
 │   │   ├── csv/
 │   │   ├── satellite_labels/
-│   │   └── environment_terrain/
+│   │   ├── environment_terrain/
+│   │   └── fire_mask_stacked/      # daily fire-mask GEE downloads
 │   ├── aligned/
 │   ├── aligned_compressed/
+│   ├── fire_mask_update/           # incremental daily fire-mask alignment
 │   ├── tensors/
 │   └── splits/
 ├── scripts/
@@ -48,11 +50,21 @@ Everything the pipeline reads or writes.
   Phase 2 (`*__terrain__static.tif`, `*__weather__stacked.tif`; legacy
   daily mode: `*__weather__YYYY-MM-DD.tif`)
   after sync from Google Drive.
+- **`data/raw/fire_mask_stacked/`** — stacked daily cumulative fire-mask
+  GeoTIFFs from GEE (`<fire_id>__fire_mask__stacked.tif`), organized by
+  fire ID after download from Drive folder `Wildfire_FireMask_Stacked`.
 - **`data/aligned/`** — temporary workspace for Phase 3 alignment
   (uncompressed). Often empty after compression + cleanup.
 - **`data/aligned_compressed/`** — *(Task 1 / Phase 3, completed)* final
   aligned, internally compressed GeoTIFFs per fire event. **Phase 4
   input.**
+- **`data/fire_mask_update/`** — incremental update for daily stacked
+  fire masks. Aligned output:
+  `data/fire_mask_update/aligned_compressed/<fire_id>/labels/
+  fire_mask_stacked_30m_aligned.tif`. Merge into the main dataset with
+  `rsync -av data/fire_mask_update/aligned_compressed/
+  data/aligned_compressed/` after verification. Summary:
+  `data/fire_mask_update/fire_mask_update_summary.csv`.
 - **`data/tensors/`** — *(Task 1 / Phase 4, not started)* ML-ready
   stacked tensors (e.g. `.npz` files), one per fire event.
 - **`data/splits/`** — *(Task 1 / Phase 4, not started)* train / val
@@ -67,7 +79,17 @@ Runnable command-line entrypoints. All are designed to be run from
 the **project root**:
 
 - `extract_burn_labels.py` — Task 1 / Phase 1 entrypoint.
+- `extract_daily_fire_masks.py` — incremental daily fire-mask stack
+  export (MODIS MCD64A1 BurnDate) to Google Drive.
 - `extract_environment_terrain.py` — Task 1 / Phase 2 entrypoint.
+- `organize_satellite_labels.py` — group flat Phase 1 Drive downloads.
+- `organize_environment_terrain.py` — group flat Phase 2 downloads.
+- `organize_fire_mask_stacks.py` — group flat fire-mask stack downloads.
+- `align_fire_event_layers.py` — Task 1 / Phase 3 alignment.
+- `align_fire_mask_update.py` — align fire-mask stacks into
+  `data/fire_mask_update/`.
+- `compress_aligned_geotiffs.py` — deflate-compress Phase 3 aligned
+  layers into `data/aligned_compressed/`.
 - `validate_fire_csv.py` — quick sanity check on the input CSV.
 - `build_event_manifest.py` — turn the input CSV into a JSON manifest.
 

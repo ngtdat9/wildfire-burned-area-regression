@@ -1,0 +1,1115 @@
+{
+  "phase": "fire_mask_stacked_extraction",
+  "project": "wildfire-area-regression",
+  "input_csv": "data/raw/csv/fire_all.csv",
+  "drive_folder": "Wildfire_FireMask_Stacked",
+  "dry_run": false,
+  "submitted": 138,
+  "failed": [],
+  "tasks": [
+    {
+      "fire_id": "20778153",
+      "task_id": "4TTZRETEJMPGQNWXTNI4L4JY",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20778153__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20778186",
+      "task_id": "4YK5LIJLHSKEXTQT64FFCIN6",
+      "days": 58,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20778186__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20901111",
+      "task_id": "5UMOZXRZPW5N3O7BT775DVB4",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20901111__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20778225",
+      "task_id": "T4YG55AMH6ARZ4HMDXL4WFPB",
+      "days": 7,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20778225__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20900131",
+      "task_id": "6WDMLCFLOXNFDUBW4ID6QZU5",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20900131__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20901127",
+      "task_id": "QTQ26GNXWLO7SIZTIZJX436A",
+      "days": 8,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20901127__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20899892",
+      "task_id": "TXOPQCF336KL7TFSDHBQRXDF",
+      "days": 34,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20899892__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20900124",
+      "task_id": "PJCVZQDV4YAOISYKYFI4DVAS",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20900124__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20900040",
+      "task_id": "OOQWFOJGAJGFCHXRD6ATC6FD",
+      "days": 6,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20900040__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20899967",
+      "task_id": "TUPIVPUDQA6BDQUJI4QOZIIG",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20899967__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20778140",
+      "task_id": "PFBSG5COHGNXYVK3O2SZKFGO",
+      "days": 66,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20778140__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20899673",
+      "task_id": "C6ACKTKZFMOEYWFITVOOWAKH",
+      "days": 39,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20899673__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20900085",
+      "task_id": "4BVKIFO43APT7FNSPJRD6O3X",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20900085__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777397",
+      "task_id": "W3PBJTZB5ZH3SMB3UIOANI4N",
+      "days": 15,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777397__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21038333",
+      "task_id": "LUEYIAVT5C4ABHGMWYQ7YBZJ",
+      "days": 15,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21038333__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20899721",
+      "task_id": "SJKWZLAUDUZ3KMUOQM5PDPZZ",
+      "days": 34,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20899721__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777134",
+      "task_id": "QGZT3EMMSG5IBSIN6D5ESJW2",
+      "days": 52,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777134__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777152",
+      "task_id": "JGBCGNHPWOJL4JZZSBJWLQMB",
+      "days": 18,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777152__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777459",
+      "task_id": "M2LJF3PWOW74SRJLUWZCN3B5",
+      "days": 6,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777459__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777452",
+      "task_id": "IGNPDSKIBXDUUFZ7H5BK3VF5",
+      "days": 5,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777452__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20899813",
+      "task_id": "JILXKEL37IXSMVQLWSWRH4CR",
+      "days": 26,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20899813__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777482",
+      "task_id": "PMW4TIQ7M3QAAD2TJNQEOHRE",
+      "days": 6,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777482__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777487",
+      "task_id": "ZAYLJWXIRG6WMZU5WY5VMEWZ",
+      "days": 8,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777487__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777521",
+      "task_id": "E6R2KGPJYYGZWPPFNMYU7U74",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777521__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777181",
+      "task_id": "IUQG27RYTQK6UD4N6AWZUGHZ",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777181__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20899766",
+      "task_id": "MOXPC2IQ24LF54ZQXKH7Y2ZQ",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20899766__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21158900",
+      "task_id": "AB5IQLWKRNGKEGADSQBK3KSR",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21158900__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777195",
+      "task_id": "T6Z3OTLBVHD3SNB77T5VMQQO",
+      "days": 15,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777195__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777203",
+      "task_id": "4IQR7OBA3S2NFYKJKMSRNS2I",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777203__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20702159",
+      "task_id": "PX4IICWZDN6X2HHHQ7MITVV5",
+      "days": 28,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20702159__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21158940",
+      "task_id": "5VPDOQO57DXYUUQ5UBBHM6SG",
+      "days": 20,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21158940__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21158932",
+      "task_id": "AD5NTZSRARYAZ3TYHS2RH74N",
+      "days": 15,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21158932__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21158939",
+      "task_id": "6PXXLDKRQH3VKOTLCM6QLITT",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21158939__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20777508",
+      "task_id": "BTWTJEPH3RMDZJ5IBGZJ7JFV",
+      "days": 7,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20777508__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20700973",
+      "task_id": "7DRVO6DHQC2WX77BZPH5MTUE",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20700973__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20562846",
+      "task_id": "7VDU56BOUB22HWDYLO2CNPR6",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20562846__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20701026",
+      "task_id": "OTILOVN47ETFR5WWDS72YJFE",
+      "days": 25,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20701026__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "20568194",
+      "task_id": "L7U6XA3KTQBJFH5QRNWYVCEM",
+      "days": 39,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "20568194__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890013",
+      "task_id": "TDFOJZCX4RY4UUXEOVQ3S775",
+      "days": 13,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890013__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890003",
+      "task_id": "53D4UPZZG22SSSEC4URYPUNF",
+      "days": 30,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890003__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889992",
+      "task_id": "W6NLPPOUAS6NFAFKURXLYODZ",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889992__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21804884",
+      "task_id": "WLS6EGOX62GUQJTKLJ55TJTV",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21804884__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889717",
+      "task_id": "NKXFNH57TY2SCEMH6X75RWNG",
+      "days": 8,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889717__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890524",
+      "task_id": "UIVESHEOM5X5FQIDDTBNN6A3",
+      "days": 44,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890524__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889953",
+      "task_id": "BUP7M3HIDZZ5BSG6CQJGPHLA",
+      "days": 8,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889953__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889943",
+      "task_id": "6KXGP2ZHWKDCF5O3ZKU7DRND",
+      "days": 38,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889943__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21998095",
+      "task_id": "FD7YX6T4OX2ATFBX4NYIZMWF",
+      "days": 19,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21998095__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21997770",
+      "task_id": "QPFNIINMW64EQ4HMYHEU4VS2",
+      "days": 15,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21997770__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889994",
+      "task_id": "X4SCSM6RDFXZMFUBKVA3VOXN",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889994__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890009",
+      "task_id": "M3JLRCTF7I3LRXYZ22465ZTU",
+      "days": 20,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890009__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21998023",
+      "task_id": "XYSBNHVCZLDLW4OFSSDSB6L7",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21998023__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890502",
+      "task_id": "4PG7QWGO4LP4XU6TD3PJCJTU",
+      "days": 44,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890502__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21998230",
+      "task_id": "7OCTOH7ANYF22C7LZTY2BKKO",
+      "days": 16,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21998230__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890024",
+      "task_id": "HALCQSLMW2L22RRU2BWJV7DE",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890024__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22343688",
+      "task_id": "KHRMGHUXTOH5Q3ROTYD44UV3",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22343688__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22343661",
+      "task_id": "7QAFU3LIJRVAJYU65M4E2UII",
+      "days": 13,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22343661__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21997828",
+      "task_id": "IRK5ZIHNTJDHGJS53OHYTQNA",
+      "days": 24,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21997828__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889779",
+      "task_id": "IXWHXY7KZIE2R3W6UWU3L4VS",
+      "days": 35,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889779__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21998287",
+      "task_id": "S4I6YEQ7NKHAG72KCC6YUF3F",
+      "days": 7,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21998287__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890072",
+      "task_id": "EIXS5W7HP77OT47UQZ5MKMVZ",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890072__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21804582",
+      "task_id": "3HWGBLNRBQ2SJX3XJXJ2DZ55",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21804582__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889763",
+      "task_id": "RMBQKUUDQWLXE6FJKU4IE7WL",
+      "days": 16,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889763__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890056",
+      "task_id": "WROWKOS6ZTLZJUUG3UX2VPX2",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890056__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21889750",
+      "task_id": "TLOP7ERE5C6EPCV6ILN7S6HC",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21889750__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21998264",
+      "task_id": "6MBRN54W4N5BRZRBVT6UOSUM",
+      "days": 20,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21998264__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22141509",
+      "task_id": "WDXDBUWHOCBT5LMJ4AJAEFBI",
+      "days": 15,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22141509__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21751305",
+      "task_id": "DSL2WVWMYZ55JA3IJ7RZMVXJ",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21751305__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21804985",
+      "task_id": "G3V2PML5DV4HFU6DSG3KEA6M",
+      "days": 13,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21804985__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21890160",
+      "task_id": "MRCMYDFSYULQMZDE4K5TK4PA",
+      "days": 27,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21890160__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21748801",
+      "task_id": "EFGPZSAFGKECIBM6VWR4AEH2",
+      "days": 33,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21748801__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21693566",
+      "task_id": "5TAPAJM55CF5MEQHESVS7776",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21693566__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21751309",
+      "task_id": "KTUBN7PHKVLGP4ZGZ4YHVNJD",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21751309__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21999381",
+      "task_id": "26X5SO4IF6QIYXFH4EC7LE4S",
+      "days": 19,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21999381__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22141596",
+      "task_id": "WK6Q3E2PPGQDDNLLIW323FKZ",
+      "days": 20,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22141596__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21751303",
+      "task_id": "KWHP6W5SL6CPNYOGOL4MBABU",
+      "days": 42,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21751303__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "21998313",
+      "task_id": "5W4OF7ANSLCEJV53WIYQJDD5",
+      "days": 25,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "21998313__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23036871",
+      "task_id": "IUAJWJWBP4SJAERPSMURBUTL",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23036871__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23159836",
+      "task_id": "SCGH54GOG2NRRSOAUGJ26UYB",
+      "days": 8,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23159836__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23036806",
+      "task_id": "KMFWZJZKL7PFUC47ZBK227BZ",
+      "days": 7,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23036806__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23160475",
+      "task_id": "DHFQHJFJJPKZGNVWOPCIV3IA",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23160475__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23410594",
+      "task_id": "TRLTVOODNGC7CJM5FNQLJSKM",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23410594__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23300669",
+      "task_id": "VMKNXDP7PDSXAJEZ5MLBQ3KG",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23300669__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22712973",
+      "task_id": "GJS5I7HYM6E3VWK5GKKXXTIP",
+      "days": 24,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22712973__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22938749",
+      "task_id": "Y3HV2ACXF7U6DRQCOJUIRBW3",
+      "days": 24,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22938749__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "22712904",
+      "task_id": "V7RYVH5VREZEDOF3BX2ZRUBK",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "22712904__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24463187",
+      "task_id": "XL25NHNK34TYHANCKGX3Z3LQ",
+      "days": 4,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24463187__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333277",
+      "task_id": "BVWUW2BIPYFRPR6YTBLU43QX",
+      "days": 7,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333277__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333270",
+      "task_id": "G3TGTLANSWUPWQHQUMF2ORKV",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333270__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333279",
+      "task_id": "ODJFVG5X55ZQDFZS5H4O5LZV",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333279__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461328",
+      "task_id": "YZCQSGQ5V7KWLANX2FBV44Z2",
+      "days": 25,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461328__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461320",
+      "task_id": "ZKTYMOR5FPLB7XEGTDFH7MXL",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461320__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332880",
+      "task_id": "DCK3XYBGZXBAIQA7BTTMVI3U",
+      "days": 14,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332880__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462610",
+      "task_id": "YZV6VOLJOC7U3CSYWUNTIBUK",
+      "days": 28,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462610__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462263",
+      "task_id": "LGSUO7DHLECTXS3A33SX6G6Y",
+      "days": 27,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462263__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462488",
+      "task_id": "SSXPPMLCXKDUEWYNXL6JPEM6",
+      "days": 27,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462488__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332956",
+      "task_id": "CP5A6MV7MABE3HMTOIXE7GSU",
+      "days": 19,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332956__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24191347",
+      "task_id": "GIVDO4ZYSZYE2CQZQLZDZLRT",
+      "days": 13,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24191347__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461421",
+      "task_id": "AZONYQB2CVPMY4K3MZODA5YX",
+      "days": 7,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461421__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462753",
+      "task_id": "KLJLCWCGNAOWFZBVJQKQVZEY",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462753__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462335",
+      "task_id": "USU2CO4B5LKHOEXBOFSVHOSC",
+      "days": 23,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462335__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461996",
+      "task_id": "6JIWHBDGBEFIKKY4R4BYQB63",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461996__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461899",
+      "task_id": "J6RPZXSUIZ7ZKA37HHHS3BNR",
+      "days": 23,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461899__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332939",
+      "task_id": "NYRSSIK2ATSCBLX24AYPMYFP",
+      "days": 44,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332939__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332592",
+      "task_id": "WPA7MVJDSQOZVE2XVGO4DXZ6",
+      "days": 24,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332592__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332608",
+      "task_id": "KOYGXHIWIWVMFUDVPHOYIFK2",
+      "days": 51,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332608__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461771",
+      "task_id": "ATG2J54NAX6QP3NJ7CHIGJ6T",
+      "days": 25,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461771__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24191393",
+      "task_id": "VOQQY5DXEKUYMX2VOGT55HH3",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24191393__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332622",
+      "task_id": "SPRITFBBA7GHE6D6LROONPBX",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332622__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332704",
+      "task_id": "HY7ADZGCCE7LCEQJV5S3DGYJ",
+      "days": 19,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332704__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24461607",
+      "task_id": "MLDCJCNKA2P5LACSSRYXNMG7",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24461607__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332760",
+      "task_id": "VSA2A7WCCR2J7AI6W4FGJUOS",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332760__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332676",
+      "task_id": "A2NOTD5E3Z235LQTVDBHZY77",
+      "days": 9,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332676__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332700",
+      "task_id": "QT5FGX64NCBNFE5DN3HQ3MSN",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332700__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332764",
+      "task_id": "F6TPXA5RDMCDEKT7VYFTI3E5",
+      "days": 38,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332764__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332746",
+      "task_id": "ZA3CACRHRUDRT3MBP43Y5P2U",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332746__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332702",
+      "task_id": "M6MBFLBKWA4WMP73RRQQQDIN",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332702__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332732",
+      "task_id": "SWWOSZMVQDH3T4K2BNNWHESY",
+      "days": 24,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332732__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24191376",
+      "task_id": "5AZNWLAWXTYALJ6JTY472FOC",
+      "days": 11,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24191376__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332763",
+      "task_id": "5QGPXAZTSECXUEPRTR6IO6RA",
+      "days": 53,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332763__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24191418",
+      "task_id": "IRGU3KI27K2AH3M7GUCX3J6F",
+      "days": 13,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24191418__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332787",
+      "task_id": "PX2RCWHEUD26JBDBEVQV4WOK",
+      "days": 14,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332787__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332647",
+      "task_id": "NSZXFFBIB5Y63II62TKUN4ZA",
+      "days": 52,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332647__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332783",
+      "task_id": "YZTWK4KOP3VLEHLNC6RXCS6W",
+      "days": 6,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332783__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462788",
+      "task_id": "GOPCJNK54HPM5QIABQBSRQRP",
+      "days": 17,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462788__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "23860939",
+      "task_id": "OXNXXFU3CZVI3UYKJNI7SXGB",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "23860939__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462847",
+      "task_id": "UBOAV2KUZCSM3JS7WK53GGCJ",
+      "days": 36,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462847__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333000",
+      "task_id": "CBMY7TIWDOL7YZDVY6EO2HQA",
+      "days": 37,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333000__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333039",
+      "task_id": "N4GL3VNPUIRZ6TYVRI27Y5VU",
+      "days": 31,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333039__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24191427",
+      "task_id": "CSJKVAMFHTOJATTD53R6GDLX",
+      "days": 18,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24191427__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333033",
+      "task_id": "LIKEASANEA7YT3VFUHOUDLLE",
+      "days": 21,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333033__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24332801",
+      "task_id": "YMOATCXY3KFSYOBBY2RAXPQU",
+      "days": 14,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24332801__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24103581",
+      "task_id": "YYXREO6JZK7EJRWQ5QJOAP45",
+      "days": 10,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24103581__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24103557",
+      "task_id": "OQGAZCRUG3BKDIBNVEBTZJ6S",
+      "days": 22,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24103557__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24104631",
+      "task_id": "UENNGM4B7N7OT4O4IDJKT4ET",
+      "days": 12,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24104631__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24103611",
+      "task_id": "RT5SRCRNTUTNQADIXWNEVGA5",
+      "days": 32,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24103611__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24462819",
+      "task_id": "QKR55YYAXWQKESCO7J7FJ5Y5",
+      "days": 25,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24462819__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24333012",
+      "task_id": "2STDOLPQO32BO3OD2QCHDXSM",
+      "days": 19,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24333012__fire_mask__stacked",
+      "note": ""
+    },
+    {
+      "fire_id": "24103571",
+      "task_id": "G3CW2GB7UCRBIYUGYDQJGUJ2",
+      "days": 19,
+      "drive_folder": "Wildfire_FireMask_Stacked",
+      "file_prefix": "24103571__fire_mask__stacked",
+      "note": ""
+    }
+  ]
+}

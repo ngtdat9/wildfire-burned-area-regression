@@ -148,6 +148,30 @@ Examples with the corrected formula (rounded):
    restrict the result to the MODIS burned footprint.
 7. Export both rasters to Google Drive.
 
+## Daily fire-mask time series (incremental update)
+
+Phase 1 also exports a **single cumulative final burned footprint** in
+`<Id>_BurnedArea.tif`. For fire-spread **time-series** modeling, an
+additional stacked daily mask is available:
+
+| Layer | Meaning |
+|-------|---------|
+| `BurnedArea.tif` | Final cumulative burned footprint (one band) |
+| `<Id>__fire_mask__stacked.tif` | Daily cumulative mask — one band per day from `start_date` to `end_date` (1 = burned by that date, 0 = not yet) |
+
+Script: `scripts/extract_daily_fire_masks.py`
+
+Uses MODIS MCD64A1 `BurnDate` with rule: `BurnDate > 0 AND BurnDate <= day_of_year`.
+
+```bash
+python scripts/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --fire-id <fire_id>
+```
+
+Download to `data/raw/fire_mask_stacked/`, organize with
+`scripts/organize_fire_mask_stacks.py`, then align with
+`scripts/align_fire_mask_update.py` into
+`data/fire_mask_update/aligned_compressed/<fire_id>/labels/fire_mask_stacked_30m_aligned.tif`.
+
 ## Known issues / TODO
 
 1. **`area` unit — RESOLVED 2026-05-23.** Confirmed to be **m²**. The
