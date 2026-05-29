@@ -221,6 +221,93 @@ rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/
 This adds `labels/fire_mask_stacked_30m_aligned.tif` under each
 `<fire_id>/` without reprocessing existing layers.
 
+## Validation and QGIS Visualization
+
+Black rectangles in QGIS do **not** automatically mean the data is
+wrong. The stacked fire mask stores **binary 0/1** cumulative burned
+pixels per day. QGIS often loads it with default **Singleband gray**
+symbology, which renders both 0 and 1 as very dark grays — the layer
+can look like a solid black rectangle even when the GeoTIFF is valid.
+
+If your QGIS import script sets `LOAD_MASK = True` and disables other
+layers (`LOAD_BURNED_AREA`, `LOAD_SEVERITY`, etc.), you will only see the
+fire mask. Enable other layers to cross-check against the final burned
+footprint and severity map.
+
+### Validate aligned data
+
+```bash
+python scripts/validate_aligned_fire_data.py --limit 5
+python scripts/validate_aligned_fire_data.py --fire-id <fire_id>
+```
+
+Report: `data/aligned_compressed/aligned_data_validation_report.csv`
+
+### QGIS styling help
+
+```bash
+python scripts/qgis_style_fire_mask.py --fire-id <fire_id>
+```
+
+In QGIS: **Properties → Symbology → Paletted / Unique values** — set
+**0 = transparent**, **1 = red/orange**, and inspect **later bands**
+(not only Band 1) to see fire progression.
+
+### When is data considered valid?
+
+A fire folder is **`overall_valid = True`** when:
+
+1. All expected files exist (`burned_area`, `severity`, `fire_mask`,
+   `terrain`, `weather`).
+2. All GeoTIFFs open successfully with Rasterio.
+3. All layers share the same CRS, transform, width, height, and bounds.
+4. Burned area values are **0/1** with at least some valid pixels.
+5. Severity values are within **0–4**.
+6. Fire mask stack has **more than one band**, values are **0/1**, at
+   least one sample band has burned pixels, and burned pixel counts are
+   **non-decreasing** from first → middle → last band (cumulative mask).
+7. Terrain has **≥ 3 bands** with finite numeric data.
+8. Weather has **≥ 2 bands** with finite numeric data.
+
+Fires that have not yet received the merged fire-mask update will fail
+check (1) until `fire_mask_stacked_30m_aligned.tif` is present.
+
+## Visualization on Basemap
+
+Black rectangles in QGIS often come from default symbology on binary
+0/1 fire masks. These Python scripts produce map-style PNGs on
+OpenStreetMap for reports and presentations.
+
+### Single fire — actual fire-mask pixels
+
+`scripts/visualize_fire_mask_on_basemap.py` plots one selected band of
+`fire_mask_stacked_30m_aligned.tif` in red/orange (0 = transparent) on
+an OpenStreetMap basemap:
+
+```bash
+python scripts/visualize_fire_mask_on_basemap.py --fire-id <fire_id>
+python scripts/visualize_fire_mask_on_basemap.py --fire-id <fire_id> --band middle
+```
+
+Default output:
+`outputs/visualizations/<fire_id>_fire_mask_<band>.png`
+
+### Regional overview — multiple fire extents
+
+`scripts/visualize_multiple_fire_extents_on_basemap.py` draws the
+bounding box of each fire mask as a black rectangle on a regional
+OpenStreetMap map — similar to a QGIS overview screenshot with many
+study areas:
+
+```bash
+python scripts/visualize_multiple_fire_extents_on_basemap.py --limit 20
+```
+
+Default output:
+`outputs/visualizations/fire_extent_overview.png`
+
+Requires network access to fetch OSM tiles (`contextily`).
+
 ## Related docs
 
 - Phase 1: [`phase_01_burn_label_extraction.md`](./phase_01_burn_label_extraction.md)

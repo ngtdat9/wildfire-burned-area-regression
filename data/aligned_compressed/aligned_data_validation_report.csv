@@ -1,0 +1,6 @@
+fire_id,all_files_exist,all_files_readable,same_crs,same_transform,same_shape,same_bounds,burned_area_valid,burned_area_unique_values,burned_area_burned_pixels,severity_valid,severity_unique_values,severity_nonzero_pixels,fire_mask_valid,fire_mask_band_count,fire_mask_first_band_pixels,fire_mask_middle_band_pixels,fire_mask_last_band_pixels,fire_mask_non_decreasing_sample,terrain_valid,terrain_band_count,weather_valid,weather_band_count,overall_valid,error
+20562846,True,True,True,True,True,True,True,"0, 1",10033,True,"0, 1, 2",3060,True,9,0,0,833,True,True,3,True,72,True,
+20568194,True,True,True,True,True,True,True,"0, 1",739524,True,"0, 1, 2, 3, 4",196986,True,39,3400,350230,739235,True,True,3,True,252,True,
+20700973,True,True,True,True,True,True,True,"0, 1",272,True,"0, 1, 2",54,True,10,0,0,272,True,True,3,True,78,True,
+20701026,True,True,True,True,True,True,True,"0, 1",229984,True,"0, 1, 2, 3, 4",122931,True,25,561,89728,229984,True,True,3,True,168,True,
+20702159,True,True,True,True,True,True,True,"0, 1",27872,True,"0, 1, 2, 3, 4",20634,True,28,0,0,27583,True,True,3,True,186,True,
