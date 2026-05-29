@@ -24,11 +24,12 @@ trained inside Task 1.
 | 1     | Burn label extraction              | Student 1  | Completed first version         |
 | 2     | Environment & terrain extraction   | Student 2  | Completed first version         |
 | 3     | Geospatial alignment               | Student 3  | Completed first version         |
-| 4     | Tensor structuring & ML export     | Student 4  | **Not started**                 |
+| 4     | Tensor structuring & ML export     | Student 4  | Completed first version         |
 
 - Phase 1 details: [`phase_01_burn_label_extraction.md`](./phase_01_burn_label_extraction.md)
 - Phase 2 details: [`phase_02_environment_terrain_extraction.md`](./phase_02_environment_terrain_extraction.md)
 - Phase 3 details: [`phase_03_geospatial_alignment.md`](./phase_03_geospatial_alignment.md)
+- Phase 4 details: [`phase_04_tensor_structuring.md`](./phase_04_tensor_structuring.md)
 - Role / student assignment: [`role_distribution.md`](./role_distribution.md)
 - Open TODOs across the task: [`known_issues_and_todos.md`](./known_issues_and_todos.md)
 
@@ -84,10 +85,30 @@ All layers share the **Landsat severity 30 m reference grid**. GeoTIFFs
 use internal `deflate` compression but remain normal `.tif` files
 readable by Rasterio, GDAL, and QGIS.
 
-### Not yet built (Phase 4)
+### ML-ready deliverable (Phase 4)
 
-- `data/tensors/` — ML-ready tensor stacks
-- `data/splits/` — train/val/test split by **entire wildfire event**
+```
+data/tensors/<fire_id>/
+├── tensor.npz       # features (H,W,15) float32 | burned_area (H,W) uint8 | severity (H,W) uint8
+└── band_info.json   # channel names and descriptions
+data/tensors/
+└── dataset_manifest.json
+data/splits/
+├── splits.json
+├── train.txt        # 27 fire IDs
+├── val.txt          #  6 fire IDs
+└── test.txt         #  6 fire IDs
+```
+
+Feature tensor layout (15 channels):
+
+| Index | Band | Source |
+|-------|------|--------|
+| 0–2 | elevation_m, slope_deg, aspect_deg | terrain tif (static) |
+| 3–14 | 6 ERA5 weather vars × (mean, max) over fire duration | weather tif |
+
+Split is **by entire wildfire event** (seed=42, 70/15/15).
+Never split by pixel or patch — that leaks spatial information.
 
 ## Relationship to future tasks
 

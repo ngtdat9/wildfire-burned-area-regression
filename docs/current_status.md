@@ -7,7 +7,7 @@ Snapshot of where the project stands. The project is organised into
 
 | Task | Title                                   | Status                  |
 |------|-----------------------------------------|-------------------------|
-| 1    | Dataset construction & data preparation | **In progress** (Phases 1–3 done) |
+| 1    | Dataset construction & data preparation | **Completed first version** (all 4 phases done) |
 | 2+   | *(modelling, evaluation, downstream analysis)* | **Not defined yet** |
 
 > Tasks beyond Task 1 are intentionally **not defined yet** — no
@@ -22,7 +22,7 @@ Snapshot of where the project stands. The project is organised into
 | 1     | Burn label extraction              | Student 1  | Completed first version |
 | 2     | Environment & terrain extraction   | Student 2  | Completed first version |
 | 3     | Geospatial alignment               | Student 3  | Completed first version |
-| 4     | Tensor structuring & ML export     | Student 4  | **Not started**         |
+| 4     | Tensor structuring & ML export     | Student 4  | Completed first version |
 
 ### Phase 1 — Burn label extraction
 - Completed first version by **Student 1**.
@@ -51,12 +51,15 @@ Snapshot of where the project stands. The project is organised into
 - Update folder: `data/fire_mask_update/aligned_compressed/` → merge with `rsync` into main dataset.
 - Test fire `20778153` aligned successfully; full run pending for all fires.
 
-### Phase 4 — Tensor structuring & event-based splitting *(not started)*
-- **Student 4** will build ML-ready tensors from
-  `data/aligned_compressed/`.
-- Train/validation/test splits must be by **entire wildfire event**,
-  not random pixels or patches.
-- Will land under `data/tensors/` and `data/splits/` when implemented.
+### Phase 4 — Tensor structuring & event-based splitting
+- Completed first version by **Student 4**.
+- Reads aligned GeoTIFFs from `data/aligned_compressed/` (39 fires).
+- Stacks terrain + aggregated weather into 15-channel feature tensors.
+- Outputs land under `data/tensors/` (per-fire `.npz` files) and
+  `data/splits/` (train/val/test split by entire wildfire event).
+- See [`task_01_dataset_construction/phase_04_tensor_structuring.md`](./task_01_dataset_construction/phase_04_tensor_structuring.md).
+- Scripts: `scripts/build_tensors.py`, `scripts/build_splits.py`.
+- Colab notebook: `notebooks/03_phase4_tensor_export_colab.ipynb`.
 
 ## Tasks 2+ *(not defined yet)*
 

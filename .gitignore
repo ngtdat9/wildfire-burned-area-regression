@@ -98,3 +98,10 @@ models/**
 !data/aligned/*.json
 !data/fire_mask_update/*.csv
 !data/fire_mask_update/*.json
+
+# Allow Phase 4 small metadata files (tensors stay ignored, manifest does not)
+!data/tensors/dataset_manifest.json
+!data/splits/splits.json
+!data/splits/train.txt
+!data/splits/val.txt
+!data/splits/test.txt
