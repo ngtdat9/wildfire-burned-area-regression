@@ -1,0 +1,440 @@
+{
+  "n_fires_processed": 39,
+  "n_fires_success": 39,
+  "n_feature_bands": 15,
+  "feature_bands": [
+    {
+      "name": "elevation_m",
+      "source": "terrain",
+      "aggregation": "static"
+    },
+    {
+      "name": "slope_deg",
+      "source": "terrain",
+      "aggregation": "static"
+    },
+    {
+      "name": "aspect_deg",
+      "source": "terrain",
+      "aggregation": "static"
+    },
+    {
+      "name": "temperature_2m_mean",
+      "source": "weather",
+      "aggregation": "mean_over_fire_duration"
+    },
+    {
+      "name": "temperature_2m_max",
+      "source": "weather",
+      "aggregation": "max_over_fire_duration"
+    },
+    {
+      "name": "relative_humidity_pct_mean",
+      "source": "weather",
+      "aggregation": "mean_over_fire_duration"
+    },
+    {
+      "name": "relative_humidity_pct_max",
+      "source": "weather",
+      "aggregation": "max_over_fire_duration"
+    },
+    {
+      "name": "wind_speed_ms_mean",
+      "source": "weather",
+      "aggregation": "mean_over_fire_duration"
+    },
+    {
+      "name": "wind_speed_ms_max",
+      "source": "weather",
+      "aggregation": "max_over_fire_duration"
+    },
+    {
+      "name": "wind_dir_deg_mean",
+      "source": "weather",
+      "aggregation": "mean_over_fire_duration"
+    },
+    {
+      "name": "wind_dir_deg_max",
+      "source": "weather",
+      "aggregation": "max_over_fire_duration"
+    },
+    {
+      "name": "surface_pressure_mean",
+      "source": "weather",
+      "aggregation": "mean_over_fire_duration"
+    },
+    {
+      "name": "surface_pressure_max",
+      "source": "weather",
+      "aggregation": "max_over_fire_duration"
+    },
+    {
+      "name": "total_precipitation_mean",
+      "source": "weather",
+      "aggregation": "mean_over_fire_duration"
+    },
+    {
+      "name": "total_precipitation_max",
+      "source": "weather",
+      "aggregation": "max_over_fire_duration"
+    }
+  ],
+  "label_bands": [
+    "burned_area",
+    "severity"
+  ],
+  "tensor_dir": "/content/drive/MyDrive/bigdata/tensors",
+  "fires": [
+    {
+      "fire_id": "24332647",
+      "success": true,
+      "height": 1954,
+      "width": 2524,
+      "n_feature_bands": 15,
+      "n_weather_days": 55,
+      "error": ""
+    },
+    {
+      "fire_id": "24332676",
+      "success": true,
+      "height": 1336,
+      "width": 1726,
+      "n_feature_bands": 15,
+      "n_weather_days": 12,
+      "error": ""
+    },
+    {
+      "fire_id": "24332700",
+      "success": true,
+      "height": 1897,
+      "width": 2413,
+      "n_feature_bands": 15,
+      "n_weather_days": 24,
+      "error": ""
+    },
+    {
+      "fire_id": "24332702",
+      "success": true,
+      "height": 1337,
+      "width": 1699,
+      "n_feature_bands": 15,
+      "n_weather_days": 15,
+      "error": ""
+    },
+    {
+      "fire_id": "24332704",
+      "success": true,
+      "height": 1336,
+      "width": 1697,
+      "n_feature_bands": 15,
+      "n_weather_days": 22,
+      "error": ""
+    },
+    {
+      "fire_id": "24332732",
+      "success": true,
+      "height": 2144,
+      "width": 2679,
+      "n_feature_bands": 15,
+      "n_weather_days": 27,
+      "error": ""
+    },
+    {
+      "fire_id": "24332746",
+      "success": true,
+      "height": 1337,
+      "width": 1665,
+      "n_feature_bands": 15,
+      "n_weather_days": 20,
+      "error": ""
+    },
+    {
+      "fire_id": "24332760",
+      "success": true,
+      "height": 1336,
+      "width": 1652,
+      "n_feature_bands": 15,
+      "n_weather_days": 14,
+      "error": ""
+    },
+    {
+      "fire_id": "24332763",
+      "success": true,
+      "height": 1389,
+      "width": 1710,
+      "n_feature_bands": 15,
+      "n_weather_days": 56,
+      "error": ""
+    },
+    {
+      "fire_id": "24332764",
+      "success": true,
+      "height": 1336,
+      "width": 1642,
+      "n_feature_bands": 15,
+      "n_weather_days": 41,
+      "error": ""
+    },
+    {
+      "fire_id": "24332783",
+      "success": true,
+      "height": 1337,
+      "width": 1627,
+      "n_feature_bands": 15,
+      "n_weather_days": 9,
+      "error": ""
+    },
+    {
+      "fire_id": "24332787",
+      "success": true,
+      "height": 1337,
+      "width": 1615,
+      "n_feature_bands": 15,
+      "n_weather_days": 17,
+      "error": ""
+    },
+    {
+      "fire_id": "24332801",
+      "success": true,
+      "height": 1336,
+      "width": 1592,
+      "n_feature_bands": 15,
+      "n_weather_days": 17,
+      "error": ""
+    },
+    {
+      "fire_id": "24332880",
+      "success": true,
+      "height": 1337,
+      "width": 1941,
+      "n_feature_bands": 15,
+      "n_weather_days": 17,
+      "error": ""
+    },
+    {
+      "fire_id": "24332939",
+      "success": true,
+      "height": 2112,
+      "width": 2958,
+      "n_feature_bands": 15,
+      "n_weather_days": 47,
+      "error": ""
+    },
+    {
+      "fire_id": "24332956",
+      "success": true,
+      "height": 1336,
+      "width": 1843,
+      "n_feature_bands": 15,
+      "n_weather_days": 22,
+      "error": ""
+    },
+    {
+      "fire_id": "24333000",
+      "success": true,
+      "height": 1336,
+      "width": 1748,
+      "n_feature_bands": 15,
+      "n_weather_days": 40,
+      "error": ""
+    },
+    {
+      "fire_id": "24333012",
+      "success": true,
+      "height": 1337,
+      "width": 1749,
+      "n_feature_bands": 15,
+      "n_weather_days": 22,
+      "error": ""
+    },
+    {
+      "fire_id": "24333033",
+      "success": true,
+      "height": 1337,
+      "width": 1723,
+      "n_feature_bands": 15,
+      "n_weather_days": 24,
+      "error": ""
+    },
+    {
+      "fire_id": "24333039",
+      "success": true,
+      "height": 1337,
+      "width": 1719,
+      "n_feature_bands": 15,
+      "n_weather_days": 34,
+      "error": ""
+    },
+    {
+      "fire_id": "24333270",
+      "success": true,
+      "height": 1336,
+      "width": 1922,
+      "n_feature_bands": 15,
+      "n_weather_days": 14,
+      "error": ""
+    },
+    {
+      "fire_id": "24333277",
+      "success": true,
+      "height": 1336,
+      "width": 1906,
+      "n_feature_bands": 15,
+      "n_weather_days": 10,
+      "error": ""
+    },
+    {
+      "fire_id": "24333279",
+      "success": true,
+      "height": 1336,
+      "width": 1900,
+      "n_feature_bands": 15,
+      "n_weather_days": 14,
+      "error": ""
+    },
+    {
+      "fire_id": "24461320",
+      "success": true,
+      "height": 1337,
+      "width": 1802,
+      "n_feature_bands": 15,
+      "n_weather_days": 20,
+      "error": ""
+    },
+    {
+      "fire_id": "24461328",
+      "success": true,
+      "height": 1337,
+      "width": 1785,
+      "n_feature_bands": 15,
+      "n_weather_days": 28,
+      "error": ""
+    },
+    {
+      "fire_id": "24461421",
+      "success": true,
+      "height": 1337,
+      "width": 1744,
+      "n_feature_bands": 15,
+      "n_weather_days": 10,
+      "error": ""
+    },
+    {
+      "fire_id": "24461607",
+      "success": true,
+      "height": 1336,
+      "width": 1698,
+      "n_feature_bands": 15,
+      "n_weather_days": 15,
+      "error": ""
+    },
+    {
+      "fire_id": "24461771",
+      "success": true,
+      "height": 1336,
+      "width": 1608,
+      "n_feature_bands": 15,
+      "n_weather_days": 28,
+      "error": ""
+    },
+    {
+      "fire_id": "24461899",
+      "success": true,
+      "height": 2046,
+      "width": 3040,
+      "n_feature_bands": 15,
+      "n_weather_days": 26,
+      "error": ""
+    },
+    {
+      "fire_id": "24461996",
+      "success": true,
+      "height": 1337,
+      "width": 1969,
+      "n_feature_bands": 15,
+      "n_weather_days": 13,
+      "error": ""
+    },
+    {
+      "fire_id": "24462263",
+      "success": true,
+      "height": 1336,
+      "width": 1881,
+      "n_feature_bands": 15,
+      "n_weather_days": 30,
+      "error": ""
+    },
+    {
+      "fire_id": "24462335",
+      "success": true,
+      "height": 1336,
+      "width": 1869,
+      "n_feature_bands": 15,
+      "n_weather_days": 26,
+      "error": ""
+    },
+    {
+      "fire_id": "24462488",
+      "success": true,
+      "height": 1446,
+      "width": 2002,
+      "n_feature_bands": 15,
+      "n_weather_days": 30,
+      "error": ""
+    },
+    {
+      "fire_id": "24462610",
+      "success": true,
+      "height": 1336,
+      "width": 1827,
+      "n_feature_bands": 15,
+      "n_weather_days": 31,
+      "error": ""
+    },
+    {
+      "fire_id": "24462753",
+      "success": true,
+      "height": 1337,
+      "width": 1804,
+      "n_feature_bands": 15,
+      "n_weather_days": 24,
+      "error": ""
+    },
+    {
+      "fire_id": "24462788",
+      "success": true,
+      "height": 1337,
+      "width": 1793,
+      "n_feature_bands": 15,
+      "n_weather_days": 20,
+      "error": ""
+    },
+    {
+      "fire_id": "24462819",
+      "success": true,
+      "height": 1476,
+      "width": 1945,
+      "n_feature_bands": 15,
+      "n_weather_days": 28,
+      "error": ""
+    },
+    {
+      "fire_id": "24462847",
+      "success": true,
+      "height": 1337,
+      "width": 1752,
+      "n_feature_bands": 15,
+      "n_weather_days": 39,
+      "error": ""
+    },
+    {
+      "fire_id": "24463187",
+      "success": true,
+      "height": 1336,
+      "width": 1959,
+      "n_feature_bands": 15,
+      "n_weather_days": 7,
+      "error": ""
+    }
+  ]
+}

@@ -43,13 +43,15 @@ inside Task 1 (Dataset Construction & Data Preparation).
 - [ ] **Corrupted raw inputs.** Log and optionally re-export any fire
       whose Phase 1/2 GeoTIFFs fail to open during alignment.
 
-### Phase 4 — Tensor construction & event-based splitting (Student 4)
+### Phase 4 — Tensor construction & event-based splitting (Student 4) — completed
 
-- [ ] Build ML-ready tensors from `data/aligned_compressed/<fire_id>/`.
-- [ ] Split train / validation / test by **entire wildfire event** — not
+- [x] Build ML-ready tensors from `data/aligned_compressed/<fire_id>/`.
+      → `data/tensors/<fire_id>/tensor.npz`
+- [x] Split train / validation / test by **entire wildfire event** — not
       random pixels or patches.
-- [ ] Choose on-disk tensor format (NPZ, Zarr, …).
-- [ ] Add `docs/task_01_dataset_construction/phase_04_*.md`.
+      → `data/splits/splits.json`, `train.txt`, `val.txt`, `test.txt`
+- [x] Tensor format chosen: compressed NumPy NPZ.
+- [x] `docs/task_01_dataset_construction/phase_04_tensor_structuring.md` added.
 
 ## Cross-cutting (open)
 
@@ -99,9 +101,15 @@ Known limitation (documented, not a blocker):
 - ERA5 bilinear upsampling to 30 m adds grid compatibility, not real
   weather spatial detail.
 
-## Phase 4 — Tensor structuring & ML export (Student 4) — not started
+## Phase 4 — Tensor structuring & ML export (Student 4) — completed first version
 
-- [ ] Use `data/aligned_compressed/` as input (include merged
-      `fire_mask_stacked_30m_aligned.tif` for time-series modeling).
-- [ ] Event-based train/val/test split policy.
-- [ ] Tensor format and folder layout under `data/tensors/`, `data/splits/`.
+See [`phase_04_tensor_structuring.md`](./phase_04_tensor_structuring.md) for full spec.
+
+- [x] Event-based train/val/test split (70/15/15, seed=42, by fire event).
+- [x] 15-channel feature tensor: terrain (3) + aggregated weather (12).
+- [x] Per-fire `tensor.npz` + `band_info.json` under `data/tensors/`.
+- [x] `dataset_manifest.json` for downstream task discovery.
+
+Open item:
+- [ ] Extend to include `fire_mask_stacked_30m_aligned.tif` as an
+      additional input channel once the daily fire-mask update is complete.
