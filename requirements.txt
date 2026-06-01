@@ -5,4 +5,7 @@ rasterio
 geopandas
 pyyaml
 matplotlib
+contextily
+shapely
+pyproj
 jupyter
