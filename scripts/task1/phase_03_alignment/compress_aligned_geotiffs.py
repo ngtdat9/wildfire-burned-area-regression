@@ -11,18 +11,18 @@ that fire are compressed and verified — freeing disk space progressively.
 Usage (from project root):
 
     # Test one fire, keep original
-    python scripts/compress_aligned_geotiffs.py --fire-id 20562846
+    python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py --fire-id 20562846
 
     # Test one fire, delete original only if everything succeeds
-    python scripts/compress_aligned_geotiffs.py \\
+    python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py \\
         --fire-id 20562846 --delete-original-after-success
 
     # First 5 fires, delete originals after each success
-    python scripts/compress_aligned_geotiffs.py \\
+    python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py \\
         --limit 5 --delete-original-after-success
 
     # All remaining aligned fires
-    python scripts/compress_aligned_geotiffs.py --delete-original-after-success
+    python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py --delete-original-after-success
 """
 
 from __future__ import annotations

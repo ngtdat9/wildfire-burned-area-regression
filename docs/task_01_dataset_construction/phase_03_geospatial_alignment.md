@@ -7,10 +7,10 @@
 - **Assigned student:** Student 3
 - **Status:** Completed first version
 - **Scripts:**
-  - `scripts/align_fire_event_layers.py` — reproject/resample layers
-  - `scripts/compress_aligned_geotiffs.py` — storage-safe compression
-  - `scripts/check_phase1_phase2_inventory.py` — pre-alignment inventory
-  - `scripts/test_geotiff_compression.py` — optional one-fire compression test
+  - `scripts/task1/phase_03_alignment/align_fire_event_layers.py` — reproject/resample layers
+  - `scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py` — storage-safe compression
+  - `scripts/task1/validation/check_phase1_phase2_inventory.py` — pre-alignment inventory
+  - `scripts/task1/phase_03_alignment/test_geotiff_compression.py` — optional one-fire compression test
 
 ## Purpose
 
@@ -38,7 +38,7 @@ Prerequisites:
 
 1. Phase 1 outputs organized under `data/raw/satellite_labels/<fire_id>/`
 2. Phase 2 outputs organized under `data/raw/environment_terrain/<fire_id>/`
-3. Inventory check: `python scripts/check_phase1_phase2_inventory.py`
+3. Inventory check: `python scripts/task1/validation/check_phase1_phase2_inventory.py`
 
 Only fire IDs with `ready_for_phase3=True` in
 `data/raw/csv/phase1_phase2_inventory.csv` were processed.
@@ -106,7 +106,7 @@ Important:
 - **No manual decompression** is needed before reading them.
 - Open directly with **Rasterio**, **GDAL**, or **QGIS**.
 
-Compression settings (via `scripts/compress_aligned_geotiffs.py`):
+Compression settings (via `scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py`):
 
 - `compress="deflate"`
 - `tiled=True`, `blockxsize=256`, `blockysize=256`
@@ -118,26 +118,26 @@ Compression settings (via `scripts/compress_aligned_geotiffs.py`):
 **Check inventory before alignment:**
 
 ```bash
-python scripts/check_phase1_phase2_inventory.py
+python scripts/task1/validation/check_phase1_phase2_inventory.py
 ```
 
 **Align one fire:**
 
 ```bash
-python scripts/align_fire_event_layers.py --fire-id <fire_id>
+python scripts/task1/phase_03_alignment/align_fire_event_layers.py --fire-id <fire_id>
 ```
 
 **Compress aligned outputs (storage-safe — delete uncompressed copy after success):**
 
 ```bash
-python scripts/compress_aligned_geotiffs.py --delete-original-after-success
+python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py --delete-original-after-success
 ```
 
 **Align + compress one fire (two steps):**
 
 ```bash
-python scripts/align_fire_event_layers.py --fire-id <fire_id>
-python scripts/compress_aligned_geotiffs.py \
+python scripts/task1/phase_03_alignment/align_fire_event_layers.py --fire-id <fire_id>
+python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py \
     --fire-id <fire_id> \
     --delete-original-after-success
 ```
@@ -203,10 +203,10 @@ data/fire_mask_update/aligned_compressed/<fire_id>/labels/
 
 ### Pipeline
 
-1. **Extract** (GEE): `scripts/extract_daily_fire_masks.py`
+1. **Extract** (GEE): `scripts/task1/phase_01_burn_labels/extract_daily_fire_masks.py`
 2. **Download** from Drive → `data/raw/fire_mask_stacked/`
-3. **Organize**: `scripts/organize_fire_mask_stacks.py`
-4. **Align** to severity 30 m grid: `scripts/align_fire_mask_update.py`
+3. **Organize**: `scripts/task1/phase_01_burn_labels/organize_fire_mask_stacks.py`
+4. **Align** to severity 30 m grid: `scripts/task1/phase_03_alignment/align_fire_mask_update.py`
 
 Summary: `data/fire_mask_update/fire_mask_update_summary.csv`
 
@@ -237,8 +237,8 @@ footprint and severity map.
 ### Validate aligned data
 
 ```bash
-python scripts/validate_aligned_fire_data.py --limit 5
-python scripts/validate_aligned_fire_data.py --fire-id <fire_id>
+python scripts/task1/validation/validate_aligned_fire_data.py --limit 5
+python scripts/task1/validation/validate_aligned_fire_data.py --fire-id <fire_id>
 ```
 
 Report: `data/aligned_compressed/aligned_data_validation_report.csv`
@@ -246,7 +246,7 @@ Report: `data/aligned_compressed/aligned_data_validation_report.csv`
 ### QGIS styling help
 
 ```bash
-python scripts/qgis_style_fire_mask.py --fire-id <fire_id>
+python scripts/task1/visualization/qgis_style_fire_mask.py --fire-id <fire_id>
 ```
 
 In QGIS: **Properties → Symbology → Paletted / Unique values** — set
@@ -280,13 +280,13 @@ OpenStreetMap for reports and presentations.
 
 ### Single fire — actual fire-mask pixels
 
-`scripts/visualize_fire_mask_on_basemap.py` plots one selected band of
+`scripts/task1/visualization/visualize_fire_mask_on_basemap.py` plots one selected band of
 `fire_mask_stacked_30m_aligned.tif` in red/orange (0 = transparent) on
 an OpenStreetMap basemap:
 
 ```bash
-python scripts/visualize_fire_mask_on_basemap.py --fire-id <fire_id>
-python scripts/visualize_fire_mask_on_basemap.py --fire-id <fire_id> --band middle
+python scripts/task1/visualization/visualize_fire_mask_on_basemap.py --fire-id <fire_id>
+python scripts/task1/visualization/visualize_fire_mask_on_basemap.py --fire-id <fire_id> --band middle
 ```
 
 Default output:
@@ -294,13 +294,13 @@ Default output:
 
 ### Regional overview — multiple fire extents
 
-`scripts/visualize_multiple_fire_extents_on_basemap.py` draws the
+`scripts/task1/visualization/visualize_multiple_fire_extents_on_basemap.py` draws the
 bounding box of each fire mask as a black rectangle on a regional
 OpenStreetMap map — similar to a QGIS overview screenshot with many
 study areas:
 
 ```bash
-python scripts/visualize_multiple_fire_extents_on_basemap.py --limit 20
+python scripts/task1/visualization/visualize_multiple_fire_extents_on_basemap.py --limit 20
 ```
 
 Default output:

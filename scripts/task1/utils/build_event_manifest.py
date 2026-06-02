@@ -17,7 +17,7 @@ future phases (e.g. once a GeoTIFF has been downloaded into
 `data/raw/satellite_labels/` we can flip `burn_labels.exported` to True).
 
 Usage (from project root):
-    python scripts/build_event_manifest.py data/raw/csv/fire_all.csv
+    python scripts/task1/utils/build_event_manifest.py data/raw/csv/fire_all.csv
 
 NOTE: This script does NOT perform any geospatial alignment — that is
 the responsibility of Phase 3.

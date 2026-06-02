@@ -19,10 +19,10 @@ Output:
 
 Usage (from project root):
 
-    python scripts/build_splits.py
-    python scripts/build_splits.py --train 0.7 --val 0.15 --test 0.15
-    python scripts/build_splits.py --seed 99
-    python scripts/build_splits.py --splits-dir data/splits
+    python scripts/task1/phase_04_tensors/build_splits.py
+    python scripts/task1/phase_04_tensors/build_splits.py --train 0.7 --val 0.15 --test 0.15
+    python scripts/task1/phase_04_tensors/build_splits.py --seed 99
+    python scripts/task1/phase_04_tensors/build_splits.py --splits-dir data/splits
 """
 
 from __future__ import annotations

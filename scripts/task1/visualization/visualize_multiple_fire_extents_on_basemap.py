@@ -6,8 +6,8 @@ regional overview map (similar to a QGIS extent screenshot).
 
 Usage (from project root):
 
-    python scripts/visualize_multiple_fire_extents_on_basemap.py --limit 20
-    python scripts/visualize_multiple_fire_extents_on_basemap.py --limit 20 \\
+    python scripts/task1/visualization/visualize_multiple_fire_extents_on_basemap.py --limit 20
+    python scripts/task1/visualization/visualize_multiple_fire_extents_on_basemap.py --limit 20 \\
         --output outputs/visualizations/fire_extent_overview.png
 """
 

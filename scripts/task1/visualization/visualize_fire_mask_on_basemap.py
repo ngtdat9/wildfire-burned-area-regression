@@ -5,9 +5,9 @@ Plot one aligned fire-mask band on an OpenStreetMap basemap and save PNG.
 
 Usage (from project root):
 
-    python scripts/visualize_fire_mask_on_basemap.py --fire-id 20562846
-    python scripts/visualize_fire_mask_on_basemap.py --fire-id 20562846 --band middle
-    python scripts/visualize_fire_mask_on_basemap.py --fire-id 20562846 --band 5
+    python scripts/task1/visualization/visualize_fire_mask_on_basemap.py --fire-id 20562846
+    python scripts/task1/visualization/visualize_fire_mask_on_basemap.py --fire-id 20562846 --band middle
+    python scripts/task1/visualization/visualize_fire_mask_on_basemap.py --fire-id 20562846 --band 5
 """
 
 from __future__ import annotations

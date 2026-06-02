@@ -7,10 +7,10 @@ phases. Each phase is owned by one student / role.
 
 | Role        | Phase | Responsibility                              | Script                                          | Status                  |
 |-------------|-------|---------------------------------------------|-------------------------------------------------|-------------------------|
-| Student 1   | 1     | Burn label extraction (MODIS + Landsat)     | `scripts/extract_burn_labels.py`                | Completed first version |
-| Student 2   | 2     | Environment & terrain extraction (ERA5 + SRTM) | `scripts/extract_environment_terrain.py`     | Completed first version |
-| Student 3   | 3     | Geospatial alignment onto common 30 m grid  | `scripts/align_fire_event_layers.py`            | Completed first version |
-| Student 4   | 4     | Tensor structuring & ML-ready dataset export | `scripts/build_tensors.py`, `scripts/build_splits.py` | Completed first version |
+| Student 1   | 1     | Burn label extraction (MODIS + Landsat)     | `scripts/task1/phase_01_burn_labels/extract_burn_labels.py`                | Completed first version |
+| Student 2   | 2     | Environment & terrain extraction (ERA5 + SRTM) | `scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py`     | Completed first version |
+| Student 3   | 3     | Geospatial alignment onto common 30 m grid  | `scripts/task1/phase_03_alignment/align_fire_event_layers.py`            | Completed first version |
+| Student 4   | 4     | Temporal tensors & event-based splits | `scripts/task1/phase_04_tensors/create_event_splits.py`, `build_temporal_tensors.py` (legacy: `build_tensors.py`, `build_splits.py`) | Completed first version |
 
 ## Hand-off contract between phases
 
@@ -26,7 +26,7 @@ naming, CRS, and metadata conventions must stay consistent.
   [`phase_03_geospatial_alignment.md`](./phase_03_geospatial_alignment.md).
 - **Phase 4 → downstream tasks**: produces ML-ready tensors under
   `data/tensors/<fire_id>/tensor.npz` and event-level splits under
-  `data/splits/`. See [`phase_04_tensor_structuring.md`](./phase_04_tensor_structuring.md).
+  `data/splits/`. See [`phase_04_tensor_construction.md`](./phase_04_tensor_construction.md).
 
 ## Role expectations
 
@@ -40,5 +40,5 @@ naming, CRS, and metadata conventions must stay consistent.
   Must keep `phase_03_geospatial_alignment.md` and the Phase 3 TODOs
   in `known_issues_and_todos.md` up to date.
 - **Student 4 (Phase 4)** — owns the tensor structuring and split
-  pipeline. Must keep `phase_04_tensor_structuring.md` and the Phase 4
+  pipeline. Must keep `phase_04_tensor_construction.md` and the Phase 4
   TODOs in `known_issues_and_todos.md` up to date.

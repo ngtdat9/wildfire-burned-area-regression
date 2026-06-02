@@ -21,8 +21,8 @@ Same ROI logic as Phase 1 (``area`` in m², ``--buffer`` floor).
 
 Usage (from project root):
 
-    python scripts/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --limit 1
-    python scripts/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --fire-id 20778153
+    python scripts/task1/phase_01_burn_labels/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --limit 1
+    python scripts/task1/phase_01_burn_labels/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --fire-id 20778153
 """
 
 from __future__ import annotations

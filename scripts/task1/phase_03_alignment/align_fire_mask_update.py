@@ -15,9 +15,9 @@ Reference grid (first found):
 
 Usage (from project root):
 
-    python scripts/align_fire_mask_update.py --fire-id 20778153
-    python scripts/align_fire_mask_update.py --limit 5
-    python scripts/align_fire_mask_update.py --skip-existing
+    python scripts/task1/phase_03_alignment/align_fire_mask_update.py --fire-id 20778153
+    python scripts/task1/phase_03_alignment/align_fire_mask_update.py --limit 5
+    python scripts/task1/phase_03_alignment/align_fire_mask_update.py --skip-existing
 """
 
 from __future__ import annotations

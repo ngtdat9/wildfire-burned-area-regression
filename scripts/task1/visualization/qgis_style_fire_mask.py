@@ -9,8 +9,8 @@ correct visualization steps.
 
 Usage (from project root):
 
-    python scripts/qgis_style_fire_mask.py
-    python scripts/qgis_style_fire_mask.py --fire-id 20778153
+    python scripts/task1/visualization/qgis_style_fire_mask.py
+    python scripts/task1/visualization/qgis_style_fire_mask.py --fire-id 20778153
 """
 
 from __future__ import annotations
@@ -88,11 +88,11 @@ Validate data before blaming symbology
 --------------------------------------
 Black rectangles do **not** automatically mean corrupt data. Confirm with:
 
-    python scripts/validate_aligned_fire_data.py --fire-id {args.fire_id}
+    python scripts/task1/validation/validate_aligned_fire_data.py --fire-id {args.fire_id}
 
 or for a quick batch check:
 
-    python scripts/validate_aligned_fire_data.py --limit 5
+    python scripts/task1/validation/validate_aligned_fire_data.py --limit 5
 
 If ``overall_valid`` is True in the CSV report, the GeoTIFF metadata and
 pixel values are consistent; adjust QGIS styling as above.

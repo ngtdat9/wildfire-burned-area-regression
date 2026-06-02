@@ -6,7 +6,7 @@
 
 - **Assigned student:** Student 1
 - **Status:** Completed first version
-- **Script:** `scripts/extract_burn_labels.py`
+- **Script:** `scripts/task1/phase_01_burn_labels/extract_burn_labels.py`
 - **Config example:** `configs/burn_label_config.example.yaml`
 
 ## Inputs
@@ -45,13 +45,13 @@ They may arrive as a flat list of files (e.g. `20900040_BurnedArea.tif`,
 run:
 
 ```bash
-python scripts/organize_satellite_labels.py
+python scripts/task1/phase_01_burn_labels/organize_satellite_labels.py
 ```
 
 Or specify a custom folder:
 
 ```bash
-python scripts/organize_satellite_labels.py --input-dir data/raw/satellite_labels
+python scripts/task1/phase_01_burn_labels/organize_satellite_labels.py --input-dir data/raw/satellite_labels
 ```
 
 This produces a layout such as:
@@ -128,7 +128,7 @@ Examples with the corrected formula (rounded):
 > **Warning** — before running the full CSV, always test one fire and
 > verify the printed `ROI buffer` is in the kilometres-to-tens-of-km
 > range (not thousands) and that the Landsat scene count is sane.
-> Run `python scripts/validate_fire_csv.py data/raw/csv/fire_all.csv`
+> Run `python scripts/task1/validation/validate_fire_csv.py data/raw/csv/fire_all.csv`
 > first; it will summarise the `area` column and flag it if the
 > magnitude does not look like m².
 
@@ -159,17 +159,17 @@ additional stacked daily mask is available:
 | `BurnedArea.tif` | Final cumulative burned footprint (one band) |
 | `<Id>__fire_mask__stacked.tif` | Daily cumulative mask — one band per day from `start_date` to `end_date` (1 = burned by that date, 0 = not yet) |
 
-Script: `scripts/extract_daily_fire_masks.py`
+Script: `scripts/task1/phase_01_burn_labels/extract_daily_fire_masks.py`
 
 Uses MODIS MCD64A1 `BurnDate` with rule: `BurnDate > 0 AND BurnDate <= day_of_year`.
 
 ```bash
-python scripts/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --fire-id <fire_id>
+python scripts/task1/phase_01_burn_labels/extract_daily_fire_masks.py data/raw/csv/fire_all.csv --fire-id <fire_id>
 ```
 
 Download to `data/raw/fire_mask_stacked/`, organize with
-`scripts/organize_fire_mask_stacks.py`, then align with
-`scripts/align_fire_mask_update.py` into
+`scripts/task1/phase_01_burn_labels/organize_fire_mask_stacks.py`, then align with
+`scripts/task1/phase_03_alignment/align_fire_mask_update.py` into
 `data/fire_mask_update/aligned_compressed/<fire_id>/labels/fire_mask_stacked_30m_aligned.tif`.
 
 ## Known issues / TODO

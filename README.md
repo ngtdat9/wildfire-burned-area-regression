@@ -22,8 +22,8 @@ from weather and terrain inputs.
 
 The full project is organised into **tasks**. This repository is
 currently focused on **Task 1 — Dataset Construction & Data
-Preparation**. Phases 1, 2, and 3 are **completed as first versions**.
-Phase 4 (tensor construction) is next.
+Preparation**, which is **completed** as a first working version (Phases 1–4).
+Task 2+ (modelling) is not defined yet.
 
 Future tasks (modelling, evaluation, downstream analysis) are **not
 defined yet**.
@@ -35,7 +35,7 @@ defined yet**.
 | 1     | Burn label extraction              | Student 1  | Completed first version         |
 | 2     | Environment & terrain extraction   | Student 2  | Completed first version         |
 | 3     | Geospatial alignment               | Student 3  | Completed first version         |
-| 4     | Tensor structuring & ML export     | Student 4  | **Not started**                 |
+| 4     | Temporal tensor construction       | Student 4  | Completed first version         |
 
 ### Phase 3 summary
 
@@ -95,25 +95,15 @@ wildfire-burned-area-regression/
 │   ├── aligned/                    # temporary alignment workspace (often empty)
 │   ├── aligned_compressed/         # Phase 3 final deliverable (by fire_id/)
 │   ├── fire_mask_update/           # incremental daily fire-mask alignment
-│   ├── tensors/                    # Phase 4 (not started)
-│   └── splits/                     # Phase 4 (not started)
+│   ├── tensors/                    # Phase 4 temporal NPZ (gitignored)
+│   └── splits/                     # Phase 4 event splits
 ├── scripts/
-│   ├── extract_burn_labels.py
-│   ├── extract_environment_terrain.py
-│   ├── extract_daily_fire_masks.py
-│   ├── organize_satellite_labels.py
-│   ├── organize_environment_terrain.py
-│   ├── organize_fire_mask_stacks.py
-│   ├── check_phase1_phase2_inventory.py
-│   ├── align_fire_event_layers.py
-│   ├── align_fire_mask_update.py
-│   ├── compress_aligned_geotiffs.py
-│   ├── test_geotiff_compression.py
-│   ├── validate_fire_csv.py
-│   └── build_event_manifest.py
+│   └── task1/                      # Task 1 entrypoints (by phase)
 ├── notebooks/
 ├── configs/
 ├── docs/
+├── outputs/                        # figures, validation maps
+├── reports/
 └── requirements.txt
 ```
 
@@ -133,7 +123,7 @@ earthengine authenticate   # Phases 1 & 2 only (Google Earth Engine)
 See `docs/task_01_dataset_construction/phase_01_burn_label_extraction.md`.
 
 ```bash
-python scripts/extract_burn_labels.py \
+python scripts/task1/phase_01_burn_labels/extract_burn_labels.py \
     data/raw/csv/fire_all.csv \
     --folder Wildfire_Burn_Labels \
     --buffer 20000
@@ -142,7 +132,7 @@ python scripts/extract_burn_labels.py \
 Organize downloads:
 
 ```bash
-python scripts/organize_satellite_labels.py
+python scripts/task1/phase_01_burn_labels/organize_satellite_labels.py
 ```
 
 ## Phase 2 — Environment & terrain extraction
@@ -150,7 +140,7 @@ python scripts/organize_satellite_labels.py
 See `docs/task_01_dataset_construction/phase_02_environment_terrain_extraction.md`.
 
 ```bash
-python scripts/extract_environment_terrain.py \
+python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
     data/raw/csv/fire_all.csv \
     --project wildfire-area-regression \
     --folder Wildfire_Environment_Exports \
@@ -161,7 +151,7 @@ python scripts/extract_environment_terrain.py \
 Organize downloads:
 
 ```bash
-python scripts/organize_environment_terrain.py
+python scripts/task1/phase_02_environment_terrain/organize_environment_terrain.py
 ```
 
 ## Phase 3 — Geospatial alignment & compression
@@ -171,27 +161,27 @@ See `docs/task_01_dataset_construction/phase_03_geospatial_alignment.md`.
 **Check which fires are ready to align:**
 
 ```bash
-python scripts/check_phase1_phase2_inventory.py
+python scripts/task1/validation/check_phase1_phase2_inventory.py
 ```
 
 **Align one fire:**
 
 ```bash
-python scripts/align_fire_event_layers.py --fire-id <fire_id>
+python scripts/task1/phase_03_alignment/align_fire_event_layers.py --fire-id <fire_id>
 ```
 
 **Compress aligned GeoTIFFs** (writes to `data/aligned_compressed/`,
 optionally deletes uncompressed `data/aligned/<fire_id>/` after success):
 
 ```bash
-python scripts/compress_aligned_geotiffs.py --delete-original-after-success
+python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py --delete-original-after-success
 ```
 
 **Typical one-fire workflow (align then compress):**
 
 ```bash
-python scripts/align_fire_event_layers.py --fire-id <fire_id>
-python scripts/compress_aligned_geotiffs.py \
+python scripts/task1/phase_03_alignment/align_fire_event_layers.py --fire-id <fire_id>
+python scripts/task1/phase_03_alignment/compress_aligned_geotiffs.py \
     --fire-id <fire_id> \
     --delete-original-after-success
 ```
@@ -205,7 +195,7 @@ main `data/aligned_compressed/` folder until you merge.
 **Extract (GEE, one fire):**
 
 ```bash
-python scripts/extract_daily_fire_masks.py \
+python scripts/task1/phase_01_burn_labels/extract_daily_fire_masks.py \
     data/raw/csv/fire_all.csv \
     --fire-id <fire_id>
 ```
@@ -213,13 +203,13 @@ python scripts/extract_daily_fire_masks.py \
 **Organize downloads:**
 
 ```bash
-python scripts/organize_fire_mask_stacks.py
+python scripts/task1/phase_01_burn_labels/organize_fire_mask_stacks.py
 ```
 
 **Align to 30 m severity grid:**
 
 ```bash
-python scripts/align_fire_mask_update.py --fire-id <fire_id>
+python scripts/task1/phase_03_alignment/align_fire_mask_update.py --fire-id <fire_id>
 ```
 
 **Merge into main dataset after verification:**
@@ -231,14 +221,24 @@ rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/
 ## Helper scripts
 
 ```bash
-python scripts/validate_fire_csv.py data/raw/csv/fire_all.csv
-python scripts/build_event_manifest.py data/raw/csv/fire_all.csv
+python scripts/task1/validation/validate_fire_csv.py data/raw/csv/fire_all.csv
+python scripts/task1/utils/build_event_manifest.py data/raw/csv/fire_all.csv
 ```
 
-## Not implemented yet
+## Phase 4 — Event splits & temporal tensors
 
-- **Phase 4 — Tensor structuring & event-based splitting** (Student 4).
-  No code under `data/tensors/` or `data/splits/` yet.
+See `docs/task_01_dataset_construction/phase_04_tensor_construction.md` and
+`docs/task_01_dataset_construction/task_01_completion_summary.md`.
+
+**X** = fire mask + weather for [t−3…t]; **Y** = fire mask at t+1. Splits are
+by **entire wildfire event** (70/15/15, seed 42), not random pixels.
+
+```bash
+python scripts/task1/phase_04_tensors/create_event_splits.py
+python scripts/task1/phase_04_tensors/build_temporal_tensors.py --split train --skip-existing
+```
+
+Large NPZ files belong on **Google Drive**, not Git.
 
 ## Documentation
 
@@ -247,4 +247,6 @@ python scripts/build_event_manifest.py data/raw/csv/fire_all.csv
 | `docs/current_status.md` | Project status snapshot |
 | `docs/task_01_dataset_construction/task_01_overview.md` | Task 1 overview |
 | `docs/task_01_dataset_construction/phase_03_geospatial_alignment.md` | Phase 3 spec & delivery |
+| `docs/task_01_dataset_construction/phase_04_tensor_construction.md` | Phase 4 temporal tensors |
+| `docs/task_01_dataset_construction/task_01_completion_summary.md` | Task 1 completion summary |
 | `docs/task_01_dataset_construction/known_issues_and_todos.md` | Open TODOs |

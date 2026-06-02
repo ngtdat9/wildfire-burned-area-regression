@@ -1,43 +1,41 @@
 """
-organize_environment_terrain.py
-================================
-After Phase 2 (environment & terrain extraction), download the exported
-GeoTIFFs from Google Drive into:
+organize_satellite_labels.py
+============================
+After Phase 1 (burn label extraction), download the exported GeoTIFFs
+from Google Drive into:
 
-    data/raw/environment_terrain/
+    data/raw/satellite_labels/
 
 Files often arrive in one flat folder, for example:
 
-    data/raw/environment_terrain/
-    ├── 20778153__terrain__static.tif
-    ├── 20778153__weather__stacked.tif
-    ├── 20778186__terrain__static.tif
-    └── 20778186__weather__stacked.tif
+    data/raw/satellite_labels/
+    ├── 20900040_BurnedArea.tif
+    ├── 20900040_Severity.tif
+    ├── 20899967_BurnedArea.tif
+    └── 20899967_Severity.tif
 
 This script groups them by fire ID:
 
-    data/raw/environment_terrain/
-    ├── 20778153/
-    │   ├── 20778153__terrain__static.tif
-    │   └── 20778153__weather__stacked.tif
-    └── 20778186/
-        ├── 20778186__terrain__static.tif
-        └── 20778186__weather__stacked.tif
+    data/raw/satellite_labels/
+    ├── 20900040/
+    │   ├── 20900040_BurnedArea.tif
+    │   └── 20900040_Severity.tif
+    └── 20899967/
+        ├── 20899967_BurnedArea.tif
+        └── 20899967_Severity.tif
 
 The fire ID is taken from the part of the filename before the first
-double underscore (``__``), e.g.
-``20778153__terrain__static.tif`` → ``20778153``.
+underscore (e.g. ``20900040_BurnedArea.tif`` → ``20900040``).
 
 Only files sitting **directly** in the input folder are moved. Files
-already inside subfolders are left alone. If a destination file already
-exists, the file is skipped (not overwritten).
+already inside subfolders are left alone.
 
 Usage (from project root):
 
-    python scripts/organize_environment_terrain.py
+    python scripts/task1/phase_01_burn_labels/organize_satellite_labels.py
 
-    python scripts/organize_environment_terrain.py \\
-        --input-dir data/raw/environment_terrain
+    python scripts/task1/phase_01_burn_labels/organize_satellite_labels.py \\
+        --input-dir data/raw/satellite_labels
 """
 
 from __future__ import annotations
@@ -48,16 +46,16 @@ import sys
 from pathlib import Path
 
 
-DEFAULT_INPUT_DIR = Path("data/raw/environment_terrain")
+DEFAULT_INPUT_DIR = Path("data/raw/satellite_labels")
 VALID_SUFFIXES = {".tif", ".tiff"}
 
 
 def fire_id_from_filename(filename: str) -> str | None:
-    """Return the fire ID (text before the first ``__``) or None if invalid."""
+    """Return the fire ID (text before the first '_') or None if invalid."""
     stem = Path(filename).stem
-    if "__" not in stem:
+    if "_" not in stem:
         return None
-    fire_id = stem.split("__", 1)[0]
+    fire_id = stem.split("_", 1)[0]
     return fire_id if fire_id else None
 
 
@@ -89,7 +87,7 @@ def organize(input_dir: Path) -> int:
     for src in sorted(candidates):
         fire_id = fire_id_from_filename(src.name)
         if fire_id is None:
-            print(f"[WARN] Skipping (no '__' in name): {src.name}")
+            print(f"[WARN] Skipping (no '_' in name): {src.name}")
             files_skipped += 1
             continue
 
@@ -125,8 +123,8 @@ def organize(input_dir: Path) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Organize flat Phase 2 environment/terrain GeoTIFFs into one "
-            "subfolder per fire ID under data/raw/environment_terrain/."
+            "Organize flat Phase 1 burn-label GeoTIFFs into one subfolder "
+            "per fire ID under data/raw/satellite_labels/."
         )
     )
     parser.add_argument(

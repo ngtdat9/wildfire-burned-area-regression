@@ -21,7 +21,7 @@ This script groups them by fire ID (text before the first ``__``):
 
 Usage (from project root):
 
-    python scripts/organize_fire_mask_stacks.py
+    python scripts/task1/phase_01_burn_labels/organize_fire_mask_stacks.py
 """
 
 from __future__ import annotations

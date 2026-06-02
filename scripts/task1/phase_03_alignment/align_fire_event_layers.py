@@ -27,9 +27,9 @@ Resampling:
 
 Usage (from project root):
 
-    python scripts/align_fire_event_layers.py --limit 1
-    python scripts/align_fire_event_layers.py --fire-id 20562846
-    python scripts/align_fire_event_layers.py --limit 5
+    python scripts/task1/phase_03_alignment/align_fire_event_layers.py --limit 1
+    python scripts/task1/phase_03_alignment/align_fire_event_layers.py --fire-id 20562846
+    python scripts/task1/phase_03_alignment/align_fire_event_layers.py --limit 5
 """
 
 from __future__ import annotations

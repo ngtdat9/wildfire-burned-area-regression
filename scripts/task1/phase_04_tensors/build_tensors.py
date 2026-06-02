@@ -35,16 +35,16 @@ Loading a tensor later:
 Usage (from project root):
 
     # Process all fires with fire_complete=True in compression_report.csv
-    python scripts/build_tensors.py
+    python scripts/task1/phase_04_tensors/build_tensors.py
 
     # Single fire (useful for testing with mock data)
-    python scripts/build_tensors.py --fire-id MOCK001
+    python scripts/task1/phase_04_tensors/build_tensors.py --fire-id MOCK001
 
     # First N fires only
-    python scripts/build_tensors.py --limit 5
+    python scripts/task1/phase_04_tensors/build_tensors.py --limit 5
 
     # Custom directories
-    python scripts/build_tensors.py \\
+    python scripts/task1/phase_04_tensors/build_tensors.py \\
         --aligned-dir data/aligned_compressed \\
         --tensor-dir  data/tensors
 """
@@ -240,7 +240,7 @@ def main() -> None:
         if not fire_ids:
             print(
                 f"No fire_complete=True entries found in {REPORT_CSV}.\n"
-                "Generate mock data first:  python scripts/generate_mock_data.py",
+                "Aligned data required under data/aligned_compressed/ (see Phase 3 docs).",
                 file=sys.stderr,
             )
             sys.exit(1)
@@ -267,7 +267,7 @@ def main() -> None:
     print(f"\nDone: {n_ok} succeeded, {n_fail} failed.")
     print(f"Manifest written to {args.tensor_dir / MANIFEST_NAME}")
     if n_ok > 0:
-        print("\nNext step:  python scripts/build_splits.py")
+        print("\nNext step:  python scripts/task1/phase_04_tensors/build_splits.py")
 
 
 if __name__ == "__main__":

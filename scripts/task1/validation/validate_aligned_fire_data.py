@@ -10,8 +10,8 @@ Memory-safe: reads one band at a time; does not load full multi-band stacks.
 
 Usage (from project root):
 
-    python scripts/validate_aligned_fire_data.py --limit 5
-    python scripts/validate_aligned_fire_data.py --fire-id 20778153
+    python scripts/task1/validation/validate_aligned_fire_data.py --limit 5
+    python scripts/task1/validation/validate_aligned_fire_data.py --fire-id 20778153
 """
 
 from __future__ import annotations

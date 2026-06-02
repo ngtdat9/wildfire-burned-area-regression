@@ -7,9 +7,9 @@
 - **Assigned student:** Student 4
 - **Status:** Completed first version
 - **Scripts:**
-  - `scripts/build_tensors.py` — stack aligned GeoTIFFs into per-fire tensors
-  - `scripts/build_splits.py` — event-level train / val / test split
-  - `scripts/generate_mock_data.py` — synthetic data generator for testing without real data
+  - `scripts/task1/phase_04_tensors/build_tensors.py` — stack aligned GeoTIFFs into per-fire tensors
+  - `scripts/task1/phase_04_tensors/build_splits.py` — event-level train / val / test split
+  - *(removed)* `generate_mock_data.py` — was a dev-only helper; not shipped in this repo
 - **Notebook:** `notebooks/03_phase4_tensor_export_colab.ipynb` — Colab-ready end-to-end pipeline
 
 ## Purpose
@@ -148,25 +148,25 @@ run all cells. Tensors and splits are written back to Drive.
 pip install -r requirements.txt
 
 # (Optional) generate mock data for testing without real data
-python scripts/generate_mock_data.py
+# (optional) create minimal mock aligned data locally for dry-runs — not in repo
 
 # Build tensors for all fires
-python scripts/build_tensors.py
+python scripts/task1/phase_04_tensors/build_tensors.py
 
 # Create train/val/test split
-python scripts/build_splits.py
+python scripts/task1/phase_04_tensors/build_splits.py
 ```
 
 Single fire:
 
 ```bash
-python scripts/build_tensors.py --fire-id 24332647
+python scripts/task1/phase_04_tensors/build_tensors.py --fire-id 24332647
 ```
 
 Custom directories:
 
 ```bash
-python scripts/build_tensors.py \
+python scripts/task1/phase_04_tensors/build_tensors.py \
     --aligned-dir /path/to/aligned_compressed \
     --tensor-dir  /path/to/tensors
 ```

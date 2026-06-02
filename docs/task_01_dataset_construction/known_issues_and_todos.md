@@ -12,7 +12,7 @@ inside Task 1 (Dataset Construction & Data Preparation).
       terrain + stacked ERA5 weather exported and organized under
       `data/raw/environment_terrain/<fire_id>/`.
 - [x] **Phase 1 + Phase 2 inventory check.**
-      `scripts/check_phase1_phase2_inventory.py` →
+      `scripts/task1/validation/check_phase1_phase2_inventory.py` →
       `data/raw/csv/phase1_phase2_inventory.csv`.
 - [x] **Phase 3 — geospatial alignment** (Student 3). All ready layers
       aligned to the Landsat severity 30 m reference grid.
@@ -32,7 +32,7 @@ inside Task 1 (Dataset Construction & Data Preparation).
 - [ ] **Full export run.** Submit GEE tasks for all fires in
       `fire_all.csv` → Drive folder `Wildfire_FireMask_Stacked`.
 - [ ] **Download & organize** into `data/raw/fire_mask_stacked/`.
-- [ ] **Align all fires** with `scripts/align_fire_mask_update.py`.
+- [ ] **Align all fires** with `scripts/task1/phase_03_alignment/align_fire_mask_update.py`.
 - [ ] **Merge** into main dataset:
       `rsync -av data/fire_mask_update/aligned_compressed/ data/aligned_compressed/`
 
@@ -56,7 +56,7 @@ inside Task 1 (Dataset Construction & Data Preparation).
 ## Cross-cutting (open)
 
 - [ ] **Centralise config.** GEE project ID is still hard-coded in
-      `scripts/extract_burn_labels.py`; should read from
+      `scripts/task1/phase_01_burn_labels/extract_burn_labels.py`; should read from
       `configs/gee_config.yaml`.
 - [ ] **Per-event metadata sidecars** for Phase 1/2 raw exports (Phase 3
       already writes `metadata.json` per aligned fire).
@@ -84,7 +84,7 @@ inside Task 1 (Dataset Construction & Data Preparation).
 Before alignment (or to audit raw inputs):
 
 ```bash
-python scripts/check_phase1_phase2_inventory.py
+python scripts/task1/validation/check_phase1_phase2_inventory.py
 ```
 
 Output: `data/raw/csv/phase1_phase2_inventory.csv`

@@ -6,7 +6,7 @@
 
 - **Assigned student:** Student 2
 - **Status:** Completed first version (stacked weather export, 2026-05-24)
-- **Script:** `scripts/extract_environment_terrain.py`
+- **Script:** `scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py`
 - **Config example:** `configs/environment_terrain_config.example.yaml`
 
 ## Inputs
@@ -83,7 +83,7 @@ original daily-export design; only the **export packaging** changed
 **Dry run** (no GEE calls):
 
 ```bash
-python scripts/extract_environment_terrain.py \
+python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
     data/raw/csv/fire_all.csv \
     --limit 1 --dry-run
 ```
@@ -91,7 +91,7 @@ python scripts/extract_environment_terrain.py \
 **Live run — stacked weather (default):**
 
 ```bash
-python scripts/extract_environment_terrain.py \
+python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
     data/raw/csv/fire_all.csv \
     --project wildfire-area-regression \
     --folder Wildfire_Environment_Exports \
@@ -104,7 +104,7 @@ python scripts/extract_environment_terrain.py \
 **Legacy daily weather:**
 
 ```bash
-python scripts/extract_environment_terrain.py \
+python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
     data/raw/csv/fire_all.csv \
     --daily-weather-exports
 ```
@@ -120,7 +120,7 @@ data/raw/environment_terrain/
 Then run:
 
 ```bash
-python scripts/organize_environment_terrain.py
+python scripts/task1/phase_02_environment_terrain/organize_environment_terrain.py
 ```
 
 This organizes the flat Phase 2 GeoTIFF outputs into one folder per fire
@@ -138,7 +138,7 @@ data/raw/environment_terrain/
 Optional custom input folder:
 
 ```bash
-python scripts/organize_environment_terrain.py \
+python scripts/task1/phase_02_environment_terrain/organize_environment_terrain.py \
     --input-dir data/raw/environment_terrain
 ```
 
@@ -188,7 +188,7 @@ The script builds one multi-band image per fire:
 3. Collect daily images in an `ImageCollection` and call `.toBands()`.
 4. Export once as `<Id>__weather__stacked.tif` at `--weather-scale 9000`.
 
-Key functions in `scripts/extract_environment_terrain.py`:
+Key functions in `scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py`:
 
 - `build_stacked_weather_image(dates, region, utm_crs)` — stacks all days
 - `_rename_daily_weather_bands(img, day_index, date_str)` — band naming

@@ -11,7 +11,7 @@ when `area` is present it prints a small summary so you can sanity-check
 that the values are in square metres (m²), as Phases 1 and 2 expect.
 
 Usage (from project root):
-    python scripts/validate_fire_csv.py data/raw/csv/fire_all.csv
+    python scripts/task1/validation/validate_fire_csv.py data/raw/csv/fire_all.csv
 """
 
 from __future__ import annotations

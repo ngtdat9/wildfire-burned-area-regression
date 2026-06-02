@@ -2,7 +2,7 @@
 Phase 2 — Environment & Terrain Extraction (Google Earth Engine)
 ================================================================
 Project : wildfire-burned-area-regression
-Script  : scripts/extract_environment_terrain.py
+Script  : scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py
 Role    : Student 2 (Weather & Terrain Extraction)
 Status  : First version completed.
 
@@ -24,11 +24,11 @@ Typical usage (from project root):
     earthengine authenticate                          # first-time only
 
     # Dry run (builds export manifest, no GEE calls):
-    python scripts/extract_environment_terrain.py \
+    python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
         data/raw/csv/fire_all.csv --limit 1 --dry-run
 
     # Live run (stacked weather — default, 2 GEE tasks per fire):
-    python scripts/extract_environment_terrain.py \
+    python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
         data/raw/csv/fire_all.csv \
         --project wildfire-area-regression \
         --folder Wildfire_Environment_Exports \
@@ -39,7 +39,7 @@ Typical usage (from project root):
         --limit 1
 
     # Legacy: one weather GeoTIFF per day (many GEE tasks):
-    python scripts/extract_environment_terrain.py \
+    python scripts/task1/phase_02_environment_terrain/extract_environment_terrain.py \
         data/raw/csv/fire_all.csv \
         --daily-weather-exports \
         ...

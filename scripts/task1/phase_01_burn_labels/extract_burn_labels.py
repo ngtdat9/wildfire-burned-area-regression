@@ -2,7 +2,7 @@
 Phase 1 — Burn Label Extraction (Google Earth Engine)
 =====================================================
 Project : wildfire-burned-area-regression
-Script  : scripts/extract_burn_labels.py
+Script  : scripts/task1/phase_01_burn_labels/extract_burn_labels.py
 Role    : Student 1 (Satellite Label Extraction)
 Status  : First version completed.
 
@@ -26,7 +26,7 @@ Input CSV columns expected:
 
 Typical usage (from project root):
     earthengine authenticate                          # first-time only
-    python scripts/extract_burn_labels.py \
+    python scripts/task1/phase_01_burn_labels/extract_burn_labels.py \
         data/raw/csv/fire_all.csv \
         --folder Wildfire_Burn_Labels \
         --buffer 20000

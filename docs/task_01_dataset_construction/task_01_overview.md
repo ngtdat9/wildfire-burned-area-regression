@@ -29,7 +29,9 @@ trained inside Task 1.
 - Phase 1 details: [`phase_01_burn_label_extraction.md`](./phase_01_burn_label_extraction.md)
 - Phase 2 details: [`phase_02_environment_terrain_extraction.md`](./phase_02_environment_terrain_extraction.md)
 - Phase 3 details: [`phase_03_geospatial_alignment.md`](./phase_03_geospatial_alignment.md)
-- Phase 4 details: [`phase_04_tensor_structuring.md`](./phase_04_tensor_structuring.md)
+- Phase 4 (temporal): [`phase_04_tensor_construction.md`](./phase_04_tensor_construction.md)
+- Phase 4 (legacy static): [`phase_04_tensor_structuring.md`](./phase_04_tensor_structuring.md)
+- Task 1 scripts: `scripts/task1/`
 - Role / student assignment: [`role_distribution.md`](./role_distribution.md)
 - Open TODOs across the task: [`known_issues_and_todos.md`](./known_issues_and_todos.md)
 

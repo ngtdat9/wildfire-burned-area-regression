@@ -10,15 +10,15 @@ still open each compressed GeoTIFF.
 Usage (from project root):
 
     # One weather file (largest layer)
-    python scripts/test_geotiff_compression.py \\
+    python scripts/task1/phase_03_alignment/test_geotiff_compression.py \\
         --input data/aligned/<fire_id>/weather/weather_stacked_30m_aligned.tif
 
     # Full fire folder (all four aligned layers)
-    python scripts/test_geotiff_compression.py \\
+    python scripts/task1/phase_03_alignment/test_geotiff_compression.py \\
         --input data/aligned/<fire_id>/
 
     # Overwrite existing test outputs
-    python scripts/test_geotiff_compression.py \\
+    python scripts/task1/phase_03_alignment/test_geotiff_compression.py \\
         --input data/aligned/<fire_id>/ \\
         --overwrite
 """

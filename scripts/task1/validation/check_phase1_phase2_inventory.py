@@ -20,9 +20,9 @@ terminal summary.
 
 Usage (from project root):
 
-    python scripts/check_phase1_phase2_inventory.py
+    python scripts/task1/validation/check_phase1_phase2_inventory.py
 
-    python scripts/check_phase1_phase2_inventory.py \\
+    python scripts/task1/validation/check_phase1_phase2_inventory.py \\
         --labels-dir data/raw/satellite_labels \\
         --environment-dir data/raw/environment_terrain \\
         --output data/raw/csv/phase1_phase2_inventory.csv
