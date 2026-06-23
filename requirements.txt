@@ -9,3 +9,8 @@ contextily
 shapely
 pyproj
 jupyter
+
+# Task 2 — modeling (Student 4: temporal ablations & evaluation)
+scikit-learn
+xgboost
+scipy          # neighbor-burn-fraction features (scipy.ndimage.uniform_filter)
