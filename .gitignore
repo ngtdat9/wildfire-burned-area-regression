@@ -7,6 +7,7 @@ __pycache__/
 *.pyd
 .Python
 *.so
+.ipynb_checkpoints/
 
 # Virtual environments
 .venv/
@@ -105,3 +106,31 @@ models/**
 !data/splits/train.txt
 !data/splits/val.txt
 !data/splits/test.txt
+
+# Wildfire data and model artifacts
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+tensors/
+tensors_npy_cache/
+Dataset/
+data/
+
+# Outputs
+checkpoints/
+logs/
+predictions/
+outputs/
+runs/
+
+# Generated figures
+*.png
+*.jpg
+*.jpeg
+
+# Local/private config
+.env
+local_config.py
