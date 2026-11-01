@@ -1,5 +1,14 @@
 # Wildfire Burned-Area & Burn-Severity Regression
 
+> **Status: Postponed.** This project is postponed due to a lack of
+> computation resources on GitHub.
+>
+> **Known data issue (unresolved):** burned-area, severity, and daily
+> fire-mask labels may be incomplete for up to 57 of the 138 fires. Fires
+> starting on or after the 17th of a month appear to lose that month's
+> MODIS burn data because of the date filter used during extraction.
+> Check these labels before reusing the dataset.
+
 A reproducible **spatio-temporal wildfire dataset pipeline** that turns
 publicly available remote-sensing and reanalysis products into
 machine-learning-ready data for **burned-area** and **burn-severity**

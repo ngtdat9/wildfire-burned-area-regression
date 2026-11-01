@@ -1,5 +1,7 @@
 # Current Status
 
+**Project status: Postponed** due to a lack of computation resources on GitHub.
+
 ## Tasks
 
 | Task | Title                                   | Status                  |
