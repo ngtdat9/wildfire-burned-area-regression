@@ -1,7 +1,7 @@
 # Wildfire Burned-Area & Burn-Severity Regression
 
 > **Status: Postponed.** This project is postponed due to a lack of
-> computation resources on GitHub.
+> computation resources.
 >
 > **Known data issue (unresolved):** burned-area, severity, and daily
 > fire-mask labels may be incomplete for up to 57 of the 138 fires. Fires
